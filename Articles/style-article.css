@@ -1,0 +1,25 @@
+ @font-face {
+     font-family: Libel_Suit_Rg;
+     src: url(../Arculati_Elemek/libel-suit-rg.otf);
+ }
+
+ body {
+     background-color: #e2c68e;
+     font-family: Libel_Suit_Rg;
+     border: 1px solid darkred;
+     border-radius: 50px;
+ }
+
+ body>div {
+     background-color: rgb(194, 62, 29);
+     border: 1px solid darkred;
+     border-radius: 50px;
+ }
+
+ body>div>section {
+     background-color: #e2c68e;
+     padding: 2%;
+     margin: 2%;
+     border-radius: 50px;
+
+ }

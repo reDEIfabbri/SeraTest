@@ -1,0 +1,18 @@
+html,
+body {
+    height: 100%;
+}
+
+div.page>section {
+    min-height: 0px;
+
+}
+
+div.page {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+}

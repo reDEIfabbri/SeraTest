@@ -1,0 +1,100 @@
+html,
+body {
+    height: 100%;
+}
+
+div.heading>header {
+    grid-area: head;
+}
+
+div.heading>header#small-logo {
+    grid-area: logo;
+}
+
+div.heading>header#social {
+    grid-area: soc;
+}
+
+div.navbar {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.navbar>nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #9F8C76;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+div.navbar>nav>ul li {
+    float: left;
+}
+
+div.navbar>nav>ul li a {
+    display: block;
+    padding: 8px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    opacity: 50%;
+    /*border-right: 1px solid #000;*/
+}
+
+div.navbar>nav>ul li:last-child {
+    float: right;
+}
+
+div.navbar>nav>ul li:last-child a {
+    color: #9F8C76;
+}
+
+div.navbar nav ul li a#active {
+    background-color: #fff;
+    color: rgb(194, 62, 29);
+    border: 1px solid #000;
+    opacity: 100%;
+}
+
+div.navbar nav ul li a:hover {
+    background-color: #fff;
+    color: rgb(194, 62, 29);
+    border: 1px solid #000;
+    opacity: 100%;
+}
+
+div.footing #left {
+    grid-area: footl;
+}
+
+div.footing #right {
+    grid-area: footr;
+}
+
+div.heading {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        'logo head soc'
+        'padl tabs padr'
+    ;
+    grid-template-rows: 15% 10%;
+    grid-template-columns: 15% auto 15%;
+}
+
+div.footing {
+    width: 100%;
+    margin: 50px;
+    display: grid;
+    grid-template-areas:
+        'padl footl footr padr'
+    ;
+    grid-template-rows: auto;
+    grid-template-columns: 20% auto auto 20%;
+}

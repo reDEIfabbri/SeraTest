@@ -1,0 +1,58 @@
+ @font-face {
+     font-family: Libel_Suit_Rg;
+     src: url(/Arculati_Elemek/libel-suit-rg.otf);
+ }
+
+ div.footing>footer {
+     margin: auto;
+     width: auto;
+     border: 3px solid green;
+     padding: 10px;
+ }
+
+ div.footing>ul {
+     list-style-type: none;
+ }
+
+ body {
+     background-color: #e2c68e;
+     font-family: Libel_Suit_Rg;
+ }
+
+ /*theese are the buttons for social media, we probaly only need like two of them but it is nice to have them for shits and gigles*/
+ .fa {
+     width: 45px;
+     height: 45px;
+     font-size: 30px;
+     text-align: center;
+     text-decoration: none;
+     margin: 5px 2px;
+     border-radius: 15px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .fa:hover {
+     opacity: 0.7;
+ }
+
+ .fa-facebook {
+     background: #3B5998;
+     color: white;
+ }
+
+ .fa-google {
+     background: #dd4b39;
+     color: white;
+ }
+
+ .fa-youtube {
+     background: #bb0000;
+     color: white;
+ }
+
+ .fa-instagram {
+     background: #125688;
+     color: white;
+ }

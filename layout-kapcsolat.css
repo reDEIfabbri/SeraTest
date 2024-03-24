@@ -1,0 +1,17 @@
+html,
+body {
+    height: 100%;
+}
+
+div.page>section {
+    min-height: 0px;
+    border: 1px solid salmon;
+
+}
+
+div.page {
+    width: 80%;
+    margin: auto;
+    display: block;
+    gap: 50px;
+}
