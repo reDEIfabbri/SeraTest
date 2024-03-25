@@ -6,6 +6,7 @@
  div.footing>footer {
      margin: auto;
      width: auto;
+     height: 150px;
      border: 3px solid green;
      padding: 10px;
  }
@@ -17,6 +18,10 @@
  body {
      background-color: #e2c68e;
      font-family: Libel_Suit_Rg;
+ }
+
+ body>div.footing {
+     background-image: url("/Arculati_Elemek/Logo/logo-long.png");
  }
 
  body>div.page {
@@ -40,12 +45,12 @@
 
  /*theese are the buttons for social media, we probaly only need like two of them but it is nice to have them for shits and gigles*/
  .fa {
-     width: 45px;
-     height: 45px;
-     font-size: 30px;
+     height: 9%;
+     aspect-ratio: 1;
+     font-size: 250%;
      text-align: center;
      text-decoration: none;
-     margin: 5px 2px;
+     margin: 5px;
      border-radius: 15px;
      display: flex;
      justify-content: center;
@@ -67,11 +72,11 @@
  }
 
  .fa-youtube {
-     background: #bb0000;
+     background: rgb(194, 62, 29);
      color: white;
  }
 
  .fa-instagram {
-     background: #125688;
+     background: linear-gradient(#125688, rgb(194, 62, 29));
      color: white;
  }

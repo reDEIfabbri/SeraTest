@@ -78,7 +78,7 @@ div.footing #right {
 
 div.heading {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     display: grid;
     grid-template-areas:
         'logo head soc'
