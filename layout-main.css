@@ -17,7 +17,7 @@ div.heading>header#social {
 
 div.navbar {
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 div.navbar>nav>ul {
@@ -77,8 +77,9 @@ div.footing #right {
 }
 
 div.heading {
-    width: 80%;
-    margin: 0 auto 0 auto;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto 3% auto;
     display: grid;
     grid-template-areas:
         'logo head soc'

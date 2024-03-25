@@ -3,6 +3,17 @@
      src: url(Arculati_Elemek/libel-suit-rg.otf);
  }
 
+ body {
+     background-color: #e2c68e;
+     font-family: Libel_Suit_Rg;
+ }
+
+ body>div.footing {
+     background-image: url("/Arculati_Elemek/Logo/small-logo-gray.png"), linear-gradient(#e2c68e, rgb(194, 62, 29));
+     background-position: center;
+     background-blend-mode: darken;
+ }
+
  div.footing>footer {
      margin: auto;
      width: auto;
@@ -13,15 +24,6 @@
 
  div.footing>ul {
      list-style-type: none;
- }
-
- body {
-     background-color: #e2c68e;
-     font-family: Libel_Suit_Rg;
- }
-
- body>div.footing {
-     background-image: url("/Arculati_Elemek/Logo/logo-long.png");
  }
 
  body>div.page {
@@ -45,12 +47,12 @@
 
  /*theese are the buttons for social media, we probaly only need like two of them but it is nice to have them for shits and gigles*/
  .fa {
-     height: 9%;
+     height: 250%;
      aspect-ratio: 1;
      font-size: 250%;
      text-align: center;
      text-decoration: none;
-     margin: 5px;
+     margin: 0 5px 4%;
      border-radius: 15px;
      display: flex;
      justify-content: center;
