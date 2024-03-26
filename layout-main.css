@@ -61,10 +61,10 @@ div.navbar>nav>ul li a {
     /*border-right: 1px solid #000;*/
 }
 
-/*
+
 div.navbar>nav>ul li:last-child {
     float: right;
-}*/
+}
 
 div.navbar>nav>ul li:last-child a {
     color: #9F8C76;

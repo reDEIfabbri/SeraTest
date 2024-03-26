@@ -3,8 +3,30 @@
      src: url(../Arculati_Elemek/libel-suit-rg.otf);
  }
 
+ /* track width */
+ ::-webkit-scrollbar {
+     width: 6px;
+ }
+
+ /* Track */
+ ::-webkit-scrollbar-track {
+     background: #ab7860;
+ }
+
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+     background: rgba(200, 200, 200, 50%);
+     border-radius: 3px;
+     opacity: 20%;
+ }
+
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+     background: #555;
+ }
+
  body {
-     background-color: #e2c68e;
+     background-color: #ab7860;
      font-family: Libel_Suit_Rg;
      /* border: 1px solid darkred;
      border-radius: 50px;*/
@@ -17,7 +39,7 @@
  }
 
  body>div>section {
-     background-color: #e2c68e;
+     /* background-color: #e2c68e;*/
      padding: 2%;
      margin: 2%;
      border-radius: 50px;
