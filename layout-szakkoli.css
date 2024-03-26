@@ -26,5 +26,5 @@ body>div.page>section {
 iframe {
     height: 100%;
     width: 100%;
-    border-color: none;
+    border-color: transparent;
 }

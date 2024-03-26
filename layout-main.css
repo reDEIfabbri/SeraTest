@@ -1,24 +1,38 @@
 html,
 body {
     height: 100%;
+    width: 100%;
 }
 
-div.heading>header {
-    grid-area: head;
-    height: fit-content;
+div.heading {
+    overflow: hidden;
+    float: left;
+    width: 100%;
 }
 
+div.heading > header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*
 div.heading>header#small-logo {
     grid-area: logo;
-}
+}*/
 
+/*
 div.heading>header#social {
     grid-area: soc;
-}
+}*/
 
 div.navbar {
     width: 80%;
-    margin: 10px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 div.navbar>nav>ul {
@@ -47,9 +61,10 @@ div.navbar>nav>ul li a {
     /*border-right: 1px solid #000;*/
 }
 
+/*
 div.navbar>nav>ul li:last-child {
     float: right;
-}
+}*/
 
 div.navbar>nav>ul li:last-child a {
     color: #9F8C76;
@@ -77,26 +92,31 @@ div.footing #right {
     grid-area: footr;
 }
 
-div.heading {
-    width: 100%;
-    height: 30%;
-    margin: 0 auto 3% 0;
-    display: grid;
-    grid-template-areas:
-        'logo head soc'
-        'padl tabs padr'
-    ;
-    grid-template-rows: 15% 10%;
-    grid-template-columns: 15% auto 15%;
-}
-
 .fa {
-    width: 50%;
-    max-width: 100px;
+    position: absolute;
+    width: 5%;
+    max-width: 75px;
     aspect-ratio: 1;
     font-size: 200%;
-    margin: 5%;
-    float: right;
+    max-font-size: 50px;
+    margin-right: 0;
+    clear: left;
+    right: 10px;
+}
+
+.fa-facebook {
+    top: 1%;
+}
+
+.fa-instagram {
+    top: 12%;
+}
+
+.fa-youtube {
+    top: 23%
+}
+
+.fa-google {
 }
 
 div.footing {
