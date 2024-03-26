@@ -5,6 +5,7 @@ body {
 
 div.heading>header {
     grid-area: head;
+    height: fit-content;
 }
 
 div.heading>header#small-logo {
@@ -78,8 +79,8 @@ div.footing #right {
 
 div.heading {
     width: 100%;
-    height: 200px;
-    margin: 0 auto 3% auto;
+    height: 30%;
+    margin: 0 auto 3% 0;
     display: grid;
     grid-template-areas:
         'logo head soc'
@@ -87,6 +88,15 @@ div.heading {
     ;
     grid-template-rows: 15% 10%;
     grid-template-columns: 15% auto 15%;
+}
+
+.fa {
+    width: 50%;
+    max-width: 100px;
+    aspect-ratio: 1;
+    font-size: 200%;
+    margin: 5%;
+    float: right;
 }
 
 div.footing {
