@@ -84,6 +84,11 @@ div.navbar nav ul li a:hover {
     opacity: 100%;
 }
 
+div.content {
+    min-height: 200px;
+    height: 100%;
+}
+
 div.footing #left {
     grid-area: footl;
 }
