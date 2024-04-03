@@ -26,7 +26,7 @@
  }
 
  body {
-     background-color: #ab7860;
+     background-color: #9F8C76;
      font-family: Libel_Suit_Rg, sans-serif;
      /* border: 1px solid darkred;
      border-radius: 50px;*/
@@ -35,12 +35,26 @@
  body>div {
      /* background-color: rgb(194, 62, 29);
      border: 1px solid darkred;*/
-     border-radius: 50px;
+     display: inline;
+ }
+
+ img {
+     min-width: 200px;
+     width: 100%;
+     max-width: 900px;
+     float: left;
+ }
+
+ p {
+     font-size: 200%;
+     min-width: 500px;
+     width: 95%;
+     text-align: right;
  }
 
  body>div>section {
      /* background-color: #e2c68e;*/
-     padding: 2%;
+     padding: 5px;
      margin: 2%;
      border-radius: 50px;
  }
