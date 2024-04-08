@@ -1,0 +1,24 @@
+div.gallery {
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+
+div.gallery > section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: left;
+}
+
+div.gallery > section > h1 {
+    text-align: center;
+}
+
+div.gallery > section > img {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}

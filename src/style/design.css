@@ -1,6 +1,6 @@
  @font-face {
      font-family: Libel_Suit_Rg;
-     src: url(Arculati_Elemek/libel-suit-rg.otf);
+     src: url(../../Arculati_Elemek/libel-suit-rg.otf);
  }
 
  body {
@@ -56,6 +56,10 @@
      background-color: #e2c68e;
      border-style: none;
      border-radius: 50px;
+ }
+
+ a {
+     color: #1DA1C2;
  }
 
  /*these are the buttons for social media, we probably only need like two of them but it is nice to have them for shits and giggles*/
