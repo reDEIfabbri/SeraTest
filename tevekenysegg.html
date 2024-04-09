@@ -15,7 +15,7 @@
 
     <!-- Add layout for different pages, style design also could be different,
     for now it seems to be working -->
-    <link href="src/style/layout-szakkoli.css" rel="stylesheet" type="text/css"/>
+    <link href="/src/style/layout-tevekenysegg.css" rel="stylesheet" type="text/css"/>
 
     <link href="src/style/design.css" rel="stylesheet" type="text/css"/>
     <link href="src/pictures/favicon.png" rel="icon">
@@ -24,7 +24,11 @@
 
 <body>
 
-    <div class="heading">
+<div id="fb-root"></div>
+<script async crossorigin="anonymous" defer nonce="RkCRoFAR"
+        src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v19.0"></script>
+
+<div class="heading">
         <header ID="long-logo">
             <img src="Arculati_Elemek/Logo/logo-long.png">
         </header>
@@ -44,8 +48,8 @@
     <div class="navbar">
         <nav id="navigation-bar">
             <ul>
-                <li><a href="index.html" id="active"> Bemutatkozás </a></li>
-                <li><a href="tevekenysegg.html"> Programjaink </a></li>
+                <li><a href="index.html"> Bemutatkozás </a></li>
+                <li><a href="tevekenysegg.html" id="active"> Programjaink </a></li>
                 <!-- TODO Facebook posztok, elrendez#es, stb. -->
                 <li><a href="felveteli.html"> Felvételizőknek </a></li>
                 <li><a href="Galeria.html"> Galéria </a></li>
@@ -58,19 +62,39 @@
 
     <div class="page">
         <section>
-            <iframe src="Articles/article1.html" title="Article 1"></iframe>
+            <iframe class="own" src="Articles/article1.html" title="Article 1"></iframe>
         </section>
         <section>
-            <iframe src="Articles/article2.html" title="Article 1"></iframe>
+            <iframe class="own" src="Articles/article2.html" title="Article 2"></iframe>
         </section>
         <section>
-            <iframe src="Articles/article3.html" title="Article 1"></iframe>
+            <div class="fb-post"
+                 data-href="https://www.facebook.com/Seraphicum/posts/pfbid02f3P1c9Pfpxx1GVUjQgZQfakiu9eJKHGZTAyK8Adw7yQvdiUNT9adg72LXEiHeYZrl"
+                 data-show-text="true" data-width="">
+                <blockquote cite="https://www.facebook.com/Seraphicum/posts/832379662220814"
+                            class="fb-xfbml-parse-ignore">Közzétette: <a href="https://www.facebook.com/Seraphicum">Collegium
+                    Seraphicum</a> –&nbsp;<a href="https://www.facebook.com/Seraphicum/posts/832379662220814">2023.
+                    szeptember 14., csütörtök</a></blockquote>
+            </div>
         </section>
         <section>
-            <iframe src="Articles/article4.html" title="Article 1"></iframe>
+            <iframe class="own" src="Articles/article4.html" title="Article 4"></iframe>
         </section>
         <section>
-            <iframe src="Articles/article5.html" title="Article 1"></iframe>
+            <iframe class="own" src="Articles/article5.html" title="Article 5"></iframe>
+        </section>
+        <section>
+            <div class="fb-post"
+                 data-href="https://www.facebook.com/Seraphicum/posts/pfbid02PgLPJaWVG5Phd93rM2f7GU8Ktd1d6DdeNMJVosKJfpN8gh9sA5gaGuYpY6G9tSzBl"
+                 data-show-text="true" data-width="">
+                <blockquote cite="https://www.facebook.com/Seraphicum/posts/839327568192690"
+                            class="fb-xfbml-parse-ignore"><p>Szerda esténként fél nyolckor FerencEstek a Collegium
+                    Seraphicumban!
+                    Részletek alant a plakátokon. Minden érdeklődő fiatalt várunk szeretettel!</p>Közzétette: <a
+                        href="https://www.facebook.com/Seraphicum">Collegium Seraphicum</a> –&nbsp;<a
+                        href="https://www.facebook.com/Seraphicum/posts/839327568192690">2023. szeptember 23.,
+                    szombat</a></blockquote>
+            </div>
         </section>
     </div>
 
@@ -102,6 +126,13 @@
             </ul>
         </footer>
     </div>
+<div class="banner">
+    <p> Támogasson minket adója 1%-val. 🥺 Na lééccciii!!! : <a href="/tamogatok.html"> Igentet mongyok a változäsra!</a>
+    </p>
+    <div onClick="parentNode.remove()">Nem köszönöm én nem akarok segíteni az éhező, fagyoskodó 's mosdatlan egyetemista
+        kollegistákon akik a világ jövőjét képviselik : [X]
+    </div>
+</div>
 
 </body>
 

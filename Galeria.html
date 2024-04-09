@@ -15,15 +15,14 @@
 
     <!-- Add layout for different pages, style design also could be different,
     for now it seems to be working -->
-    <link href="src/style/layout-szakkoli.css" rel="stylesheet" type="text/css"/>
+    <link href="src/style/layout-Galeria.css" rel="stylesheet" type="text/css"/>
 
     <link href="src/style/design.css" rel="stylesheet" type="text/css"/>
     <link href="src/pictures/favicon.png" rel="icon">
-
+    <script src="src/scripts/gallery.js"></script>
 </head>
 
 <body>
-
     <div class="heading">
         <header ID="long-logo">
             <img src="Arculati_Elemek/Logo/logo-long.png">
@@ -44,11 +43,11 @@
     <div class="navbar">
         <nav id="navigation-bar">
             <ul>
-                <li><a href="index.html" id="active"> Bemutatkozás </a></li>
+                <li><a href="index.html"> Bemutatkozás </a></li>
                 <li><a href="tevekenysegg.html"> Programjaink </a></li>
                 <!-- TODO Facebook posztok, elrendez#es, stb. -->
                 <li><a href="felveteli.html"> Felvételizőknek </a></li>
-                <li><a href="Galeria.html"> Galéria </a></li>
+                <li><a href="Galeria.html" id="active"> Galéria </a></li>
                 <li><a href="Dokumentumok.html"> Dokumentumok </a></li>
                 <li><a href="media.html"> Média </a></li>
                 <li><a href="https://youtu.be/6jJkdRaa04g?t=35"> Easter Egg </a></li>
@@ -58,15 +57,10 @@
 
     <div class="page">
         <section>
-            <h1>Mit bämulsz?</h1>
-            <img src="src/pictures/plakat1.png" width="100%">
-            <p>Dori me Interimo, adapare Dori me Ameno, Ameno Latire Latiremo Dori me Ameno
-                Omenare imperavi ameno Dimere, dimere matiro Matiremo Ameno Omenare imperavi emulari, ameno Omenare
-                imperavi emulari, ameno Ameno dore Ameno dori me
-            </p>
-            <a href="https://www.youtube.com/watch?v=onjPLuZp6hY">
-                <p> Nem mered</p>
-            </a>
+            <button class="btn" id="back" onclick="goPicBack(image)">back</button>
+            <button class="btn" id="forth" onclick="goPicForth(image)">forth</button>
+            <p id="number">text</p>
+            <img id="image" src="src/pictures/gallery/test/1.jpg">
         </section>
     </div>
 
@@ -97,6 +91,13 @@
                 <li>Itt lakóknak</li>
             </ul>
         </footer>
+    </div>
+    <div class="banner">
+        <p> Támogasson minket adója 1%-val. 🥺 Na lééccciii!!! : <a href="/tamogatok.html"> Igentet mongyok a
+            változäsra!</a></p>
+        <div onClick="parentNode.remove()">Nem köszönöm én nem akarok segíteni az éhező, fagyoskodó 's mosdatlan
+            egyetemista kollegistákon akik a világ jövőjét képviselik : [X]
+        </div>
     </div>
 
 </body>

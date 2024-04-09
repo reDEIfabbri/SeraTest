@@ -3,14 +3,17 @@
      src: url(../../Arculati_Elemek/libel-suit-rg.otf);
  }
 
+ h3, h2, h1, p {
+     font-size: 150%;
+ }
+
  body {
      background-color: #e2c68e;
      font-family: Libel_Suit_Rg, ui-rounded;
  }
 
  body>div.footing {
-     margin: 0;
-     margin-top: 5%;
+     margin: 5% 0 0;
      background: linear-gradient(#e2c68e, rgb(194, 62, 29));
  }
 
@@ -24,11 +27,11 @@
      width: auto;
      height: 150px;
      overflow: visible;
-     border: 3px solid green;
+     border: 2px solid green;
      background-image: url("/Arculati_Elemek/Logo/small-logo-gray.png");
      background-repeat: no-repeat;
      background-position: center;
-     background-size: 50%;;
+     background-size: 50%;
  }
 
  div.footing > footer::before {
@@ -47,14 +50,23 @@
  }
 
  body>div.page>section {
-     background-color: rgb(194, 62, 29);
-     border: 1px solid darkred;
+     background-color: rgba(194, 62, 29, 0%);
+     /*border: 1px solid darkred;*/
      border-radius: 50px;
+     padding: 2%;
  }
 
  section>iframe {
-     background-color: #e2c68e;
-     border-style: none;
+     background-color: #c23e1d;
+     /*border-style: none;*/
+     border: 5px solid rgba(194, 62, 29, 0%);
+     border-radius: 50px;
+ }
+
+ section > svg {
+     background-color: #c23e1d;
+     /*border-style: none;*/
+     border: 5px solid rgba(194, 62, 29, 0%);
      border-radius: 50px;
  }
 

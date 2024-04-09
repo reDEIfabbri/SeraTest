@@ -1,0 +1,17 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+div.page {
+    /*overflow: hidden;*/
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+}
+
+div.page > section > img {
+    max-width: 100%;
+    height: auto;
+}

@@ -29,7 +29,7 @@ div.heading>header#social {
 }*/
 
 div.navbar {
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
@@ -85,6 +85,7 @@ div.navbar nav ul li a:hover {
     opacity: 100%;
 }
 
+/*
 div.content {
     min-height: 500px;
     padding: 2% 10%;
@@ -93,8 +94,7 @@ div.content {
 div.content > iframe {
     border-radius: 50px;
     height: 800px;
-
-}
+}*/
 
 
 div.footing #left {
@@ -141,4 +141,15 @@ div.footing {
     ;
     grid-template-rows: auto;
     grid-template-columns: 20% auto auto 20%;
+}
+
+.banner {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: darkgray;
+    color: #c23e1d;
+    font-size: 20px;
 }

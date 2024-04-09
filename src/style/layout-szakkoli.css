@@ -1,55 +1,26 @@
 html,
 body {
     height: 100%;
-}
-
-div.page>section {
-    min-height: 0;
-    height: fit-content;
-}
-
-div.page {
-    padding: 0px;
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 50px;
-
-}
-
-body>div.page>section {
-    padding: 5%;
+    margin: 0;
 }
 
 div.content {
-    overflow: hidden;
-    float: left;
-    width: 100%;
-}
-
-div.content > section {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    width: 80%;
-    text-align: left;
-}
-
-div.content > section > h1 {
-    text-align: center;
+    /*overflow: hidden;*/
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content;
+    gap: 10px;
+    /*width: 90%;*/
 }
 
 div.content > section > img {
-    display: inline;
-    float: left;
-    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
-iframe {
-    height: 100%;
-    width: 100%;
-    border-color: transparent;
+div.content > section > iframe {
+    max-width: 100%;
+    min-height: 315px;
 }

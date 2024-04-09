@@ -1,0 +1,41 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+div.content {
+    /*overflow: hidden;*/
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: max-content;
+    gap: 10px;
+    /*width: 90%;*/
+}
+
+div.content > section > {
+    max-width: 100%;
+    min-height: 500px;
+    height: 100%;
+}
+
+div.content > section > iframe.own {
+    aspect-ratio: 210/297;
+    min-width: 210px;
+    min-height: 297px;
+    width: 100%;
+}
+
+div.content > section > iframe.svg {
+    width: 100%;
+    height: auto;
+    scale: 50%;
+}
+
+div.content > section > svg {
+    width: 100%;
+    height: auto;
+    scale: 100%;
+}
