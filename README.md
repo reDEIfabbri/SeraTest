@@ -28,10 +28,11 @@ This repo is for the Seraphicum website project
         - content
         - page
         - footer
-- oldalak:
-  - 
-    - felvételi
-    - média
-    - kapcsolat
-    - támogatók
-    - tevékenység
+- Oldalak:
+  -
+    - Bemutatksozás
+    - Programjaink
+    - Felvételizőknek
+    - Galéria
+    - Dokumentumok
+    - Média(mejelenések)

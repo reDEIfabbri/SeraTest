@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title> Yo Mama! </title>
 
     <!-- Add icon library, for social media buttons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="layout-main.css"/>
+    <link href="layout-main.css" rel="stylesheet" type="text/css"/>
 
     <!-- Add layout for different pages, style design also could be different,
     for now it seems to be working -->
-    <link rel="stylesheet" type="text/css" href="layout-szakkoli.css"/>
+    <link href="layout-szakkoli.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="stylesheet" type="text/css" href="design.css"/>
-    <link rel="icon" href="favicon.png">
+    <link href="design.css" rel="stylesheet" type="text/css"/>
+    <link href="favicon.png" rel="icon">
 
 </head>
 
@@ -34,9 +34,9 @@
     </header>
     -->
     <header ID="social">
-        <a href="https://www.facebook.com/Seraphicum/" target="_blank" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/szeraf_koli/" target="_blank" class="fa fa-instagram"></a>
-        <a href="https://www.youtube.com/channel/UCpOokV3I5dHLWZNzvOiJa1w" target="_blank" class="fa fa-youtube"></a>
+        <a class="fa fa-facebook" href="https://www.facebook.com/Seraphicum/" target="_blank"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/szeraf_koli/" target="_blank"></a>
+        <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpOokV3I5dHLWZNzvOiJa1w" target="_blank"></a>
     </header>
 </div>
 
@@ -57,16 +57,16 @@
     </nav>
 </div>
 
-    <p>Nulla nisi in cillum in dolor dolor laboris anim quis dolor ullamco voluptate tempor elits reprehenderit in et
-        nulla labore.</p>
-    <main>
-        <div class="content">
-            <iframe src="Articles/article1.html" title="Article 1"></iframe>
-        </div>
-        <section></section>
-        <section></section>
-        <section></section>
-    </main>
+<p>Nulla nisi in cillum in dolor dolor laboris anim quis dolor ullamco voluptate tempor elits reprehenderit in et
+    nulla labore.</p>
+<main>
+    <div class="content">
+        <iframe src="Articles/article1.html" title="Article 1"></iframe>
+    </div>
+    <section></section>
+    <section></section>
+    <section></section>
+</main>
 
 <div class="footing">
     <footer id="left">
@@ -96,22 +96,22 @@
         </ul>
     </footer>
 </div>
-    <div style="width: 100%; position: fixed; z-index: 1000; top: 0; left: 0; background: lightgray;">
-        <p> Ez egy még nem kész oldal boilerplate-e.</p>
-        <div onClick="parentNode.remove()">Close [X]</div>
-    </div>
-    <script>
-        function togglemenu() {
-            var x = document.getElementById("nav");
-            if (x.className === "nav") {
-                x.className += " nav--open";
-            } else {
-                x.className = "nav";
-            }
-            var element = document.getElementById("menu-toggle");
-            element.classList.toggle("menu-toggle--open");
+<div style="width: 100%; position: fixed; z-index: 1000; top: 0; left: 0; background: lightgray;">
+    <p> Ez egy még nem kész oldal boilerplate-e.</p>
+    <div onClick="parentNode.remove()">Close [X]</div>
+</div>
+<script>
+    function togglemenu() {
+        var x = document.getElementById("nav");
+        if (x.className === "nav") {
+            x.className += " nav--open";
+        } else {
+            x.className = "nav";
         }
-    </script>
+        var element = document.getElementById("menu-toggle");
+        element.classList.toggle("menu-toggle--open");
+    }
+</script>
 </body>
 
 </html>
