@@ -11,14 +11,14 @@
     <!-- Add icon library, for social media buttons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link href="src/style/layout-main.css" rel="stylesheet" type="text/css"/>
+    <link href="/src/style/layout-main.css" rel="stylesheet" type="text/css"/>
 
     <!-- Add layout for different pages, style design also could be different,
     for now it seems to be working -->
-    <link href="src/style/layout-media.css" rel="stylesheet" type="text/css"/>
+    <link href="/src/style/layout-media.css" rel="stylesheet" type="text/css"/>
 
-    <link href="src/style/design.css" rel="stylesheet" type="text/css"/>
-    <link href="src/pictures/favicon.png" rel="icon">
+    <link href="/src/style/design.css" rel="stylesheet" type="text/css"/>
+    <link href="/src/pictures/favicon.png" rel="icon">
 
 </head>
 <body>
@@ -43,13 +43,13 @@
     <div class="navbar">
         <nav id="navigation-bar">
             <ul>
-                <li><a href="index.html"> Bemutatkozás </a></li>
-                <li><a href="tevekenysegg.html"> Programjaink </a></li>
+                <li><a href="/index.html"> Bemutatkozás </a></li>
+                <li><a href="/tevekenysegg.html"> Programjaink </a></li>
                 <!-- TODO Facebook posztok, elrendez#es, stb. -->
-                <li><a href="felveteli.html"> Felvételizőknek </a></li>
-                <li><a href="Galeria.html"> Galéria </a></li>
-                <li><a href="Dokumentumok.html"> Dokumentumok </a></li>
-                <li><a href="media.html" id="active"> Média </a></li>
+                <li><a href="/felveteli.html"> Felvételizőknek </a></li>
+                <li><a href="/Galeria.html"> Galéria </a></li>
+                <li><a href="/Dokumentumok.html"> Dokumentumok </a></li>
+                <li><a href="/media.html" id="active"> Média </a></li>
                 <li><a href="https://youtu.be/6jJkdRaa04g?t=35"> Easter Egg </a></li>
             </ul>
         </nav>
@@ -57,16 +57,24 @@
 
     <div class="gallery">
         <section>
-            <h1>Mediumok</h1>
-            <img src="src/pictures/plakat4.png" width="50%">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis viverra magna, eu malesuada
-                nisi. Donec faucibus congue augue, eu eleifend ante viverra quis. Suspendisse potenti. Quisque finibus
-                quis turpis mollis rutrum. Sed tempus suscipit justo, et auctor quam ultrices at. Vestibulum sed ante
-                vitae nunc varius sollicitudin. Ut fringilla libero iaculis, pellentesque ligula tempor, ultrices nibh.
-                Nam condimentum sit amet quam at aliquet. Ut feugiat efficitur risus, vel ornare sapien sodales ac. Sed
-                non molestie leo. Aenean vitae diam in leo dictum tincidunt sit amet et est. Fusce vel mi commodo,
-                viverra purus gravida, convallis nunc. Vestibulum sit amet diam auctor est commodo cursus id sit amet
-                turpis. Nunc ac tincidunt neque.</p>
+            <a href="https://www.katolikusradio.hu/archivum.php?firstaudioid=20&mev=2024&mho=04&mnap=06&mora=20&mperc=04"
+               target="_blank"><h1>Mediumok</h1></a>
+            <iframe src="https://www.katolikusradio.hu/archivum.php?firstaudioid=20&mev=2024&mho=04&mnap=06&mora=20&mperc=04"></iframe>
+        </section>
+        <section>
+            <a href="https://www.youtube-nocookie.com/embed/2bYFC_cr9as?si=EZpoOBrCmlg8NGxW&amp;start=2231"
+               target="_blank"><h1>Ehez van már videlyó es!</h1></a>
+            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    class="youtube" frameborder="0"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    src="https://www.youtube-nocookie.com/embed/2bYFC_cr9as?si=EZpoOBrCmlg8NGxW&amp;start=2231" title="YouTube video player">
+            </iframe>
+        </section>
+        <section>
+            <a href="https://www.magyarkurir.hu" target="_blank"><h1>Olyan neves oldalakon is emlegetnek minket, mint a
+                magyar kurír!</h1></a>
+            <iframe src="https://www.magyarkurir.hu/hirek/keddenkent-ferencestekre-varja-pecsi-collegium-seraphicum-az-egyetemistakat"></iframe>
         </section>
     </div>
 

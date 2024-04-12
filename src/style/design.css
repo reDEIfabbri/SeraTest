@@ -12,11 +12,29 @@
      font-family: Libel_Suit_Rg, ui-rounded;
  }
 
+ div.gallery {
+ }
+
+ div.gallery > section > a {
+     text-decoration: none;
+ }
+
+ div.gallery > section > a > h1 {
+     text-align: center;
+     border: #ab7860 2px solid;
+     border-radius: 50px;
+     background-color: #ffe3a8;
+     color: #000;
+ }
+
+ div.gallery > section > h1:hover {
+     background-color: #bc9675;
+ }
+
  body>div.footing {
      margin: 5% 0 0;
      background: linear-gradient(#e2c68e, rgb(194, 62, 29));
  }
-
 
  /* TODO: Split the footer's content from the background with the before element */
  div.footing>footer {
@@ -40,6 +58,12 @@
 
  div.footing>ul {
      list-style-type: none;
+ }
+
+ .banner {
+     background: rgba(200, 200, 200, 75%);
+     color: #c23e1d;
+     font-size: 20px;
  }
 
  body>div.page {

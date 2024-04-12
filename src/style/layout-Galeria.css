@@ -15,3 +15,43 @@ div.page > section > img {
     max-width: 100%;
     height: auto;
 }
+
+div.gallery {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content;
+    gap: 20px;
+}
+
+div.gallery > section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: left;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+}
+
+div.gallery > section > a > h1 {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+div.gallery > section > img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+}
+
+div.gallery > section > iframe {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+}

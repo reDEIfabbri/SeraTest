@@ -143,13 +143,19 @@ div.footing {
     grid-template-columns: 20% auto auto 20%;
 }
 
-.banner {
+div.banner {
     width: 100%;
     position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
-    background: darkgray;
-    color: #c23e1d;
-    font-size: 20px;
+}
+
+div.banner > p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div.banner > div {
+    margin-top: 0;
 }
