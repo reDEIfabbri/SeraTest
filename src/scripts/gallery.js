@@ -6,18 +6,14 @@ function changeText(id) {
 
 function goPicBack(id) {
     pn--;
-    if (pn == 0) {
-        pn = 19;
-    }
-    id.src = "src/pictures/gallery/test/" + pn + ".jpg";
+    id.src = image.getAttribute("data-path") + pn + ".jpg";
+    alert(image.getAttribute("data-path"));
     changeText(number);
 }
 
 function goPicForth(id) {
     pn++;
-    if (pn == 20) {
-        pn = 1;
-    }
-    id.src = "src/pictures/gallery/test/" + pn + ".jpg";
+    id.src = image.getAttribute("data-path") + pn + ".jpg";
+    alert(image.getAttribute("data-path"));
     changeText(number);
 }

@@ -45,13 +45,13 @@ div.gallery > section > a > h1 {
 }
 
 div.gallery > section > img {
-    aspect-ratio: 16/9;
+    aspect-ratio: 1;
     width: 100%;
     height: auto;
 }
 
 div.gallery > section > iframe {
-    aspect-ratio: 16/9;
+    aspect-ratio: 1;
     width: 100%;
     height: auto;
 }
