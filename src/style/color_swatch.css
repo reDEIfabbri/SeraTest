@@ -1,3 +1,8 @@
+:root {
+    --bgc_light: #e2c68e; /* _drapp */;
+    --hlc_light: #c23e1d;
+}
+
 .color-swatch {
     color: #ab7860; /* _sötetdrapp */
 

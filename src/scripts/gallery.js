@@ -7,13 +7,11 @@ function changeText(id) {
 function goPicBack(id) {
     pn--;
     id.src = image.getAttribute("data-path") + pn + ".jpg";
-    alert(image.getAttribute("data-path"));
     changeText(number);
 }
 
 function goPicForth(id) {
     pn++;
     id.src = image.getAttribute("data-path") + pn + ".jpg";
-    alert(image.getAttribute("data-path"));
     changeText(number);
 }
