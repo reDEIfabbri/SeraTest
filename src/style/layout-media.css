@@ -37,3 +37,51 @@ div.gallery > section > iframe {
     width: 100%;
     height: auto;
 }
+
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    div.gallery {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content;
+        gap: 10px;
+    }
+
+    div.gallery > section {
+        aspect-ratio: unset;
+        min-height: 0;
+        min-width: 350px;
+        align-content: center;
+    }
+
+    a.fa {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    div.gallery {
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+        gap: 10px;
+    }
+
+    div.gallery > section {
+        aspect-ratio: unset;
+        min-height: 0;
+        min-width: 350px;
+        align-content: center;
+    }
+
+    div.gallery > section > iframe {
+        display: none;
+    }
+
+    a.fa {
+        display: none;
+    }
+}

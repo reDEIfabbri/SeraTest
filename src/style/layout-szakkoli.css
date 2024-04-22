@@ -15,6 +15,20 @@ div.content {
     /*width: 90%;*/
 }
 
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    div.content {
+        width: 90%;
+        margin: 10px 15px auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+        gap: 10px;
+    }
+
+    div.doksi {
+        display: none;
+    }
+}
 div.content > section > img {
     max-width: 100%;
     height: auto;

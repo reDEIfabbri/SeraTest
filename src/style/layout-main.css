@@ -27,7 +27,10 @@ div.heading>header#small-logo {
 div.heading>header#social {
     grid-area: soc;
 }*/
-
+/*
+Legyennek gap-ek a navbar-ban!
+https://ferenc800.hu/ dizályn példa
+*/
 div.navbar {
     width: 90%;
     margin-left: auto;
@@ -46,25 +49,26 @@ div.navbar>nav>ul {
     overflow: hidden;
 }
 
-
 div.navbar>nav>ul li {
     float: left;
 }
 
 div.navbar>nav>ul li a {
+    font-size: 1.3em;
+    margin-right: 10px;
     display: block;
     padding: 8px;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     text-align: center;
     border-radius: 15px;
-    opacity: 50%;
+    opacity: 90%;
     /*border-right: 1px solid #000;*/
 }
 
-
 div.navbar>nav>ul li:last-child {
     float: right;
+    margin: 0;
 }
 
 div.navbar>nav>ul li:last-child a {
@@ -114,19 +118,19 @@ div.footing #right {
     max-font-size: 50px;
     margin-right: 0;
     clear: left;
-    right: 10px;
+    right: 0;
 }
 
 .fa-facebook {
-    top: 1%;
+    top: 100PX;
 }
 
 .fa-instagram {
-    top: 12%;
+    top: 200PX;
 }
 
 .fa-youtube {
-    top: 23%
+    top: 300PX;
 }
 
 .fa-google {
@@ -134,13 +138,93 @@ div.footing #right {
 
 div.footing {
     width: 100%;
-    margin: 50px;
+    padding: 50px;
     display: grid;
     grid-template-areas:
         'padl footl footr padr'
     ;
     grid-template-rows: auto;
     grid-template-columns: 20% auto auto 20%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    div.footing {
+        width: 100%;
+        padding: 0px;
+        display: block;
+        font-size: 3vw;
+    }
+
+    div.footing #left {
+        width: 80%
+    }
+
+    div.footing #right {
+        width: 80%;
+    }
+
+    div.heading > header > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+    .fa {
+        position: absolute;
+        width: 10%;
+        max-width: 75px;
+        aspect-ratio: 1;
+        font-size: 200%;
+        max-font-size: 5vw;
+        margin-right: 0;
+        right: 0;
+        clear: left;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    div.navbar > nav > ul li a {
+        font-size: 1.5em;
+    }
+
+    div.footing {
+        width: 100%;
+        padding: 0px;
+        display: block;
+        font-size: 3vw;
+    }
+
+    div.footing #left {
+        width: 80%
+    }
+
+    div.footing #right {
+        width: 80%;
+    }
+
+    div.heading > header > img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+    .fa {
+        position: absolute;
+        width: 10%;
+        max-width: 75px;
+        aspect-ratio: 1;
+        font-size: 200%;
+        max-font-size: 5vw;
+        margin-right: 0;
+        right: 0;
+        clear: left;
+    }
 }
 
 div.banner {

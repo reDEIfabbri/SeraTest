@@ -8,7 +8,7 @@
  }
 
  body {
-     background-color: #e2c68e;
+     background-color: #f6efe1;
      font-family: Libel_Suit_Rg, ui-rounded;
  }
 
@@ -33,7 +33,7 @@
 
  body>div.footing {
      margin: 5% 0 0;
-     background: linear-gradient(#e2c68e, rgb(194, 62, 29));
+     background: #f6efe1;
  }
 
  /* TODO: Split the footer's content from the background with the before element */
@@ -41,19 +41,36 @@
      margin-left: auto;
      margin-right: auto;
      margin-top: 5%;
-     padding: 10px 10px 100px;
+     margin-bottom: 0;
+     padding: 20px 20px 100px;
      width: auto;
      height: 150px;
-     overflow: visible;
-     border: 2px solid green;
-     background-image: url("/Arculati_Elemek/Logo/small-logo-gray.png");
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: 50%;
+     overflow: hidden;
+     border-radius: 20px;
+     background-color: #f6efe1;
+     mix-blend-mode: multiply;
+     opacity: 75%;
+     position: relative;
+     z-index: 0;
+     font-size: 1.2em;
  }
 
  div.footing > footer::before {
-
+     box-sizing: border-box;
+     content: '';
+     position: absolute;
+     z-index: -1;
+     top: -100px;
+     left: -5%;
+     width: 421px;
+     height: 423px;
+     background-image: url("/Arculati_Elemek/Logo/small-logo-gray.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 75%;
+     transform: rotate(30deg);
+     opacity: 30%;
+     mix-blend-mode: darken;
  }
 
  div.footing>ul {
@@ -67,7 +84,7 @@
  }
 
  body>div.page {
-     background-color: #e2c68e;
+     background-color: #f6efe1;
      font-family: Libel_Suit_Rg, ui-rounded;
      border: 0 solid blue;
      border-radius: 50px;
@@ -81,10 +98,15 @@
  }
 
  section>iframe {
-     background-color: #c23e1d;
+     background-color: #e5d0be;
      /*border-style: none;*/
      border: 5px solid rgba(194, 62, 29, 0%);
      border-radius: 50px;
+ }
+
+ section > iframe.fb-post {
+     background-color: #f6efe1;
+     border-radius: 0;
  }
 
  section > svg {
@@ -95,7 +117,7 @@
  }
 
  a {
-     color: #1DA1C2;
+     color: #5c4034;
  }
 
  /*these are the buttons for social media, we probably only need like two of them but it is nice to have them for shits and giggles*/

@@ -12,7 +12,6 @@ div.content {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: max-content;
     gap: 10px;
-    /*width: 90%;*/
 }
 
 div.content > section > {
@@ -38,4 +37,33 @@ div.content > section > svg {
     width: 100%;
     height: auto;
     scale: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    div.content {
+        width: 90%;
+        margin: 10px auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        gap: 10px;
+    }
+
+    div.content > section > {
+        max-width: 100%;
+        min-height: 0px;
+        height: 100%;
+    }
+
+    div.content > section > iframe {
+        display: none;
+    }
+
+    div.content > section > svg {
+        display: none;
+    }
+
+    a.fa {
+        display: none;
+    }
 }

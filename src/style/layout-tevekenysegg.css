@@ -13,6 +13,11 @@ div.page > section > iframe.own {
     aspect-ratio: 27/42;
 }
 
+div.page > section > iframe.fb-post {
+    height: 100%;
+    aspect-ratio: 27/42;
+}
+
 div.page > section > div.fb-post {
     aspect-ratio: 27/40;
     width: 100%;
@@ -34,4 +39,44 @@ div.page {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: max-content;
     gap: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    div.page {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content;
+        gap: 10px;
+    }
+
+    div.page > section > div.fb-post {
+        float: left;
+        margin: auto;
+    }
+
+    a.fa {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    div.page {
+        width: 90%;
+        margin: 10px 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+        gap: 10px;
+    }
+
+    div.page > section > div.fb-post {
+        float: left;
+        margin: auto;
+    }
+
+    a.fa {
+        display: none;
+    }
 }

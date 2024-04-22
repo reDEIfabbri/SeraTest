@@ -1,19 +1,24 @@
 html,
 body {
     height: 100%;
-    margin: 0;
 }
 
-div.page {
-    /*overflow: hidden;*/
-    width: 90%;
-    margin: 10px auto;
-    display: grid;
+* {
+    box-sizing: border-box;
 }
 
-div.page > section > img {
-    max-width: 100%;
-    height: auto;
+div.gallery > section > iframe {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    aspect-ratio: 27/42;
+}
+
+div.gallery > section {
+    aspect-ratio: 269/345;
+    min-height: 0;
+    min-width: 350px;
+    align-content: center;
 }
 
 div.gallery {
@@ -25,33 +30,57 @@ div.gallery {
     gap: 20px;
 }
 
-div.gallery > section {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    text-align: left;
-    aspect-ratio: 16/9;
-    width: 100%;
-    height: auto;
+.mobile {
+    display: none;
 }
 
-div.gallery > section > a > h1 {
-    width: fit-content;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 5px;
-    padding: 10px;
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    div.gallery {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content;
+    }
+
+    div.gallery > section {
+        aspect-ratio: unset;
+        min-height: 0;
+        min-width: 350px;
+        align-content: center;
+    }
+
+    a.fa {
+        display: none;
+    }
 }
 
-div.gallery > section > img {
-    aspect-ratio: 1;
-    width: 100%;
-    height: auto;
-}
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    div.gallery {
+        width: 90%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content;
+        gap: 10px;
+    }
 
-div.gallery > section > iframe {
-    aspect-ratio: 1;
-    width: 100%;
-    height: auto;
+    div.gallery > section {
+        aspect-ratio: unset;
+        min-height: 0;
+        min-width: 350px;
+        align-content: center;
+    }
+
+    div.gallery > section > iframe {
+        display: none;
+    }
+
+    .mobile {
+        display: unset;
+    }
+
+    a.fa {
+        display: none;
+    }
 }
