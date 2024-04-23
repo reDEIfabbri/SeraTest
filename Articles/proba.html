@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The setInterval() Method</h2>
+
+<p id="demo"></p>
+<img id="slides" src="/src/pictures/plakat1.png">
+
+
+<script>
+    const element = document.getElementById("demo");
+    let pn = 1;
+    const slide = document.getElementById("slides");
+
+    setInterval(function () {
+        slide.src = "/src/pictures/plakat" + pn + ".png";
+        num()
+    }, 1000);
+
+    function num() {
+        pn++;
+        if (pn > 4) {
+            pn = 1
+        }
+
+    }
+</script>
+
+</body>
+</html>
