@@ -1,3 +1,7 @@
+img:hover {
+    mix-blend-mode: difference;
+}
+
  @font-face {
      font-family: Libel_Suit_Rg;
      src: url(../Arculati_Elemek/libel-suit-rg.otf);

@@ -55,6 +55,10 @@
      font-size: 1.2em;
  }
 
+ img:hover {
+     mix-blend-mode: difference;
+ }
+
  div.footing > footer::before {
      box-sizing: border-box;
      content: '';

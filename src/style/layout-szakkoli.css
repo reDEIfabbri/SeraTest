@@ -29,6 +29,7 @@ div.content {
         display: none;
     }
 }
+
 div.content > section > img {
     max-width: 100%;
     height: auto;
@@ -37,4 +38,19 @@ div.content > section > img {
 div.content > section > iframe {
     max-width: 100%;
     min-height: 315px;
+}
+
+#slides:hover {
+    mix-blend-mode: difference;
+}
+
+section.container {
+    position: relative;
+}
+section.container>img.image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    aspect-ratio: inherit;
 }
