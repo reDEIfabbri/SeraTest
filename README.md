@@ -4,6 +4,8 @@ This repo is for the Seraphicum website project
 > This is a personal trial project for us not a commercial project! Although we use real assets of the organization (
 > with permission).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bc110cab-b3d4-4977-ba19-5953decf2697/deploy-status)](https://app.netlify.com/sites/collegium-seraphicum/deploys)
+
 # Főbb részek:
 
 - index.html
