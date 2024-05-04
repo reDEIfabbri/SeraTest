@@ -6,9 +6,10 @@ setInterval(function () {
     num()
 }, 5000);*/
 
-function num() {
+
+function num(id) {
     pn++;
-    if (pn > 4) {
+    if (pn > id.getAttribute("data-max")) {
         pn = 1
     }
 
@@ -19,7 +20,8 @@ let boolPlay = 1;
 let nIntervID;
 
 function changeSlide(id) {
-    id.src = "/src/pictures/plakat" + pn + ".png";
+    id.src = id.getAttribute("data-path") + pn + ".jpg";
+    id.alt = pn + ".jpg";
     num();
 }
 
@@ -34,7 +36,7 @@ function stopSlideShow(id) {
 }
 
 function btnSlide(id) {
-    alert(id);
+    alert(id.getAttribute("data-max"));
     if(boolPlay == 1) {
         startSlideShow(id);
         boolPlay = 0;
