@@ -84,6 +84,7 @@ div.content > section > iframe {
 
 section.column-left {
     max-width: 100%;
+    margin-right: 10px;
 }
 
 section.column-right {
