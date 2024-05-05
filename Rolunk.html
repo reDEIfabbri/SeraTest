@@ -11,13 +11,17 @@
     <!-- Add icon library, for social media buttons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <link href="/src/style/layout-Rolunk.css" rel="stylesheet" type="text/css"/>
+
     <link href="/src/style/layout-main.css" rel="stylesheet" type="text/css"/>
     <!-- Add layout for different pages, style design also could be different,
     for now it seems to be working -->
-    <link href="/src/style/layout-szakkoli.css" rel="stylesheet" type="text/css"/>
+
 
     <link href="/src/style/design.css" rel="stylesheet" type="text/css"/>
     <link href="/src/pictures/favicon.png" rel="icon">
+    <link href="/src/pictures/honlap_kepek" rel="prefetch">
+
 </head>
 
 <body>
@@ -30,9 +34,6 @@
 </svg>
 -->
 
-<audio autoplay controls muted>
-    <source src="Arculati_Elemek/Era-Ameno-(TrendyBeatz.com).mp3" type="audio/mpeg">
-</audio>
 <div class="banner">
     <p> Támogasson minket adója 1%-val. 🥺 Na lééccciii!!! : <a href="/tamogatok.html"> Igentet mongyok a
         változäsra!</a></p>
@@ -75,30 +76,81 @@
     </nav>
 </div>
 
-<div class="content row">
-    <section class="column left">
-        <h1>Ez már a rólunk oldal </h1>
-        <p>Ide ír a Réka szöveget.
-        </p>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img alt="" class="slupe" src="/src/pictures/honlap_kepek/IMG_4230.JPG">
+    </div>
+
+    <div class="mySlides fade">
+        <img alt="" class="slupe" src="/src/pictures/honlap_kepek/IMG_7859.JPG">
+    </div>
+
+    <div class="mySlides fade">
+        <img alt="" class="slupe" src="/src/pictures/honlap_kepek/IMG_7867.JPG">
+    </div>
+
+    <div class="mySlides fade">
+        <img alt="" class="slupe" src="/src/pictures/honlap_kepek/IMG_8655.JPG">
+    </div>
+
+    <div class="mySlides fade">
+        <img alt="" class="slupe" src="/src/pictures/honlap_kepek/IMG_8675.JPG">
+    </div>
+
+    <div class="mySlides fade">
+        <img alt="" class="slupe" src="/src/pictures/honlap_kepek/IMG_8802.JPG">
+    </div>
+
+    <div class="mySlides fade">
+        <img alt="" class="slupe" src="/src/pictures/honlap_kepek/IMG_8820.JPG">
+    </div>
+
+    <div class="mySlides fade">
+        <img alt="" class="slupe" src="/src/pictures/honlap_kepek/IMG_8848.JPG">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+    </div>
+
+    <p>Ide ír a Réka szöveget. <br>
+        Kollégiumunk 1990-ben az országban elsőként nyitotta meg kaput az egyházi felsőoktatási kollégiumok
+        kill. Jelene kill száz keresztény egyetemista fiatalnak ad otthont 39 szobában, melyek kettő-, három
+        személyesek. Intézményünk biztosítja... Bla-bla-bla...
+    </p>
+</div>
+
+
+<div class="content">
+    <section class="column-left">
         <h3>Kisfilmes bemutatkozás:</h3>
         <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
                 frameborder="0"
-                height="315" referrerpolicy="strict-origin-when-cross-origin"
+                referrerpolicy="strict-origin-when-cross-origin"
                 src="https://www.youtube-nocookie.com/embed/bxBqZ1UbpPM?si=u2ytRmskluOV1uAp"
-                title="YouTube video player" width="560"></iframe>
+                title="YouTube video player"></iframe>
         <h3>fejlesztések</h3>
         <p>
             Ide be kopizom a honlapon levő dolgokat, esetleg képekkel az igazgatónőtől.
         </p>
-
     </section>
+
     <section class="column-right">
         Ide gyühetnek képek!
-        <img id="slides" src="/src/pictures/Kollegium_Bejarat.jpg">
+        <img src="/src/pictures/Kollegium_Bejarat.jpg">
         <h3>Ide fülszöveg+képek gyünnek</h3>
         </a>
-        <img src="/src/pictures/act-month.jpg">
 
     </section>
 </div>
@@ -134,5 +186,9 @@
 </div>
 
 </body>
+
+<footer>
+    <script src="/src/scripts/slideshow2.js"></script>
+</footer>
 
 </html>

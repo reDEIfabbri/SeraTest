@@ -77,8 +77,8 @@
         </nav>
     </div>
 
-    <div class="content row">
-        <section class="column left">
+    <div class="content">
+        <section class="column-left">
             EZek lesznek az usztatott képek:
             <img alt="uzstatott képek" src="/src/pictures/Fejlec_2023_09.jpg">
             <h1>Köszöntjük a Collegium Seraphicum honlapján! ide lesz a jelmondat</h1>
@@ -94,20 +94,49 @@
             <h3>Kisfilmes bemutatkozás:</h3>
             <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
                     frameborder="0"
-                    height="315" referrerpolicy="strict-origin-when-cross-origin"
+                    referrerpolicy="strict-origin-when-cross-origin"
                     src="https://www.youtube-nocookie.com/embed/bxBqZ1UbpPM?si=u2ytRmskluOV1uAp"
-                    title="YouTube video player" width="560"></iframe>
+                    title="YouTube video player"></iframe>
         </section>
-        <section class="column-right container">
 
-            <img id="slides" src="/src/pictures/Kollegium_Bejarat.jpg" onclick="btnSlide(slides)"
-                 data-path="/src/pictures/SlideShow/" data-max="8" alt="SlideShow">
-            <img src="/src/pictures/SlidePauseSquare.png" class="image2"/>
+        <section class="column-right">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img alt="" class="slupe" src="/src/pictures/naptarak/sept.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img alt="" class="slupe" src="/src/pictures/naptarak/oct.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img alt="" class="slupe" src="/src/pictures/naptarak/nov.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img alt="" class="slupe" src="/src/pictures/naptarak/dec.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img alt="" class="slupe" src="/src/pictures/naptarak/marc.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img alt="" class="slupe" src="/src/pictures/naptarak/apr.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img alt="" class="slupe" src="/src/pictures/naptarak/may.jpg">
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="pause" onclick="plusSlides(0)">⏸</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
 
             <a href="https://www.magyarkurir.hu/hirek/keddenkent-ferencestekre-varja-pecsi-collegium-seraphicum-az-egyetemistakat"
                target="_blank"><h3>Keddenként FerencEstekre várja a pécsi Collegium Seraphicum az egyetemistákat</h3>
             </a>
-            <img src="/src/pictures/act-month.jpg">
 
         </section>
     </div>
@@ -143,5 +172,7 @@
     </div>
 
 </body>
-
+<footer>
+    <script src="/src/scripts/slideshow.js"></script>
+</footer>
 </html>

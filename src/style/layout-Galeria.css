@@ -84,3 +84,58 @@ div.gallery {
         display: none;
     }
 }
+
+div.strip-gallery {
+    width: 90%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.strip-gallery > div.years {
+    margin: auto 0;
+    padding: 0;
+    width: fit-content;
+    height: 100%;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+div.strip-gallery > div.years > div.year {
+    float: left;
+    height: 100%;
+    width: fit-content;
+    text-align: center;
+    position: relative;
+}
+
+img.thumbnail {
+    height: 100%;
+    width: auto;
+}
+
+div.year > p {
+    background-color: #C2211D;
+    opacity: 50%;
+    padding: 5px;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+div.year > p:hover {
+    opacity: 90%;
+}
+
+div.strip-gallery > div.months {
+    display: none;
+    margin: auto 0;
+    padding: 0;
+    width: fit-content;
+    height: 100%;
+    border-radius: 15px;
+}
