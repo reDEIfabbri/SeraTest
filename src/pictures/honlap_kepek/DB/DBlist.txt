@@ -1,0 +1,7 @@
+0 DB Elnök: Ruszcsák Bori
+1 Kommunikációs Munkacsoport: Böhm Patrik
+2 Közösségi Munkacsoport: Böhm Kristóf
+3-4 Külügyi Munkacsoport: Szép Marcell
+5 Belügyi Munkacsoport: Kertai Joci Károly
+6 Toborzó Munkacsoport: Tatai Eszter
+7 Lelki Munkacsoport: Léner Emma
