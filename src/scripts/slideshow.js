@@ -33,7 +33,7 @@ function slideShow() {
 
 function startSlideShow() {
     if (!nIntervalID) {
-        nIntervalID = setInterval(slideShow, 5000);
+        nIntervalID = setInterval(slideShow, 3000);
     }
 }
 

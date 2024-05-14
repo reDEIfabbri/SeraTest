@@ -42,6 +42,16 @@ div.page > section > img.inner {
     margin-bottom: 10px;
 }
 
+iframe.inner {
+    display: inline;
+    max-width: 600px;
+    max-height: 300px;
+    aspect-ratio: 1;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 800px) {
     div.page {
         width: 90%;
