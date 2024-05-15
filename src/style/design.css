@@ -55,9 +55,9 @@
      font-size: 1.2em;
  }
 
- img:hover {
+ /*img:hover {
      mix-blend-mode: difference;
- }
+ }*/
 
  div.footing > footer::before {
      box-sizing: border-box;

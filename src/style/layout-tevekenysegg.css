@@ -3,31 +3,10 @@ body {
     height: 100%;
 }
 
-div.page > section > iframe {
-    width: 100%;
-    padding: 10px;
-}
-
-div.page > section > iframe.own {
-    height: 100%;
-    aspect-ratio: 27/42;
-}
-
-div.page > section > iframe.fb-post {
-    height: 100%;
-    aspect-ratio: 27/42;
-}
-
-div.page > section > div.fb-post {
-    aspect-ratio: 27/40;
-    width: 100%;
-    height: auto;
-    align-content: center;
-}
-
 div.page>section {
     aspect-ratio: 269/345;
     min-height: 0;
+    height: max-content;
     min-width: 350px;
     align-content: center;
 }
