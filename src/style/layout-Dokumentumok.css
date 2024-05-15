@@ -9,15 +9,35 @@ div.content {
     width: 90%;
     margin: 10px auto;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: max-content;
-    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
 
 div.content > section > {
     max-width: 100%;
     min-height: 500px;
     height: 100%;
+}
+
+section.list-of-documents {
+    align-content: center;
+    font-size: x-large;
+    width: 100%;
+    /*background-color: rgba(226, 198, 142, 0.5);*/
+    background-image: radial-gradient(circle, #fff, #f6efe1, rgba(255, 255, 255, 0));
+}
+
+section.list-of-documents > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.list-of-documents > ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 div.content > section > iframe.own {
