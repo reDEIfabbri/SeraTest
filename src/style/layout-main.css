@@ -109,31 +109,23 @@ div.footing #right {
     grid-area: footr;
 }
 
-.fa {
+header#social {
     position: absolute;
-    width: 5%;
-    max-width: 75px;
+    margin-right: 10px;
+    clear: left;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fa {
+    width: 100%;
+    min-width: 75px;
     aspect-ratio: 1;
     font-size: 200%;
     max-font-size: 50px;
-    margin-right: 0;
-    clear: left;
-    right: 0;
-}
-
-.fa-facebook {
-    top: 100PX;
-}
-
-.fa-instagram {
-    top: 200PX;
-}
-
-.fa-youtube {
-    top: 300PX;
-}
-
-.fa-google {
+    margin-bottom: 10px;
 }
 
 div.footing {
@@ -172,16 +164,29 @@ div.footing {
         width: 90%;
     }
 
+    header#social {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        gap: 10%;
+    }
+
     .fa {
-        position: absolute;
-        width: 10%;
+        width: 100%;
+        min-width: 48px;
         max-width: 75px;
-        aspect-ratio: 1;
-        font-size: 200%;
-        max-font-size: 5vw;
-        margin-right: 0;
-        right: 0;
-        clear: left;
+        max-font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    div.navbar > nav > ul li a {
+        margin-right: 5px;
+    }
+
+    div.navbar > nav > ul li:last-child {
+        display: none;
     }
 }
 
@@ -215,16 +220,28 @@ div.footing {
         width: 90%;
     }
 
+    header#social {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        gap: 10%;
+    }
     .fa {
-        position: absolute;
-        width: 10%;
+        width: 100%;
+        min-width: 48px;
         max-width: 75px;
-        aspect-ratio: 1;
-        font-size: 200%;
-        max-font-size: 5vw;
+        max-font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    div.navbar > nav > ul li a {
         margin-right: 0;
-        right: 0;
-        clear: left;
+    }
+
+    div.navbar > nav > ul li:last-child {
+        display: none;
     }
 }
 
