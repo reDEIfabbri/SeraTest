@@ -104,6 +104,25 @@ div.content {
     /*width: 90%;*/
 }
 
+div.mono {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    align-content: center;
+}
+
+div.mono > iframe {
+    aspect-ratio: 3;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-height: 315px;
+    border-radius: 50px;
+}
+
 @media only screen and (max-width: 800px) {
     /* For mobile phones: */
     div.content {
@@ -116,6 +135,14 @@ div.content {
 
     div.doksi {
         display: none;
+    }
+
+    div.mono > iframe {
+        aspect-ratio: 560/315;
+        width: 100%;
+        margin: 0;
+        min-height: 315px;
+        border-radius: 50px;
     }
 }
 

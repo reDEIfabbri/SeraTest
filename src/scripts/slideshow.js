@@ -1,40 +1,40 @@
-let slideIndex = 0; /* Alapból az első képről indulunk */
-const listOfSlides = document.getElementsByClassName("mySlides fade"); /* Because of this part the script must be tagged in the html !!AFTER!! ALL!! the ELEMENTS!! of this class are DEFINED!!*/
+let slideIndexCalendar = 0; /* Alapból az első képről indulunk */
+const listOfSlidesCalendar = document.getElementsByClassName("mySlides fade calendar"); /* Because of this part the script must be tagged in the html !!AFTER!! ALL!! the ELEMENTS!! of this class are DEFINED!!*/
 
-let nIntervalID;
+let nIntervalIDCalendar;
 
-function showSlide(newIndex) {
-    for (let i = 0; i < listOfSlides.length; i++) {
-        listOfSlides[i].style.display = "none";
+function showSlideCal(newIndex) {
+    for (let i = 0; i < listOfSlidesCalendar.length; i++) {
+        listOfSlidesCalendar[i].style.display = "none";
     }
 
-    if (newIndex >= listOfSlides.length) {
+    if (newIndex >= listOfSlidesCalendar.length) {
         newIndex = 0
     }
     if (newIndex < 0) {
-        newIndex = listOfSlides.length - 1
+        newIndex = listOfSlidesCalendar.length - 1
     }
 
-    listOfSlides[newIndex].style.display = "block";
+    listOfSlidesCalendar[newIndex].style.display = "block";
 
-    slideIndex = newIndex;
+    slideIndexCalendar = newIndex;
 
 }
 
-function plusSlides(deltaIndex) {
-    showSlide(slideIndex + deltaIndex);
-    clearInterval(nIntervalID);
-    nIntervalID = null;
+function plusSlidesCal(deltaIndex) {
+    showSlideCal(slideIndexCalendar + deltaIndex);
+    clearInterval(nIntervalIDCalendar);
+    nIntervalIDCalendar = null;
 }
 
-function slideShow() {
-    showSlide(slideIndex + 1);
+function slideShowCal() {
+    showSlideCal(slideIndexCalendar + 1);
 }
 
-function startSlideShow() {
-    if (!nIntervalID) {
-        nIntervalID = setInterval(slideShow, 3000);
+function startSlideShowCal() {
+    if (!nIntervalIDCalendar) {
+        nIntervalIDCalendar = setInterval(slideShowCal, 3000);
     }
 }
 
-startSlideShow();
+startSlideShowCal();
