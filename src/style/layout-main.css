@@ -100,9 +100,34 @@ div.content > iframe {
     height: 800px;
 }*/
 
-
 div.footing #left {
     grid-area: footl;
+}
+
+div.footing > footer#middle {
+    grid-area: footm;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: fit-content;
+    max-width: 500px;
+}
+
+div.footing > footer#middle > section > img {
+    max-width: 75%;
+    height: auto;
+}
+
+div.footing > footer#middle > img {
+    display: inline;
+    max-width: 25%;
+    height: auto;
+    float: left;
+}
+
+div.footing > footer#middle > section {
+    float: right;
+    display: inline-flex;
+    flex-direction: column;
 }
 
 div.footing #right {
@@ -133,10 +158,10 @@ div.footing {
     padding: 50px;
     display: grid;
     grid-template-areas:
-        'padl footl footr padr'
+        'padl footl footm footr padr'
     ;
     grid-template-rows: auto;
-    grid-template-columns: 20% auto auto 20%;
+    grid-template-columns: 5% auto auto auto 5%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -149,6 +174,10 @@ div.footing {
     }
 
     div.footing #left {
+        width: 80%
+    }
+
+    div.footing #middle {
         width: 80%
     }
 
@@ -207,6 +236,10 @@ div.footing {
         width: 80%
     }
 
+    div.footing #middle {
+        width: 80%
+    }
+
     div.footing #right {
         width: 80%;
     }
@@ -216,7 +249,6 @@ div.footing {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10px;
-        fa
         width: 90%;
     }
 
