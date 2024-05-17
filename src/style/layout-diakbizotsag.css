@@ -33,13 +33,17 @@ div.page > section > iframe {
     width: 100%;
 }
 
-div.page > section > img.inner {
+div.page > section img.inner {
     display: inline;
     max-width: 30%;
     height: auto;
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
+}
+
+div.page > section > div.DB {
+    height: fit-content;
 }
 
 @media only screen and (max-width: 800px) {

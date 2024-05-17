@@ -121,9 +121,10 @@ div.footing > footer#middle > section {
     flex-direction: column;
 }
 
+/*
 div.footing #right {
     grid-area: footr;
-}
+}*/
 
 header#social {
     position: absolute;
@@ -150,10 +151,10 @@ div.footing {
     padding: 50px;
     display: grid;
     grid-template-areas:
-        'padl footl footm footr padr'
+        'padl footl footm padr' /*Add footr if needed*/
     ;
     grid-template-rows: auto;
-    grid-template-columns: 5% auto auto auto 5%;
+    grid-template-columns: 5% auto auto 5%;
 }
 
 @media only screen and (max-width: 1000px) {
