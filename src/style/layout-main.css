@@ -19,15 +19,6 @@ div.heading > header > img {
 }
 
 /*
-div.heading>header#small-logo {
-    grid-area: logo;
-}*/
-
-/*
-div.heading>header#social {
-    grid-area: soc;
-}*/
-/*
 Legyennek gap-ek a navbar-ban!
 https://ferenc800.hu/ dizályn példa
 */
@@ -136,6 +127,7 @@ div.footing #right {
 
 header#social {
     position: absolute;
+    margin-top: 80px;
     margin-right: 10px;
     clear: left;
     right: 0;
@@ -278,6 +270,7 @@ div.footing {
 }
 
 div.banner {
+    display: none;
     width: 100%;
     position: fixed;
     z-index: 1000;
