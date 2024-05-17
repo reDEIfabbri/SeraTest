@@ -20,7 +20,7 @@ function showSlidePics(newIndex) {
         newIndex = listOfSlidesPictures.length - 1
     }
 
-    listOfSlidesPictures[newIndex].style.display = "block";
+    listOfSlidesPictures[newIndex].style.display = "flex";
     listOfDotsPictures[newIndex].className = "dot active";
 
     slideIndex = newIndex;

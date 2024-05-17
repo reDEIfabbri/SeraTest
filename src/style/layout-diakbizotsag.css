@@ -26,6 +26,11 @@ div.page > section > img {
     height: auto;
 }
 
+div.page > section > a > img {
+    max-width: 100%;
+    height: auto;
+}
+
 div.page > section > iframe {
     aspect-ratio: 210/297;
     min-width: 210px;
@@ -44,6 +49,7 @@ div.page > section img.inner {
 
 div.page > section > div.DB {
     height: fit-content;
+    display: flex;
 }
 
 @media only screen and (max-width: 800px) {
