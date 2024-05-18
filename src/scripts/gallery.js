@@ -4,14 +4,27 @@ function changeText(id) {
     id.innerText = pn + ".jpg";
 }
 
+function changeYearTo(id) {
+    image.setAttribute("data-path", id.getAttribute("data-path"));
+    image.setAttribute("data-max", id.getAttribute("data-max"));
+    image.src = image.getAttribute("data-path") + 1 + ".jpg";
+    image.alt = image.getAttribute("data-path") + 1 + ".jpg";
+}
+
 function goPicBack(id) {
     pn--;
-    id.src = image.getAttribute("data-path") + pn + ".jpg";
-    changeText(number);
+    if (pn < 1) {
+        pn = image.getAttribute("data-max");
+    }
+    id.src = id.getAttribute("data-path") + pn + ".jpg";
+    id.alt = image.getAttribute("data-path") + pn + ".jpg";
 }
 
 function goPicForth(id) {
     pn++;
-    id.src = image.getAttribute("data-path") + pn + ".jpg";
-    changeText(number);
+    if (pn > image.getAttribute("data-max")) {
+        pn = 1;
+    }
+    id.src = id.getAttribute("data-path") + pn + ".jpg";
+    id.alt = image.getAttribute("data-path") + pn + ".jpg";
 }

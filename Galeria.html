@@ -60,48 +60,65 @@
 
     <div class="strip-gallery">
         <div class="years">
-            <div class="year" id="2014">
-                <img alt="2014 thumbnail" class="thumbnail" data-max="18" src="/src/pictures/gallery/2014/1.jpg">
+            <section class="year">
+                <img alt="2014 thumbnail" class="thumbnail" data-max="18" data-path="/src/pictures/gallery/2014/"
+                     id="2014" onclick="changeYearTo(this)"
+                     src="/src/pictures/gallery/2014/1.jpg">
                 <p>2014</p>
-            </div>
-            <div class="year" id="2015">
-                <img alt="2015 thumbnail" class="thumbnail" data-max="14" src="/src/pictures/gallery/2015/1.jpg">
+            </section>
+            <section class="year">
+                <img alt="2015 thumbnail" class="thumbnail" data-max="14" data-path="/src/pictures/gallery/2015/"
+                     id="2015" onclick="changeYearTo(this)"
+                     src="/src/pictures/gallery/2015/1.jpg">
                 <p>2015</p>
-            </div>
-            <div class="year" id="2016">
-                <img alt="2022 thumbnail" class="thumbnail" data-max="10" src="/src/pictures/gallery/2016/1.jpg">
+            </section>
+            <section class="year">
+                <img alt="2022 thumbnail" class="thumbnail" data-max="10" data-path="/src/pictures/gallery/2016/"
+                     id="2016" onclick="changeYearTo(this)"
+                     src="/src/pictures/gallery/2016/1.jpg">
                 <p>2022</p>
-            </div>
-            <div class="year" id="2017">
-                <img alt="2017 thumbnail" class="thumbnail" data-max="13" src="/src/pictures/gallery/2017/1.jpg">
+            </section>
+            <section class="year">
+                <img alt="2017 thumbnail" class="thumbnail" data-max="13" data-path="/src/pictures/gallery/2017/"
+                     id="2017" onclick="changeYearTo(this)"
+                     src="/src/pictures/gallery/2017/1.jpg">
                 <p>2017</p>
-            </div>
-            <div class="year" id="2018">
-                <img alt="2018 thumbnail" class="thumbnail" data-max="28" src="/src/pictures/gallery/2018/1.jpg">
+            </section>
+            <section class="year">
+                <img alt="2018 thumbnail" class="thumbnail" data-max="28" data-path="/src/pictures/gallery/2018/"
+                     id="2018" onclick="changeYearTo(this)"
+                     src="/src/pictures/gallery/2018/1.jpg">
                 <p>2018</p>
-            </div>
-            <div class="year" id="2021">
-                <img alt="2021 thumbnail" class="thumbnail" data-max="24" src="/src/pictures/gallery/2021/1.jpg">
+            </section>
+            <section class="year">
+                <img alt="2021 thumbnail" class="thumbnail" data-max="24" data-path="/src/pictures/gallery/2021/"
+                     id="2021" onclick="changeYearTo(this)"
+                     src="/src/pictures/gallery/2021/1.jpg">
                 <p>2021</p>
-            </div>
-            <div class="year" id="2023">
-                <img alt="2023 thumbnail" class="thumbnail" data-max="11" src="/src/pictures/gallery/2023/1.jpg">
+            </section>
+            <section class="year">
+                <img alt="2023 thumbnail" class="thumbnail" data-max="11" data-path="/src/pictures/gallery/2023/"
+                     id="2023" onclick="changeYearTo(this)"
+                     src="/src/pictures/gallery/2023/1.jpg">
                 <p>2023</p>
-            </div>
-            <div class="year" id="Archivum">
-                <img alt="Archivum thumbnail" class="thumbnail" data-max="128"
+            </section>
+            <section class="year">
+                <img alt="Archivum thumbnail" class="thumbnail" data-max="128" data-path="/src/pictures/gallery/Archivum/"
+                     id="Archivum" onclick="changeYearTo(this)"
                      src="/src/pictures/gallery/Archivum/1.jpg">
                 <p>Archivum</p>
-            </div>
+            </section>
         </div>
     </div>
 
     <div class="gallery">
         <div class="yearly pics">
-            <img data-max="18" data-path="/src/pictures/gallery/2014" src="/src/pictures/gallery/2014/1.jpg">
+            <a class="prev" onclick="goPicBack(image)">❮</a>
 
-            <a class="prevp" onclick="plusSlidesPics(-1)">❮</a>
-            <a class="nextp" onclick="plusSlidesPics(1)">❯</a>
+            <img alt="gallery image" data-max="18" data-path="/src/pictures/gallery/2014/" id="image"
+                 src="/src/pictures/gallery/2014/1.jpg">
+
+            <a class="next" onclick="goPicForth(image)">❯</a>
         </div>
     </div>
 
