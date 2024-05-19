@@ -3,9 +3,6 @@ body {
     height: 100%;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 div.gallery > section {
     aspect-ratio: 269/345;
