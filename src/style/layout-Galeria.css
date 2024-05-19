@@ -119,19 +119,22 @@ div.strip-gallery {
 
 div.strip-gallery > div.years {
     display: flex;
-    width: 100%;
     gap: 10px;
-    align-content: center;
-    justify-content: center;
+    width: 100%;
+    height: fit-content;
     overflow: scroll;
+    white-space: nowrap;
     margin-bottom: 20px;
 }
 
-div.strip-gallery > div.years > section {
+div.strip-gallery > div.years > section.year {
     height: 100%;
+    position: relative;
 }
 
 img.thumbnail {
+    border-radius: 10px;
+    display: inline-block;
     max-height: 200px;
     width: auto;
 }
@@ -141,15 +144,16 @@ img.thumbnail:hover {
 }
 
 section.year > p {
-    display: none;
-    background-color: #C2211D;
-    opacity: 50%;
-    padding: 5px;
     position: absolute;
-    border-radius: 10px;
     top: 0;
-    right: 50%;
-    transform: translate(50%, -50%);
+    right: 0;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #ab7860;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 section.year > p:hover {

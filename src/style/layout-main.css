@@ -80,45 +80,27 @@ div.navbar nav ul li a:hover {
     opacity: 100%;
 }
 
-/*
-div.content {
-    min-height: 500px;
-    padding: 2% 10%;
+div.footing > footer {
+    width: 100%;
 }
 
-div.content > iframe {
-    border-radius: 50px;
-    height: 800px;
-}*/
-
-div.footing #left {
+div.footing > footer#left {
+    font-size: xx-large;
     grid-area: footl;
+    margin: 0 20px;
+    height: 100%;
 }
 
 div.footing > footer#middle {
     grid-area: footm;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px;
     height: fit-content;
-    max-width: 500px;
-}
-
-div.footing > footer#middle > section > img {
-    max-width: 75%;
-    height: auto;
+    width: fit-content;
 }
 
 div.footing > footer#middle > img {
-    display: inline;
-    max-width: 25%;
+    width: 100%;
     height: auto;
-    float: left;
-}
-
-div.footing > footer#middle > section {
-    float: right;
-    display: inline-flex;
-    flex-direction: column;
 }
 
 /*
@@ -151,10 +133,10 @@ div.footing {
     padding: 50px;
     display: grid;
     grid-template-areas:
-        'padl footl footm padr' /*Add footr if needed*/
+        'padl footl footr footm padr' /*Add footr if needed*/
     ;
-    grid-template-rows: auto;
-    grid-template-columns: 5% auto auto 5%;
+    grid-template-rows: max-content;
+    grid-template-columns: 5% 40% 10% 40% 5%;
 }
 
 @media only screen and (max-width: 1000px) {
