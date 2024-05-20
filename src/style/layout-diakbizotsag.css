@@ -41,7 +41,8 @@ div.page > section > iframe {
 div.page > section img.inner {
     display: inline;
     max-width: 30%;
-    height: auto;
+    height: 30%;
+    max-height: 30%;
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -52,7 +53,7 @@ div.page > section > div.DB {
     display: flex;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
     div.page {
         width: 90%;
         margin: auto;
@@ -62,5 +63,16 @@ div.page > section > div.DB {
 
     a.fa {
         display: none;
+    }
+
+    div.page {
+        /*overflow: hidden;*/
+        width: 90%;
+        margin: 10px auto;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto;
+        gap: 10px;
+        /*width: 90%;*/
     }
 }
