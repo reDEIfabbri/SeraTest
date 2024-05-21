@@ -10,6 +10,8 @@
  body {
      background-color: #f6efe1;
      font-family: Libel_Suit_Rg, ui-rounded;
+     text-align: justify;
+     text-justify: inter-word;
  }
 
  div.gallery {
@@ -123,6 +125,7 @@
  a {
      color: #5c4034;
  }
+
 
  /*these are the buttons for social media, we probably only need like two of them but it is nice to have them for shits and giggles*/
  .fa {
