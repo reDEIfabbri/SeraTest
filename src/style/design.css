@@ -160,3 +160,24 @@
      background: linear-gradient(#125688, rgb(194, 62, 29));
      color: white;
  }
+
+ /* width */
+ ::-webkit-scrollbar {
+     width: 10px;
+ }
+
+ /* Track */
+ ::-webkit-scrollbar-track {
+     background: rgba(253, 235, 199, 0.6);
+ }
+
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+     background: rgba(194, 62, 29, 0.57);
+     border-radius: 5px;
+ }
+
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+     background: #c23e1d;
+ }

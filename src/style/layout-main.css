@@ -111,7 +111,7 @@ div.footing #right {
 header#social {
     position: absolute;
     margin-top: 80px;
-    margin-right: 10px;
+    margin-right: 0;
     clear: left;
     right: 0;
     display: flex;
@@ -121,9 +121,9 @@ header#social {
 
 .fa {
     width: 100%;
-    min-width: 75px;
+    min-width: 4vw;
     aspect-ratio: 1;
-    font-size: 200%;
+    font-size: xx-large;
     max-font-size: 50px;
     margin-bottom: 10px;
 }
