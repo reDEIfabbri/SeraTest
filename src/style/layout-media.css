@@ -1,16 +1,25 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box
+}
+
 div.gallery {
+    min-width: 1000px;
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: max-content;
-    gap: 20px;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(4, max-content);
+    gap: 20px 10%;
 }
 
 div.gallery > section {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 10px;
     text-align: left;
     aspect-ratio: 16/9;

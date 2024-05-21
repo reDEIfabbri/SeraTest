@@ -56,6 +56,16 @@ section > ul.side .list {
     font-size: x-large;
 }
 
+table {
+    border: #ab7860 5px solid;
+    border-radius: 15px;
+}
+
+th {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 @media only screen and (max-width: 800px) {
     div.page {
         width: 90%;
