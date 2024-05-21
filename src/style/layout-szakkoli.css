@@ -73,6 +73,14 @@ p.sorkizart {
     text-align: center;
 }
 
+img.ig-pic {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    float: right;
+    max-width: 50%;
+    height: auto;
+}
+
 /* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
