@@ -124,7 +124,7 @@ div.content {
     /*width: 90%;*/
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     /* For mobile phones: */
     div.content {
         width: 90%;
@@ -136,6 +136,14 @@ div.content {
 
     div.doksi {
         display: none;
+    }
+
+    img.ig-pic {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        float: right;
+        max-width: 100%;
+        height: auto;
     }
 }
 

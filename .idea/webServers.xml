@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="996bb54d-d611-4f4e-b0f1-42e8f0649449" name="YerMum" url="http://www.serateszt.ferencesek.hu/">
-        <fileTransfer accessType="WEBDAV" host="http://www.serateszt.ferencesek.hu" port="6180" />
+      <webServer id="996bb54d-d611-4f4e-b0f1-42e8f0649449" name="YerMum" url="http://www.seraphicum.hu/">
+        <fileTransfer host="185.241.151.170" port="21" />
       </webServer>
     </option>
   </component>

@@ -164,11 +164,12 @@ div.footing {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 10px;
+        margin-bottom: 0;
         width: 90%;
     }
 
     header#social {
+        margin-top: 0;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -223,7 +224,7 @@ div.footing {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 10px;
+        margin-bottom: 0;
         width: 90%;
     }
 
