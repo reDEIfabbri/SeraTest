@@ -41,6 +41,13 @@ div.gallery > section > img {
     height: auto;
 }
 
+div.gallery > section > a > img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    border-radius: 30px;
+    height: auto;
+}
+
 div.gallery > section > iframe {
     aspect-ratio: 16/9;
     width: 100%;
