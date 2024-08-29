@@ -66,6 +66,13 @@ th {
     padding-right: 10px;
 }
 
+.announcement {
+    padding: 15px;
+    border-radius: 10px;
+    border-color: #C2211D;
+    background-color: rgba(194, 33, 29, 0.5);
+}
+
 @media only screen and (max-width: 800px) {
     div.page {
         width: 90%;
