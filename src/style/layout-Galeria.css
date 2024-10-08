@@ -43,10 +43,16 @@ div.gallery > div > a {
 
 .prev {
     border-radius: 0 10px 10px 0;
+    position: absolute;
+    left: 0;
+
+
 }
 
 .next {
     border-radius: 10px 0 0 10px;
+    position: absolute;
+    right: 0;
 }
 
 div.gallery > div > a:hover {
