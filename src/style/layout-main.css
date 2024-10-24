@@ -139,17 +139,18 @@ div.footing {
     grid-template-columns: 5% 40% 10% 40% 5%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1081px) {
 
     div.footing {
         width: 100%;
         padding: 0;
         display: block;
-        font-size: 3vw;
+        font-size: large;
     }
 
-    div.footing #left {
-        width: 80%
+    div.footing > footer#left {
+        width: 80%;
+        font-size: large;
     }
 
     div.footing #middle {
@@ -205,11 +206,11 @@ div.footing {
         width: 100%;
         padding: 0px;
         display: block;
-        font-size: 3vw;
     }
 
     div.footing #left {
-        width: 80%
+        width: 80%;
+        font-size: large;
     }
 
     div.footing #middle {
