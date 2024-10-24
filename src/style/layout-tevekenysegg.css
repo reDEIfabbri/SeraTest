@@ -20,42 +20,28 @@ div.page {
     gap: 20px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1081px) {
     /* For mobile phones: */
     div.page {
         width: 100%;
         margin: 0;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: min-content;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
         gap: 10px;
-    }
-
-    div.page > section > div.fb-post {
-        float: left;
-        margin: auto;
-    }
-
-    a.fa {
-        display: none;
     }
 }
 
 @media only screen and (max-width: 800px) {
     /* For mobile phones: */
     div.page {
-        width: 90%;
-        margin: 10px 0 auto;
+        width: 100%;
+        margin: 0;
+        display: grid;
+        justify-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: min-content;
+        grid-template-rows: max-content;
         gap: 10px;
-    }
-
-    div.page > section > div.fb-post {
-        float: left;
-        margin: auto;
-    }
-
-    a.fa {
-        display: none;
     }
 }
