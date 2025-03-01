@@ -27,7 +27,7 @@
 <div class="heading">
     <header ID="long-logo">
         <!-- <img src="Arculati_Elemek/Logo/logo-long.png"> ez a normális logó --->
-        <img alt="karácsonyi logó" src="/src/karacsonyiLogo.webp"> <!-- ez a téli logó --->
+        <img alt="Tavaszi logó" src="/src/pictures/TavaszLogo2.webp"> <!-- ez a téli logó --->
     </header>
     <!--
     <header ID="small-logo">
@@ -48,7 +48,6 @@
             <li><a href="/index.html"> Kezdőlap </a></li>
             <li><a href="/Rolunk.html"> Rólunk </a></li>
             <li><a href="/tevekenysegg.html"> Programok </a></li>
-            <!-- TODO Facebook posztok, elrendez#es, stb. -->
             <li><a href="/felveteli.html"> Felvételi </a></li>
             <li><a href="/Galeria.html"> Galéria </a></li>
             <li><a href="/media.html"> Média </a></li>
@@ -65,11 +64,11 @@
         <div class="db-navbar">
             <nav id="db-navigation">
                 <ul class="db-years">
-                    <li data-year="2425ii" id="active-db">2024/25 II.</li>
-                    <li data-year="2425i">2024/25 I.</li>
-                    <li data-year="2324ii">2023/24 II.</li>
-                    <li data-year="2324i">2023/24 I.</li>
-                    <li data-year="lol"> Easter Egg</li>
+                    <li class="db-year" data-year="2425ii" onclick="changeYearTo(0)">2024/25 II.</li>
+                    <li class="db-year" data-year="2425i" id="active-db" onclick="changeYearTo(1)">2024/25 I.</li>
+                    <li class="db-year" data-year="2324ii" onclick="changeYearTo(2)">2023/24 II.</li>
+                    <li class="db-year" data-year="2324i" onclick="changeYearTo(3)">2023/24 I.</li>
+                    <li class="db-year" data-year="lol" onclick="rolfcopter()"> Easter Egg</li>
                 </ul>
             </nav>
         </div>
@@ -82,7 +81,8 @@
         <br>
 
         <div class="DB">
-            <img alt="DB Elnök képe" class="inner DB-pic" src="/src/pictures/honlap_kepek/DB/2425i/CutDB0.webp">
+            <img alt="DB Elnök képe" class="inner DB-pic" data-name="CutDB0.webp"
+                 src="/src/pictures/honlap_kepek/DB/2425i/CutDB0.webp">
             <section class="DB-description">
                 <h1> DB Elnök: Ruszcsák Bori </h1>
                 <p>
@@ -108,7 +108,7 @@
         <br>
 
         <div class="DB">
-            <img class="inner" src="/src/pictures/honlap_kepek/DB/2425i/CutDB3.webp">
+            <img class="inner DB-pic" src="/src/pictures/honlap_kepek/DB/2425i/CutDB3.webp">
             <section>
                 <h1> Külügyi Munkacsoport: Szép Marcell Patrik </h1>
                 <p>
@@ -128,7 +128,7 @@
         <br>
 
         <div class="DB">
-            <img class="inner" src="/src/pictures/honlap_kepek/DB/2425i/CutDB5.webp">
+            <img class="inner DB-pic" src="/src/pictures/honlap_kepek/DB/2425i/CutDB5.webp">
             <section>
                 <h1> Belügyi Munkacsoport: Kertai József Károly </h1>
                 <p>
@@ -150,7 +150,7 @@
         <br>
 
         <div class="DB">
-            <img class="inner" src="/src/cutDB1.webp">
+            <img class="inner DB-pic" src="/src/cutDB1.webp">
             <section>
                 <h1> Kommunikációs Munkacsoport: Rizner Dávid </h1>
                 <p>
@@ -167,7 +167,7 @@
         <br>
 
         <div class="DB">
-            <img class="inner" src="/src/pictures/honlap_kepek/DB/2425i/CutDB2.webp">
+            <img class="inner DB-pic" src="/src/pictures/honlap_kepek/DB/2425i/CutDB2.webp">
             <section>
                 <h1> Közösségi Munkacsoport: Böhm Kristóf </h1>
                 <p>
@@ -187,7 +187,7 @@
         <br>
 
         <div class="DB">
-            <img class="inner" src="/src/pictures/honlap_kepek/DB/2425i/CutDB7.webp">
+            <img class="inner DB-pic" src="/src/pictures/honlap_kepek/DB/2425i/CutDB7.webp">
             <section>
                 <h1> Lelki Munkacsoport: Léner Emma Lujza </h1>
                 <p>
@@ -212,7 +212,7 @@
         <br>
 
         <div class="DB">
-            <img class="inner" src="/src/pictures/honlap_kepek/DB/2425i/CutDB6.webp">
+            <img class="inner DB-pic" src="/src/pictures/honlap_kepek/DB/2425i/CutDB6.webp">
             <section>
                 <h1> Toborzó Munkacsoport: Tatai Eszter </h1>
                 <p>
