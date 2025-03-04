@@ -1,9 +1,14 @@
+console.log("Mit leskelődöl? Margithíd kepű!");
+
 const root = "/src/pictures/honlap_kepek/DB/";
 const listOfYears = document.getElementsByClassName("db-year");
-const listOfPicks = document.getElementsByClassName("DB-pic")
-const listOfTexts = document.getElementsByClassName("DB-description")
-const listOfDB = document.getElementsByClassName("DB")
-let listOfTextTest = listOfDB[3].getElementsByClassName("DB-description")
+const listOfPicks = document.getElementsByClassName("DB-pic");
+const listOfTexts = document.getElementsByClassName("DB-description");
+const listOfDB = document.getElementsByClassName("DB");
+const listOfTextTest = [];
+for (let i = 0; i < listOfDB.length; i++) {
+    listOfTextTest[i] = listOfDB[i].getElementsByClassName("DB-description")
+}
 
 
 function getCurrentIndex() {
@@ -18,6 +23,8 @@ function getCurrentIndex() {
 let path = root + listOfYears[getCurrentIndex()].dataset.year + "/";
 
 console.log("Your test data is: " + listOfTextTest.length);
+alert("Your test data is: " + listOfTextTest.length);
+
 function setCurrentIndex(currentIndex, nextIndex) {
     listOfYears[currentIndex].id = "";
     listOfYears[nextIndex].id = "active-db";
