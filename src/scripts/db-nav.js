@@ -5,10 +5,12 @@ const listOfYears = document.getElementsByClassName("db-year");
 const listOfPicks = document.getElementsByClassName("DB-pic");
 const listOfTexts = document.getElementsByClassName("DB-description");
 const listOfDB = document.getElementsByClassName("DB");
-const listOfTextTest = [];
-for (let i = 0; i < listOfDB.length; i++) {
-    listOfTextTest[i] = listOfDB[i].getElementsByClassName("DB-description")
-}
+// const listOfTextTest = [];
+
+// Olyan hülye tudok lenni a fenti egy sor helyett meg próbáltam ezt csinálni: (valamire még jó lehet)
+// for (let i = 0; i < listOfDB.length; i++) {
+//     listOfTextTest[i] = listOfDB[i].getElementsByClassName("DB-description")
+// }
 
 
 function getCurrentIndex() {
@@ -22,8 +24,8 @@ function getCurrentIndex() {
 
 let path = root + listOfYears[getCurrentIndex()].dataset.year + "/";
 
-console.log("Your test data is: " + listOfTextTest.length);
-alert("Your test data is: " + listOfTextTest.length);
+// console.log("Your test data is: " + listOfTextTest.length);
+// alert("Your test data is: " + listOfTextTest.length);
 
 function setCurrentIndex(currentIndex, nextIndex) {
     listOfYears[currentIndex].id = "";
@@ -45,10 +47,17 @@ function changeYearTo(nextIndex) {
         listOfPicks[i].src = path + listOfPicks[i].dataset.name;
         console.log(listOfPicks[i].src);
     }
-    console.log("Number of available descriptions: " + listOfTextTest.length);
-    listOfTextTest.forEach(member => {
-        member.getElementsByClassName(listOfYears[nextIndex].dataset.year);
-    });
+    console.log("Number of available descriptions: " + listOfTexts.length);
+    let currentDescriptions = document.getElementsByClassName(listOfYears[getCurrentIndex()].dataset.year);
+    for (let i = 0; i < (listOfTexts.length); i++) {
+        listOfTexts[i].style.display = "none";
+        console.log(listOfTexts[i].classList + ": " + listOfTexts[i].style.display);
+    }
+    for (let i = 0; i < (currentDescriptions.length); i++) {
+        currentDescriptions[i].style.display = "";
+        console.log(currentDescriptions[i].classList + ": " + currentDescriptions[i].style.display);
+    }
+    console.log(currentDescriptions);
 }
 
 function rolfcopter() {
@@ -57,6 +66,7 @@ function rolfcopter() {
     setPath(listOfYears.length - 1);
     listOfPicks[0].src = path + "Roflcopter.gif";
     console.log(listOfPicks[0].src);
-    document.getElementsByClassName("DB").display = "none";
 
 }
+
+document.onload = changeYearTo(1);
