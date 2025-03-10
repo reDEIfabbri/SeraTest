@@ -85,7 +85,7 @@ div.footing > footer {
 }
 
 div.footing > footer#left {
-    font-size: xx-large;
+    font-size: x-large;
     grid-area: footl;
     margin: 0 20px;
     height: 100%;
@@ -129,7 +129,6 @@ header#social {
 }
 
 div.footing {
-    width: 100%;
     padding: 50px;
     display: grid;
     grid-template-areas:
