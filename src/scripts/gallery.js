@@ -1,8 +1,8 @@
 let pn = 1;
 
-function changeText(id) {
-    id.innerText = pn + ".webp";
-}
+// function changeText(id) {
+//     id.innerText = pn + ".webp";
+// }
 
 function changeYearTo(id) {
     image.setAttribute("data-path", id.getAttribute("data-path"));
