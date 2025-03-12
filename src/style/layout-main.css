@@ -254,7 +254,7 @@ div.footing {
 }
 
 div.banner {
-    display: none;
+    /*display: none;*/
     width: 100%;
     position: fixed;
     z-index: 1000;
