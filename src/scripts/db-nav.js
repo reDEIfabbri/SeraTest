@@ -69,4 +69,4 @@ function rolfcopter() {
 
 }
 
-document.onload = changeYearTo(1);
+document.onload = changeYearTo(0);
