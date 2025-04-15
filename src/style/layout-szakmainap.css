@@ -54,6 +54,14 @@ div.page > div.presentations > div.card > h3.major {
     text-align: center;
 }
 
+div.page > div.presentations > div.card > h2.subject {
+    margin: 0 1rem;
+}
+
+div.page > div.presentations > div.card > p.description {
+    margin: 0 1rem;
+}
+
 
 h1 {
     font-size: 200%;
