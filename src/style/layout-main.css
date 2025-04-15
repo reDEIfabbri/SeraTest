@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
 div.heading {
@@ -22,6 +23,7 @@ div.heading > header > img {
 Legyennek gap-ek a navbar-ban!
 https://ferenc800.hu/ dizályn példa
 */
+
 div.navbar {
     width: 90%;
     margin-left: auto;

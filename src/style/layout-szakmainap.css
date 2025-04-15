@@ -1,0 +1,68 @@
+div.page {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "title" "presentations";
+}
+
+div.page > div.title {
+    grid-area: title;
+    background-color: #bc967555;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+div.page > div.presentations {
+    width: 100%;
+    margin-top: 1rem;
+    grid-area: presentations;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*border: #ab786055 2px solid;*/
+    background-image: radial-gradient(#ffffff75, #ffff0025, #00ff0013, #f6efe105);
+    border-radius: 1rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+div.page > div.presentations > div.card {
+    width: 100%;
+    background-color: #bc967555;
+    border-radius: 1rem;
+}
+
+div.page > div.presentations > div.card > img.face {
+    width: 30%;
+    border-radius: 1rem;
+    float: left;
+    margin: 1rem;
+}
+
+div.page > div.presentations > div.card > img.thumbnail {
+    width: 95%;
+    margin: 0 2.5%;
+    border-radius: 1rem;
+}
+
+div.page > div.presentations > div.card > h2.name {
+    text-align: center;
+}
+
+div.page > div.presentations > div.card > h3.major {
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    font-size: 175%;
+}
+
+h3 {
+    font-size: 150%;
+}
