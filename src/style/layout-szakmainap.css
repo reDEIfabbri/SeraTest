@@ -7,7 +7,7 @@ div.page {
 
 div.page > div.title {
     grid-area: title;
-    background-color: #bc967555;
+    background-color: #4AE8BC55;
     border-radius: 1rem;
     padding: 1rem;
     color: #ffffff;
