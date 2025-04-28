@@ -37,4 +37,4 @@ This repo is for the Seraphicum website project
     - Felvételizőknek
     - Galéria
     - Dokumentumok
-    - Média(mejelenések)
+    - Média(megjelenések)
