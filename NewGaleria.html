@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title> Collegium Seraphicum </title>
+
+    <!-- Add icon library, for social media buttons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/src/style/layout-main.css" rel="stylesheet" type="text/css"/>
+
+    <link href="/src/style/design.css" rel="stylesheet" type="text/css"/>
+    <!-- Add layout for different pages, style design also could be different,
+    for now it seems to be working -->
+    <link href="/src/style/layout-NewGaleria.css" rel="stylesheet" type="text/css"/>
+
+    <link href="/src/pictures/honlap_kepek/Tau.png" rel="icon">
+    <script src="/src/scripts/gallery.js"></script>
+</head>
+
+<body>
+<div class="heading">
+    <header ID="long-logo">
+        <img src="/Arculati_Elemek/Logo/logo-long.png">
+    </header>
+
+    <header ID="social">
+        <a class="fa fa-facebook" href="https://www.facebook.com/Seraphicum/" target="_blank"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/szeraf_koli/" target="_blank"></a>
+        <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpOokV3I5dHLWZNzvOiJa1w"
+           target="_blank"></a>
+    </header>
+</div>
+
+<div class="navbar">
+    <nav id="navigation-bar">
+        <ul>
+            <li><a href="/index.html"> Kezdőlap </a></li>
+            <li><a href="/Rolunk.html"> Rólunk </a></li>
+            <li><a href="/tevekenysegg.html"> Programok </a></li>
+            <!-- TODO Facebook posztok, elrendez#es, stb. -->
+            <li><a href="/felveteli.html"> Felvételi </a></li>
+            <li><a href="/Galeria.html" id="active"> Galéria </a></li>
+            <li><a href="/media.html"> Média </a></li>
+            <li><a href="/Dokumentumok.html"> Dokumentumok </a></li>
+            <li><a href="/diakbizotsag.html"> DiákBizottság </a></li>
+            <li><a href="/Felujitasok.html"> Felújítások </a></li>
+            <li><a href="https://youtu.be/6jJkdRaa04g?t=35"> Easter Egg </a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="page">
+    <div class="years">
+        <section class="year" id="active-year">
+            <img alt="2024 sport thumbnail" class="thumbnail" data-max="39"
+                 data-path="/src/pictures/gallery/sport2/"
+                 id="2024sport" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/sport2/1.webp">
+            <p>2024 Sportolás</p>
+        </section>
+
+        <section class="viewer" id="viewer">
+            <div class="prev butt">
+                <a onclick="goPicBack(image)">❮</a>
+            </div>
+
+            <img ID="viewerpicture" alt="Ez egy szép kép..." class="viewed-picture"
+                 onclick="this.scrollIntoView()"
+                 src="/src/pictures/gallery/sport2/1.webp">
+
+            <div class="next butt">
+                <a onclick="viewer-picture.src = '/src/pictures/gallery/sport2/2.webp'">❯</a>
+            </div>
+        </section>
+
+        <section class="year">
+            <img alt="2024.09 thumbnail" class="thumbnail" data-max="63" data-path="/src/pictures/gallery/2024.09/"
+                 id="2024.09" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/2024.09/1.webp">
+            <p>2024.09</p>
+        </section>
+        <section class="year">
+            <img alt="2024 thumbnail" class="thumbnail" data-max="52" data-path="/src/pictures/gallery/2024/"
+                 id="2024" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/2024/1.webp">
+            <p>2024</p>
+        </section>
+        <section class="year">
+            <img alt="2023 thumbnail" class="thumbnail" data-max="11" data-path="/src/pictures/gallery/2023/"
+                 id="2023" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/2023/1.webp">
+            <p>2023</p>
+        </section>
+        <section class="year">
+            <img alt="2021 thumbnail" class="thumbnail" data-max="24" data-path="/src/pictures/gallery/2021/"
+                 id="2021" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/2021/1.webp">
+            <p>2021</p>
+        </section>
+        <section class="year">
+            <img alt="2018 thumbnail" class="thumbnail" data-max="28" data-path="/src/pictures/gallery/2018/"
+                 id="2018" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/2018/1.webp">
+            <p>2018</p>
+        </section>
+        <section class="year">
+            <img alt="2017 thumbnail" class="thumbnail" data-max="13" data-path="/src/pictures/gallery/2017/"
+                 id="2017" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/2017/1.webp">
+            <p>2017</p>
+        </section>
+        <section class="year">
+            <img alt="2016 thumbnail" class="thumbnail" data-max="10" data-path="/src/pictures/gallery/2016/"
+                 id="2016" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/2016/1.webp">
+            <p>2016</p>
+        </section>
+        <section class="year">
+            <img alt="2015 thumbnail" class="thumbnail" data-max="14" data-path="/src/pictures/gallery/2015/"
+                 id="2015" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/2015/1.webp">
+            <p>2015</p>
+        </section>
+        <section class="year">
+            <img alt="2014 thumbnail" class="thumbnail" data-max="18" data-path="/src/pictures/gallery/2014/"
+                 id="2014" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/2014/1.webp">
+            <p>2014</p>
+        </section>
+        <section class="year">
+            <img alt="Archivum thumbnail" class="thumbnail" data-max="128" data-path="/src/pictures/gallery/Archivum/"
+                 id="Archivum" onclick="changeYearTo(this)"
+                 src="/src/pictures/gallery/Archivum/1.webp">
+            <p>Archivum</p>
+        </section>
+    </div>
+</div>
+
+<div class="footing">
+    <footer id="left">
+        Kapcsolat
+        <ul>
+            <li>7621 Pécs, Ferencesek utcája 35.</li>
+            <li>+36 70 450 2889</li>
+            <a href="mailto:seraphicum.collegium@ferencesek.hu" target="_blank">
+                <li>seraphicum.collegium@ferencesek.hu</li>
+            </a>
+        </ul>
+    </footer>
+
+
+    <footer id="middle">
+        <h1>A Collegium Seraphicum támogatói:</h1>
+        <img src="/src/pictures/honlap_kepek/tamogatok.png">
+    </footer>
+
+    <!--
+    <footer id="right">
+        Tippem sincs, hogy miert akarnal elerni minket, de ha erre attad fejed:
+        <ul>
+            <a href="https://www.ferencesek.hu/" target="_blank">
+                <li>https://www.ferencesek.hu/</li>
+            </a>
+        </ul>
+        Információk:
+        <ul>
+            <a href="tamogatok.html" target="_blank">
+                <li>Támogatóink</li>
+            </a>
+            <li>Itt lakóknak</li>
+        </ul>
+    </footer>
+    --->
+</div>
+<div class="banner">
+    <p> Támogasson minket adója 1%-val : <a href="/tamogatok.html"> Kattintson ide a további információkért.</a></p>
+    <div onClick="parentNode.remove()">
+        Nem, köszönöm én nem akarok most segíteni: [X]
+    </div>
+</div>
+
+</body>
+
+</html>
