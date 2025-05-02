@@ -58,6 +58,10 @@ section.viewer > div.butt {
     align-content: center;
 }
 
+section.viewer > div.butt:hover {
+    background: #ecc684;
+}
+
 section.viewer > div.butt > a {
     margin: 1rem;
     font-size: 2rem;
