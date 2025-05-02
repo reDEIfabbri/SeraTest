@@ -57,11 +57,14 @@ section > ul.side .list {
 }
 
 table {
-    border: #ab7860 5px solid;
+    border: #ab786055 5px solid;
     border-radius: 15px;
+    margin-bottom: 10px;
 }
 
 th {
+    border: #ab786025 2px solid;
+    border-radius: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
