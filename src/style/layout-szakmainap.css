@@ -19,7 +19,7 @@ div.page > div.presentations {
     margin-top: 1rem;
     grid-area: presentations;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     /*border: #ab786055 2px solid;
     background-image: radial-gradient(#ffffff75, #ffff0025, #00ff0013, #f6efe105);*/
 
@@ -81,7 +81,7 @@ div.page > div.presentations > div.card > p.description {
 
 
 h1 {
-    font-size: 200%;
+    font-size: 300%;
 }
 
 h2 {
