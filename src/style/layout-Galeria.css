@@ -5,13 +5,13 @@ body {
 div.page {
     width: 90%;
     margin: 1rem 5%;
-    height: min-content;
-    min-height: 225%;
+    height: max-content;
+    min-height: 250%;
 }
 
 section.year {
     float: left;
-    margin: 1rem;
+    margin: 0.4vw;
     text-align: center;
     background: #ecc684;
     border-radius: 1rem;
@@ -23,12 +23,18 @@ section.year#active-year {
     color: #fff;
 }
 
+section.year:hover {
+    opacity: 0.75;
+    background: #615040;
+    color: #fff;
+}
+
 section.year > img.thumbnail {
     object-fit: cover;
-    height: 15vw;
-    max-height: 200px;
-    width: 15vw;
-    max-width: 200px;
+    height: 16vw;
+    /*max-height: 200px;*/
+    width: 16vw;
+    /*max-width: 200px;*/
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }

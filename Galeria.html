@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title> Collegium Seraphicum </title>
+
+    <!-- Add icon library, for social media buttons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/src/style/layout-main.css" rel="stylesheet" type="text/css"/>
+
+    <link href="/src/style/design.css" rel="stylesheet" type="text/css"/>
+    <!-- Add layout for different pages, style design also could be different,
+    for now it seems to be working -->
+    <link href="/src/style/layout-Galeria.css" rel="stylesheet" type="text/css"/>
+
+    <link href="/src/pictures/honlap_kepek/Tau.png" rel="icon">
+    <script src="/src/scripts/gallery.js"></script>
+</head>
+
+<body>
+<div class="heading">
+    <header ID="long-logo">
+        <img alt="a kollégium logója" src="/Arculati_Elemek/Logo/logo-long.png">
+    </header>
+
+    <header ID="social">
+        <a class="fa fa-facebook" href="https://www.facebook.com/Seraphicum/" target="_blank"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/szeraf_koli/" target="_blank"></a>
+        <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpOokV3I5dHLWZNzvOiJa1w"
+           target="_blank"></a>
+    </header>
+</div>
+
+<div class="navbar">
+    <nav id="navigation-bar">
+        <ul>
+            <li><a href="/index.html"> Kezdőlap </a></li>
+            <li><a href="/Rolunk.html"> Rólunk </a></li>
+            <li><a href="/tevekenyseg.html"> Programok </a></li>
+            <!-- TODO Facebook posztok, elrendez#es, stb. -->
+            <li><a href="/felveteli.html"> Felvételi </a></li>
+            <li><a href="/Galeria.html" id="active"> Galéria </a></li>
+            <li><a href="/media.html"> Média </a></li>
+            <li><a href="/Dokumentumok.html"> Dokumentumok </a></li>
+            <li><a href="/diakbizotsag.html"> DiákBizottság </a></li>
+            <li><a href="/Felujitasok.html"> Felújítások </a></li>
+            <li><a href="https://youtu.be/6jJkdRaa04g?t=35"> Easter Egg </a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="page">
+    <div class="years">
+        <!--
+        <section class="year">
+        <img alt="xyear xevent thumbnail" class="thumbnail" data-max="xmax"
+             data-path="/src/pictures/gallery/x/"
+             id="x" onclick="changeGallery(this)"
+             src="/src/pictures/gallery/x/1.webp">
+        <p>xtitle</p>
+        </section>
+        -->
+
+        <section class="year">
+            <img alt="2025 Szaknap thumbnail" class="thumbnail" data-max="10"
+                 data-path="/src/pictures/gallery/25_szaknap/"
+                 id="25_szaknap" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/25_szaknap/1.webp">
+            <p>2025 Szaknap 🃏</p>
+        </section>
+
+        <section class="year">
+            <img alt="2025 Padlás-Pince túra thumbnail" class="thumbnail" data-max="10"
+                 data-path="/src/pictures/gallery/25_padlaspince/"
+                 id="25_padlaspince" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/25_padlaspince/1.webp">
+            <p>2025 Padlás-Pince túra 🏠</p>
+        </section>
+
+        <section class="year">
+            <img alt="2025 Lelkigyakorlat thumbnail" class="thumbnail" data-max="23"
+                 data-path="/src/pictures/gallery/25_lelkigyak/"
+                 id="25_lelkigyak" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/25_lelkigyak/1.webp">
+            <p>2025 Lelkigyakorlat 🕯️</p>
+        </section>
+
+        <section class="year">
+            <img alt="2025 Farsang thumbnail" class="thumbnail" data-max="58"
+                 data-path="/src/pictures/gallery/25_farsang/"
+                 id="25_farsang" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/25_farsang/1.webp">
+            <p>2025 Farsang 🎭</p>
+        </section>
+
+        <section class="year">
+            <img alt="2025 Dárc thumbnail" class="thumbnail" data-max="13"
+                 data-path="/src/pictures/gallery/25_darc/"
+                 id="25_darc" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/25_darc/1.webp">
+            <p>2025 Dárc 🎯</p>
+        </section>
+
+        <section class="year">
+            <img alt="2025 Csocsó thumbnail" class="thumbnail" data-max="8"
+                 data-path="/src/pictures/gallery/25_csocso/"
+                 id="25_csocso" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/25_csocso/1.webp">
+            <p>2025 Csocsó ⚽</p>
+        </section>
+
+        <section class="year">
+            <img alt="2025 Böjte Csaba thumbnail" class="thumbnail" data-max="7"
+                 data-path="/src/pictures/gallery/25_bojte/"
+                 id="25_bojte" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/25_bojte/1.webp">
+            <p>2025 Böjte Csaba 🙏</p>
+        </section>
+
+        <section class="year">
+            <img alt="2024 Venisancte thumbnail" class="thumbnail" data-max="13"
+                 data-path="/src/pictures/gallery/24_venisancte/"
+                 id="24_venisancte" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/24_venisancte/1.webp">
+            <p>2024 Venisancte ⛪</p>
+        </section>
+
+        <section class="year">
+            <img alt="xyear xevent thumbnail" class="thumbnail" data-max="6"
+                 data-path="/src/pictures/gallery/24_ropi/"
+                 id="24_ropi" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/24_ropi/1.webp">
+            <p>2024 Röpi 🏐</p>
+        </section>
+
+        <section class="year">
+            <img alt="2024 Pingpong thumbnail" class="thumbnail" data-max="6"
+                 data-path="/src/pictures/gallery/24_pingpong/"
+                 id="24_pingpong" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/24_pingpong/1.webp">
+            <p>2024 Pingpong 🏓</p>
+        </section>
+
+        <section class="year">
+            <img alt="2024 Mentorest thumbnail" class="thumbnail" data-max="12"
+                 data-path="/src/pictures/gallery/24_mentorest/"
+                 id="24_mentorest" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/24_mentorest/1.webp">
+            <p>2024 Mentorest 🥂</p>
+        </section>
+
+        <section class="year">
+            <img alt="2024 Koszorúkészítés thumbnail" class="thumbnail" data-max="10"
+                 data-path="/src/pictures/gallery/24_koszoru/"
+                 id="24_koszoru" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/24_koszoru/1.webp">
+            <p>2024 Koszorúkészítés 🌿</p>
+        </section>
+
+        <section class="year">
+            <img alt="2024 Ismerkedősest  thumbnail" class="thumbnail" data-max="22"
+                 data-path="/src/pictures/gallery/24_ismest/"
+                 id="24_ismest" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/24_ismest/1.webp">
+            <p>2024 Ismerkedősest 🎊</p>
+        </section>
+
+        <section class="year">
+            <img alt="2024 ferencest thumbnail" class="thumbnail" data-max="12"
+                 data-path="/src/pictures/gallery/24_ferencest/"
+                 id="24_ferencest" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/24_ferencest/1.webp">
+            <p>2024 Ferencest 📝</p>
+        </section>
+
+        <section class="year">
+            <img alt="2024 24_csocso thumbnail" class="thumbnail" data-max="5"
+                 data-path="/src/pictures/gallery/24_csocso/"
+                 id="24_csocso" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/24_csocso/1.webp">
+            <p>2024 Csocsó ⚽</p>
+        </section>
+
+        <section class="year">
+            <img alt="2024 beerpong thumbnail" class="thumbnail" data-max="21"
+                 data-path="/src/pictures/gallery/24_beerpong/"
+                 id="24_beerpong" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/24_beerpong/1.webp">
+            <p>2024 Beerpong 🍺</p>
+        </section>
+
+        <section class="year">
+            <img alt="2024 sport thumbnail" class="thumbnail" data-max="39"
+                 data-path="/src/pictures/gallery/sport2/"
+                 id="2024sport" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/sport2/1.webp">
+            <p>2024 Sportolás 🤸</p>
+        </section>
+
+        <!--
+        <section class="viewer" id="viewer">
+            <div class="prev butt">
+                <a onclick="goPicBack(image)">❮</a>
+            </div>
+
+            <img ID="viewerpicture" alt="Ez egy szép kép..." class="viewed-picture"
+                 onclick="this.scrollIntoView()"
+                 src="/src/pictures/gallery/sport2/1.webp">
+
+            <div class="next butt">
+                <a onclick="viewer-picture.src = '/src/pictures/gallery/sport2/2.webp'">❯</a>
+            </div>
+        </section>
+        -->
+
+        <section class="year">
+            <img alt="2024.09 thumbnail" class="thumbnail" data-max="63" data-path="/src/pictures/gallery/2024.09/"
+                 id="2024.09" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/2024.09/1.webp">
+            <p>2024.09</p>
+        </section>
+        <section class="year">
+            <img alt="2024 thumbnail" class="thumbnail" data-max="52" data-path="/src/pictures/gallery/2024/"
+                 id="2024" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/2024/1.webp">
+            <p>2024</p>
+        </section>
+        <section class="year">
+            <img alt="2023 thumbnail" class="thumbnail" data-max="11" data-path="/src/pictures/gallery/2023/"
+                 id="2023" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/2023/1.webp">
+            <p>2023</p>
+        </section>
+        <section class="year">
+            <img alt="2021 thumbnail" class="thumbnail" data-max="24" data-path="/src/pictures/gallery/2021/"
+                 id="2021" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/2021/1.webp">
+            <p>2021</p>
+        </section>
+        <section class="year">
+            <img alt="2018 thumbnail" class="thumbnail" data-max="28" data-path="/src/pictures/gallery/2018/"
+                 id="2018" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/2018/1.webp">
+            <p>2018</p>
+        </section>
+        <section class="year">
+            <img alt="2017 thumbnail" class="thumbnail" data-max="13" data-path="/src/pictures/gallery/2017/"
+                 id="2017" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/2017/1.webp">
+            <p>2017</p>
+        </section>
+        <section class="year">
+            <img alt="2016 thumbnail" class="thumbnail" data-max="10" data-path="/src/pictures/gallery/2016/"
+                 id="2016" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/2016/1.webp">
+            <p>2016</p>
+        </section>
+        <section class="year">
+            <img alt="2015 thumbnail" class="thumbnail" data-max="14" data-path="/src/pictures/gallery/2015/"
+                 id="2015" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/2015/1.webp">
+            <p>2015</p>
+        </section>
+        <section class="year">
+            <img alt="2014 thumbnail" class="thumbnail" data-max="18" data-path="/src/pictures/gallery/2014/"
+                 id="2014" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/2014/1.webp">
+            <p>2014</p>
+        </section>
+        <section class="year">
+            <img alt="Archivum thumbnail" class="thumbnail" data-max="128" data-path="/src/pictures/gallery/Archivum/"
+                 id="Archivum" onclick="changeGallery(this)"
+                 src="/src/pictures/gallery/Archivum/1.webp">
+            <p>Archivum</p>
+        </section>
+        <p id="viewer"></p>
+        <p id="active-year"></p>
+    </div>
+</div>
+
+<div class="footing">
+    <footer id="left">
+        Kapcsolat
+        <ul>
+            <li>7621 Pécs, Ferencesek utcája 35.</li>
+            <li>+36 70 450 2889</li>
+            <a href="mailto:seraphicum.collegium@ferencesek.hu" target="_blank">
+                <li>seraphicum.collegium@ferencesek.hu</li>
+            </a>
+        </ul>
+    </footer>
+
+
+    <footer id="middle">
+        <h1>A Collegium Seraphicum támogatói:</h1>
+        <img src="/src/pictures/honlap_kepek/tamogatok.png">
+    </footer>
+
+    <!--
+    <footer id="right">
+        Tippem sincs, hogy miert akarnal elerni minket, de ha erre attad fejed:
+        <ul>
+            <a href="https://www.ferencesek.hu/" target="_blank">
+                <li>https://www.ferencesek.hu/</li>
+            </a>
+        </ul>
+        Információk:
+        <ul>
+            <a href="tamogatok.html" target="_blank">
+                <li>Támogatóink</li>
+            </a>
+            <li>Itt lakóknak</li>
+        </ul>
+    </footer>
+    --->
+</div>
+<div class="banner">
+    <p> Támogasson minket adója 1%-val : <a href="/tamogatok.html"> Kattintson ide a további információkért.</a></p>
+    <div onClick="parentNode.remove()">
+        Nem, köszönöm én nem akarok most segíteni: [X]
+    </div>
+</div>
+
+</body>
+
+<script src="/src/scripts/NewGallery.js"></script>
+
+</html>
