@@ -2,7 +2,7 @@ div.page {
     width: 90%;
     margin: auto;
     display: grid;
-    grid-template-areas: "title" "presentations";
+    grid-template-areas: "title" "info" "presentations";
 }
 
 div.page > div.title {
@@ -12,6 +12,14 @@ div.page > div.title {
     padding: 1rem;
     color: #ffffff;
     text-align: center;
+}
+
+div.page > div.info {
+    grid-area: info;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #000;
+    text-align: left;
 }
 
 div.page > div.presentations {
@@ -76,7 +84,7 @@ div.page > div.presentations > div.card > h2.subject {
 }
 
 div.page > div.presentations > div.card > p.description {
-    margin: 0 1rem;
+    margin: 0 1rem 1rem;
 }
 
 

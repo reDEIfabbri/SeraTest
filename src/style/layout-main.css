@@ -75,7 +75,19 @@ div.navbar nav ul li a#active {
     opacity: 100%;
 }
 
+div.navbar > nav > ul li a#felveteli {
+    color: rgb(194, 62, 29);
+    opacity: unset;
+}
+
 div.navbar nav ul li a:hover {
+    background-color: #fff;
+    color: rgb(194, 62, 29);
+    border: 1px solid #000;
+    opacity: 100%;
+}
+
+iv.navbar nav ul li a#felveteli:hover {
     background-color: #fff;
     color: rgb(194, 62, 29);
     border: 1px solid #000;
