@@ -41,8 +41,8 @@
 
 ## Felújítások fül
 
-- [ ] továbbra is rálógnak a képek a szövegre ://
-- [ ] vannak ismétlődő képek (fűszerkert, 3 fa, kápolna), illetve szerintem a rolóról olyan kép kéne, amiben nincs benne
+- [x] továbbra is rálógnak a képek a szövegre ://
+- [X] vannak ismétlődő képek (fűszerkert, 3 fa, kápolna), illetve szerintem a rolóról olyan kép kéne, amiben nincs benne
   egy random doboz (elég, ha azt a részt levágod valahogy)
 
 # És akkor még pár ötlet:

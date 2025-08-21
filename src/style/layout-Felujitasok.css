@@ -177,6 +177,8 @@ section.column-right {
 }
 
 div.palyazatok {
+    position: relative;
+    top: 20%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -184,4 +186,27 @@ div.palyazatok {
 
 div.palyazatok h3, h2 {
     text-align: center;
+}
+
+div.palyazatok img {
+    max-width: 450px;
+    width: 50%;
+    height: 50%;
+}
+
+div.palyazatok img.plakat {
+    max-width: 100%;
+    width: 100%;
+}
+
+img.Kep_balra {
+    float: left;
+    clear: left;
+    margin-right: 15px;
+}
+
+img.Kep_jobbra {
+    float: right;
+    clear: right;
+    margin-left: 15px;
 }
