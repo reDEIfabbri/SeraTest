@@ -2,7 +2,7 @@
 
 - [ ] csak egy apróság: a kápolnás képen tényleg belóg a bal felső sarokban egy ujj? Ha igen, akkor vagy legyen egy
   másik kép, vagy vágjuk úgy méretre, hogy ne legyen benne.
-- [ ] új Velemjáró készül, majd frissíteni kell (még csak jelzem)
+- [x] új Velemjáró készül, majd frissíteni kell (még csak jelzem)
 - [x] a velemjárónak lapozhatónak kéne lenni...?
 
 ## Programok fül
@@ -37,7 +37,7 @@
 - [x] a választás arra az opcióra esett, hogy az új félévnek legyen egy új füle, tehát 2025/26 I.
 - [ ] az elrendezés is változna, azt még kiderítem hogyan, mert nem teljesen értettem (szervezeti felépítés jobban
   átlátható legyen, pókhálószerűen)
-- [ ] Böhm Patriknak sosem volt semmilyen szövege vagy csak meg kéne szerezni?
+- [x] Böhm Patriknak sosem volt semmilyen szövege vagy csak meg kéne szerezni?
 
 ## Felújítások fül
 
@@ -47,5 +47,5 @@
 
 # És akkor még pár ötlet:
 
-- ESETLEG lehetne macska a honlapon, csak hogy Sándor Úr itt is képviseltesse magát és az értékeink megjelenjenek
-- van rá esély, hogy a közeljövőben lesz telefonos verzió? Teljesen összedobál mindent. :((
+- [ ] ESETLEG lehetne macska a honlapon, csak hogy Sándor Úr itt is képviseltesse magát és az értékeink megjelenjenek
+- [ ] van rá esély, hogy a közeljövőben lesz telefonos verzió? Teljesen összedobál mindent. :((
