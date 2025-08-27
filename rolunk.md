@@ -8,9 +8,9 @@
 - [Szakmai nap](/SzakmaiNap.html)
 - [Felvételi](/Felveteli.html)
 - [Galéria](/Galeria.html)
-- [Dokumentumok](D/okumentumok.html)
+- [Dokumentumok](/dokumentumok.html)
 - [DiákBizottság](/DB.html)
-- [Felújítások](/Felujitasok.html)
+- [Felújítások](/felujitasok.html)
 </details>
 
 Kedves Gólyák!

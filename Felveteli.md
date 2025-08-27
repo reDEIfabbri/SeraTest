@@ -7,9 +7,9 @@
 - [Szakmai nap](/SzakmaiNap.html)
 - [Felvételi](/Felveteli.html)
 - [Galéria](/Galeria.html)
-- [Dokumentumok](/Dokumentumok.html)
+- [Dokumentumok](/dokumentumok.html)
 - [DiákBizottság](/DB.html)
-- [Felújítások](/Felujitasok.html)
+- [Felújítások](/felujitasok.html)
 </details>
 
 ![](src/pictures/Kollegium_Bejarat.webp)
@@ -51,13 +51,13 @@ Ft-tal, továbbá a 2025/2026-ös tanév óta a nálunk lakók a PTE EHÖK álta
 +--------------------------------------------------------------------+
 | ### A kollégiumi díj a 2025/2026-ös tanévre:                       |
 +===========+===============================+========================+
-| ÁLLAMI | Szakkollégista:                | 40.000 Ft / hó|
+|   ÁLLAMI  | Szakkollégista:               |          40.000 Ft / hó|
 |ÖSZTÖNDÍJAS+-------------------------------+------------------------+
-| tanulóknak|Albérlő:                        | 50.000 Ft / hó|
+| tanulóknak|Albérlő:                       |          50.000 Ft / hó|
 +===========+======+========================+========================+
-| KÖLTSÉGTÉRÍTÉSES |Szakkollégista:            | 52.000 Ft / hó|
-| +------------------------+------------------------+
-| tanulóknak |Albérlő:                | 62.000 Ft / hó|
+| KÖLTSÉGTÉRÍTÉSES |Szakkollégista:         |          52.000 Ft / hó|
+|                  +---------------------------+---------------------+
+|    tanulóknak    |Albérlő:                |          62.000 Ft / hó|
 +------------------+------------------------+------------------------+
 
 ***Költségtérítéses (nem államilag támogatott) képzés esetén a kollégiumi díj az aktuális állami normatíva mértékével
