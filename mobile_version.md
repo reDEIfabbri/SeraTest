@@ -9,16 +9,10 @@
 - [Galéria](/Galeria.html)
 - [Dokumentumok](/Dokumentumok.html)
 - [DiákBizottság](/DB.html)
-- [Felújítások](/Felujitasok.html)
+- [Felújítások](/felujitasok.html)
 </details>
 
 ![](src/pictures/SlideShow/2024-25.webp)
-
-MD with HTML insertion:
-Some Markdown text with <span style="color:blue">some *blue* text</span>.
-
-A level-one heading
-===================
 
 Kedves Gólyák!
 -------------------
