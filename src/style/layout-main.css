@@ -285,3 +285,15 @@ div.banner > p {
 div.banner > div {
     margin-top: 0;
 }
+
+/*div.SANYI {*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*}*/
+
+img#SANYI {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
