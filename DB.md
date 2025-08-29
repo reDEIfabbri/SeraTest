@@ -43,8 +43,9 @@ szól.
  Az idei szemeszterben a Diákbizottság Elnökeként az én elsődleges feladatom, hogy segítsem és támogassam a munkacsoport vezetők munkáját. Emellett adminisztrációs feladatokat végzek, továbbá a munkacsoport vezetőknek segítek a projektek megtervezésében és végrehajtásában.</td>
   </tr>
 </table>
+</details>
 
-- ### DB Alelnök: Ruszcsák Bori\</details>
+- ### DB Alelnök: Ruszcsák Bori\
 
 <details> <summary>*Bemutatkozás*</summary>
 <table>
