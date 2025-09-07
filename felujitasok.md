@@ -11,6 +11,7 @@
 - [Dokumentumok](/Dokumentumok.html)
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
+- [Kapcsolat](/kapcsolat.html)
 </details>
 
 A kollégium épületének felújjítása egy folyamatos projekt, melyet azon tény is nehezít, miszerint ez egy műemlék... Ez

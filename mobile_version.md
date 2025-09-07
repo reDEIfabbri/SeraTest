@@ -10,6 +10,7 @@
 - [Dokumentumok](/Dokumentumok.html)
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
+- [Kapcsolat](/kapcsolat.html)
 </details>
 
 ![](src/pictures/SlideShow/2024-25.webp)

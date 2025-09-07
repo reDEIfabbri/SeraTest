@@ -10,6 +10,7 @@
 - [Dokumentumok](/dokumentumok.html)
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
+- [Kapcsolat](/kapcsolat.html)
 </details>
 
 ![](src/pictures/Kollegium_Bejarat.webp)

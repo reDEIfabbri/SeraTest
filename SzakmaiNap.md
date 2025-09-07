@@ -11,6 +11,7 @@
 - [Dokumentumok](/dokumentumok.html)
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
+- [Kapcsolat](/kapcsolat.html)
 </details>
 
 # Szakmai nap
