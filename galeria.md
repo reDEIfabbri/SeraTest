@@ -11,5 +11,4 @@
 - [Dokumentumok](/Dokumentumok.html)
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
-- [Kapcsolat](/kapcsolat.html)
 </details>

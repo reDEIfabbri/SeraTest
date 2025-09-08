@@ -1,6 +1,6 @@
 ## Rólunk fül
 
-- [ ] csak egy apróság: a kápolnás képen tényleg belóg a bal felső sarokban egy ujj? Ha igen, akkor vagy legyen egy
+- [x] csak egy apróság: a kápolnás képen tényleg belóg a bal felső sarokban egy ujj? Ha igen, akkor vagy legyen egy
   másik kép, vagy vágjuk úgy méretre, hogy ne legyen benne.
 - [x] új Velemjáró készül, majd frissíteni kell (még csak jelzem)
 - [x] a velemjárónak lapozhatónak kéne lenni...?
