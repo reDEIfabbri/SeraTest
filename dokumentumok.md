@@ -16,7 +16,7 @@
 
 #  A legfontosabb dokumentumaink: 
 - [SzMsz](/src/documents/SzMSz.pdf)
-- [Adatkezelési tájékoztatónk](/src/documents/2025/Adatkezel%C3%A9si%20%C3%A9s%20Hozz%C3%A1j%C3%A1rul%C3%B3%20nyilatkozat.docx)
+- [Adatkezelési tájékoztatónk](/src/documents/Adatkezelési_tájékoztató_Collegium_Seraphicum_weboldal_20250530.pdf)
 - [Házirend](/src/documents/2025/H%C3%A1zirend.docx)
 - [Tűzvédelmi tájékoztató](http://127.0.0.1:8080/src/documents/2025/T%C5%B1zv%C3%A9delmi%20utas%C3%ADt%C3%A1s.docx)
 - [Jelentkezési lap ***ÚJAKNAK***](/src/documents/2025/Jelentkezesi%20lap_%C3%9Ajaknak_2025.docx)
