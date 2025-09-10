@@ -7,10 +7,12 @@ function isItMobile(OSandPlatform) {
     const OS = OSandPlatformArray[0];
     const Platform = OSandPlatformArray[1];
 
-    if (OS == "Linux" || Platform.startsWith("arm")) {
+    if (OS == "Linux" && Platform.startsWith("arm")) {
         alert("It is an android phone");
+        window.location = "https://seraphicum.hu/mobile_version.html";
     } else if (navigator.platform === "iPhone") {
         alert("It is an Iphone")
+        window.location = "https://seraphicum.hu/mobile_version.html";
     }
 }
 
