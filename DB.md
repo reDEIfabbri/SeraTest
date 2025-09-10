@@ -17,7 +17,7 @@
 
 # A Diákbizottság és Én
 
-Mint minden jó szakkollégiumnak a Szeráfban is működik a munkacsoport (röviden: MCs) rendszer. Minden szakkollégistának
+Mint minden jó szakkollégiumban a Szeráfban is működik a munkacsoport (röviden: MCs) rendszer. Minden szakkollégistának
 félévente 10 órát kell teljesítenie valamelyik MCs-ben. A DiákBizottság (eztán csak DB) tagjai ezen csoportok vezetői,
 valamint az elnök és segédje az alelnök, mindüket egyszerre szoktuk választani, a második félévben, s mandátumuk 1 évre
 szól.
