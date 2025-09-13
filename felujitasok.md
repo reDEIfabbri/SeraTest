@@ -14,19 +14,20 @@
 - [Kapcsolat](/kapcsolat.html)
 </details>
 
-A kollégium épületének felújjítása egy folyamatos projekt, melyet azon tény is nehezít, miszerint ez egy műemlék... Ez
+A kollégium épületének felújítása egy folyamatos projekt, melyet azon tény is nehezít, miszerint ez egy műemlék... Ez
 nem csak azt jelenti, hogy vastagok a falai, s egy némely köveibe egészen régi keresztény szimbólumok lettek bele vésve.
 Ezzel a ténnyel bizony együtt jár a korszerű szó lecserélése korhűre! No, persze azért nem kell megijedni, van hűtőgép,
-mosógép, angol WC az épületen belül, de ha a tetőszerkezet felújjításáról val szó, akkor azt csakis az építési korának
+mosógép, angol WC az épületen belül, de ha a tetőszerkezet felújításáról val szó, akkor azt csakis az építési korának
 megfelelő ács technikákkal lehet elvégezni!
-Az elmúlt három évben ezért, főleg a belső megújjulásra koncentráltunk, amit könnyebb kivitelezni: újra festeni a
-szobákat, közösségi tereket, új közös háztartási gépek beszerzése, új közhasznú terek kialakítása, a régiek rendbe
+Éppen ezért az elmúlt három évben főleg a belső megújulásra koncentráltunk, amit könnyebb kivitelezni: a
+szobák, közösségi terek újrafestése, új közös háztartási gépek beszerzése, új közhasznú terek kialakítása, a régiek
+rendbe
 tétele, stb.
-Szeretnénk újra neki állni, nagyobb léptékű munkákat végre hajtani a kollégium épületén, sajnos azonban ezt kollégiumi
-díjjakból egyedül nem lehet megoldani. A lentiekben látható, hogy egy "kis" segítséggel már milyen nagy eredményeket
+Szeretnénk újra nekiállni és nagyobb léptékű munkákat végre hajtani a kollégium épületén, sajnos azonban ez egyedül
+kollégiumi díjakból nem megoldható. A lentiekben látható, hogy egy "kis" segítséggel már milyen nagy eredményeket
 lehet elérni!
 
-## Fejlesztések, felújjítások
+## Fejlesztések, felújítások
 
 #### 2021
 

@@ -57,15 +57,18 @@ header#social {
            target="_blank"></a>
 </header>
 
+<br>
+![](src/CsocsoJatek.webp)
+
 # Programok
 
-Az egyetemi és kollégiumi élet számos programmal eggyütjár. Vannak hivatalos szakkoli szervezésüek, ezek egy része
-kötelező jellegű, úgy mint a Veni Sancte, FerencEstek, lelkigyakorlat, etc., más része azonban opcionális részvételű,
-kitűnő példák erre a sport bajnokságok.
+Az egyetemi és kollégiumi élet számos programmal együtjár. Vannak hivatalos szakkoli szervezésűek, ezek egy része
+kötelező jellegű, úgy mint a Veni Sancte, FerencEstek, lelkigyakorlat, etc., más része azonban opcionális.
+Kitűnő példák erre a sportbajnokságok.
 
-Szerencsére még nem halt ki a spontanitás művészete ífijaink közt, így rengeteg olyan kissebb esemény is nap-, vagy
-éppen holdvilágot lát melynek a fogantatása, s születése közt nem telt el több, mint 1 hét/nap/óra/perc/pillanat...
+Szerencsére még nem halt ki a spontaneitás művészete ifjaink közt, így rengeteg olyan kisebb esemény is nap- vagy
+éppen holdvilágot lát, melynek a fogantatása, s születése közt nem telt el több, mint 1 hét/nap/óra/perc/pillanat...
 
-Sajnos ezeket itt mind felsorolni nehéz lenne, ezért inkább nyugodtan használják a fentebb belinkelt szociális
-médiáinkat, ahol előre szemmezgetünk önnöknek a legjobbakból...
+Sajnos ezeket itt mind felsorolni nehéz lenne, ezért inkább nyugodtan használjátok a fentebb belinkelt szociális
+médiáinkat, ahol előre szemezgettünk Nektek a legjobbakból...
  

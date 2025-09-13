@@ -28,7 +28,7 @@ egészséggel! [Katt ide!](/src/Szeráf_KÉSZ_velemjáró.pdf)
 | +---------------------------------------+---------------------------------+
 | Újak |szóbeli elbeszélgetése:                | augusztus 18-19. (hétfő-kedd)|
 | +---------------------------------------+---------------------------------+
-| |kiértesítése felvételről/elutasításról:| augusztus 25 (hétfő)|
+| |kiértesítése felvételről/elutasításról:| augusztus 25. (hétfő)|
 +=======+===+===================================+===+=============================+
 | | jelentkezési határidő:                | június 13. (péntek)|
 | Régiek +---------------------------------------+-----------------------------+
@@ -43,11 +43,11 @@ Először is, nem kell félned a leendő szobatársadtól, hiszen a keresztény 
 él. Nem leszel elveszett, mivel ebben a családias légkörben segítőkész felsőbb évesekre és egyben társakra találsz, akik
 azon munkálkodnak, hogy te is mihamarabb megtaláld itt a helyedet!
 
-## Lakhatásitámogatások:
+## Lakhatási támogatások:
 
 Szerencsére az alábbi összegek a 2023/2024-es tanévtől jelentősen csökkentek a MOL Új Európa Alap támogatásának
 köszönhetően, amellyel minden kollégistát tudtunk támogatni, egy főre jutó keresettől függően havi 10.000 vagy 20.000
-Ft-tal, továbbá a 2025/2026-ös tanév óta a nálunk lakók a PTE EHÖK által meghírdetett támogatásra is jelentkezhetnek.
+Ft-tal. Továbbá a 2025/2026-ös tanév óta a nálunk lakók a PTE EHÖK által meghirdetett támogatásra is jelentkezhetnek.
 
 +--------------------------------------------------------------------+
 | ### A kollégiumi díj a 2025/2026-ös tanévre:                       |

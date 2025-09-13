@@ -14,27 +14,18 @@
 - [Kapcsolat](/kapcsolat.html)
 </details>
 
-Kedves Gólyák!
--------------------
-Örömmel hirdetjük, hogy a ti érkezéseteket előkészítők szorgos csapata egy pdf-ben összefoglalta nektek a legfontosabb
-tudni valókat! Még térkép is vagyon benne a zegzugos épület útvesztőjéről™. Használjátok
-egészséggel! [Katt ide!](/src/Szeráf_KÉSZ_velemjáró.pdf)
+![](src/pictures/SlideShow/14.webp)
 
 ### ***„Ahol lelke van a helynek, s helye a léleknek“***
 
 Pécs város központjához közel, a történelmi belváros szélén, a ferences templom közvetlen szomszédságában egy ódon,
 már-már titokzatos épület áll. Nagy, robosztus falai nem hivalkodóak, de mégis felkeltik az ember
-kíváncsiságát. [...] [Tovább olvasnám](/rolunk.md)
+kíváncsiságát. A főbejáraton belépve, hirtelen nyugodtság és csönd váltja fel a belvárosi nyüzsgést. A hosszú,
+labirintusszerű folyosók és boltívek a régi idők ferences szerzeteseinek mindennapjairól mesélnek, míg a szembejövő
+fiatal mosolygó arcok a fiatalságot és a vidámságot tükrözik. S hogy miért is „jó” itt lakni? Kedves látogató, hadd
+üdvözöljünk a kollégiumunkban, Ahol lelke van a helynek, s helye a léleknek.
 
-### Egy kis történelem
-
-Az akkor még Kapisztrán Szent Jánosról nevezett Ferences Rendtartomány a pécsi rendházban 1930-ban hozta létre a
-Collegium Seraphicum-ot azzal a céllal, hogy a leendő rendi növendékek középiskolai tanulmányaik alatt már élni tudják a
-ferences szerzetesi életet. Kollégiumunk 1990-ben az országban elsőként nyitotta meg kapuit az egyházi felsőoktatási
-kollégiumok közül. Ez évtől kezdődően – Dr. Vass László ferences konfráter kezdeményezésére – Mayer Mihály pécsi
-megyéspüspök újraindította a kollégium életét, hogy abban a Pécsett tanuló, katolikus fiatalok még jobban megélhessék
-hitvalló életüket. A Magyarok Nagyasszonya Ferences Rendtartomány 1998. január 1-jétől vette át az egyházmegyétől a
-kollégium fenntartását.
+![](src/pictures/SlideShow/USA0754.webp)
 
 ### S hogy a kollégium lakójaként mire számíthatsz?
 
@@ -48,13 +39,18 @@ kápolnája és két belső kertje lehetővé teszik, hogy akkor és ott tanulju
 csendre, ahol kedvünk tartja. Maga az épület a belváros szívében, frekventált helyen található, közel a templomokhoz, a
 vasútállomáshoz és a buszpályaudvarhoz. Ráadásul az egyetemi karok épületei is elérhetőek egy kényelmes sétával vagy
 akár biciklivel. Ez a központi elhelyezkedés a közösség összetételén is visszaköszön, lévén, hogy minden karról és
-megannyi szakról érkező hallgató gazdagítja és szélesíti a látókörünk horizontját jelenlétével.
+megannyi szakról érkező hallgató gazdagítja és szélesíti a
+látókörünk horizontját jelenlétével.
+
+![](src/VenKezFog.webp)
 
 ### Főbb programok
 
 A szorgalmi időszaknak a tanévnyitó Veni Sancte és a tanévzáró Te Deum szentmisék adnak keretet. Közösen éljük meg a
 rendalapító Assisi Szent Ferenc ünnepeit, valamint az egyházi évkör nagyobb ünnepeit. Ezen kívül a tanév során egy
 alkalommal tartunk lelkigyakorlatot.
+
+![](src/pictures/SlideShow/11.webp)
 
 ### Élet a kollégiumban
 
@@ -71,3 +67,15 @@ gyorsan elrepül az idő. A közös istenhitünkben gyökerező stabil értékre
 megújulásra és az új tagok befogadására.
 
 *„Értelmet adok neked, megtanítalak az útra, amelyen járnod kell.“*   (Zsoltárok 32, 8)
+
+![](src/pictures/SlideShow/USA0733.webp)
+
+### Egy kis történelem
+
+Az akkor még Kapisztrán Szent Jánosról nevezett Ferences Rendtartomány a pécsi rendházban 1930-ban hozta létre a
+Collegium Seraphicum-ot azzal a céllal, hogy a leendő rendi növendékek középiskolai tanulmányaik alatt már élni tudják a
+ferences szerzetesi életet. Kollégiumunk 1990-ben az országban elsőként nyitotta meg kapuit az egyházi felsőoktatási
+kollégiumok közül. Ez évtől kezdődően – Dr. Vass László ferences konfráter kezdeményezésére – Mayer Mihály pécsi
+megyéspüspök újraindította a kollégium életét, hogy abban a Pécsett tanuló, katolikus fiatalok még jobban megélhessék
+hitvalló életüket. A Magyarok Nagyasszonya Ferences Rendtartomány 1998. január 1-jétől vette át az egyházmegyétől a
+kollégium fenntartását.

@@ -15,8 +15,8 @@
 
 ![](src/pictures/SlideShow/2024-25.webp)
 
-Kedves Gólyák!
--------------------
+### Kedves Gólyák!
+
 Örömmel hirdetjük, hogy a ti érkezéseteket előkészítők szorgos csapata egy pdf-ben összefoglalta nektek a legfontosabb
 tudni valókat! Még térkép is vagyon benne a zegzugos épület útvesztőjéről™. Használjátok
 egészséggel! [Katt ide!](/src/Szeráf_KÉSZ_velemjáró.pdf)
@@ -24,8 +24,14 @@ egészséggel! [Katt ide!](/src/Szeráf_KÉSZ_velemjáró.pdf)
 ### ***„Ahol lelke van a helynek, s helye a léleknek“***
 
 Pécs város központjához közel, a történelmi belváros szélén, a ferences templom közvetlen szomszédságában egy ódon,
-már-már titokzatos épület áll. Nagy, robosztus falai nem hivalkodóak, de mégis felkeltik az ember
-kíváncsiságát. [...] [Tovább olvasnám](/rolunk.md)
+már-már titokzatos épület áll. Nagy, robusztus falai nem hivalkodóak, de mégis felkeltik az ember
+kíváncsiságát. [...] [Tovább olvasnám](/rolunk.html)
+
+### Nem csak egy szállást keresel, hanem egy befogadó közösséget?
+
+Olyan emberek között töltenéd az egyetemi éveidet, akik az esetleges gondolkodásbéli különbségek ellenére azonos
+értékrenddel rendelkeznek? Ahol teret és támogatást kapnál a hitedben, s ahol építeni tudnád az Istenkapcsolatodat?
+Akkor jó helyen jársz, mert itt bizony megtalálod ezen értékeket! [Tovább a jelentkezéshez! ](/Felveteli.html)
 
 ### Az elmúlt évben sok programunk volt
 
@@ -33,12 +39,12 @@ Járt nálunk a megyés püspök, tanultunk az újraélesztésről. (Még a fél
 végtelenül türelmes bábun!) Az év folyamán rendszeresen fogadtunk különféle előadókat a FerenEstek keretein belül így
 szellemileg is művelhettük magunkat a kollégium falain belül. És mindez persze értelmetlen lett volna, ha nem tudjuk
 kifújni a gőzt és megpihenni, elbújva az élet forgatagától valamelyik udvarunkon és tűz mellett sütögetni, sörpongozni
-vagy csak olvasgatni a napsütésénben sütkérezve. Ezen programokból [válogattunk össze itt néhányat!](/programok.md)
+vagy csak olvasgatni a napsütésénben sütkérezve. Ezen programokból [válogattunk össze itt néhányat!](programok.html)
 
 ### Igazgató: Dobosiné Rizmayer Rita
 
 ![](src/pictures/honlap_kepek/093_0439_DorciRitaRegeKosza_2022aprilis_nnfoto.webp)
-Szeretettel köszöntök mindenkit a megújult honlapunkon, amelyet nagy büszkeségemre az egyik szeráflakó rakott össze 🙂 A
+Szeretettel köszöntök mindenkit a megújult honlapunkon, amelyet nagy büszkeségemre az egyik szeráflakó rakott össze. 🙂 A
 fényképemet látva gondolom, nyilvánvaló, hogy mi a közös Szent Ferencben és bennem. Persze az állatok szeretetén túl
 igyekszem más területen is a nyomdokaiba lépni.
 Szakmámat tekintve fordító, szinkrondramaturg és nyelvtanár vagyok, de azt tekintem a legfontosabb szerepemnek, hogy
@@ -60,9 +66,3 @@ elkötelezett hitéletükkel képviselik a keresztény és ferences értékeket 
 hozzájárulnak a társadalmi felelősségvállaláshoz, és önkéntes munkájukkal felelősségteljesen részt vesznek a
 Diákbizottság által irányított egyes munkacsoportokban, ezáltal gyakorolva és megtapasztalva a széleskörű autonómiával
 rendelkező önkormányzatiság jogait és felelősségét.”
-
-### Nem csak egy szállást keresel, hanem egy befogadó közösséget?
-
-Olyan emberek között töltenéd az egyetemi éveidet, akik az esetleges gondolkodásbéli különbségek ellenére azonos
-értékrenddel rendelkeznek? Ahol teret és támogatást kapnál a hitedben, s ahol építeni tudnád az Istenkapcsolatodat?
-Akkor jó helyen jársz, mert itt bizony megtalálod ezen értékeket! [Tovább a jelentkezéshez! ](/felveteli.md)
