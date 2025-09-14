@@ -70,6 +70,7 @@
       --kbd-background-color: #fafbfc;
       --kbd-border-color: #c6cbd1;
       --kbd-shadow-color: #959da5;
+      --topbars-height: 0px;
   }
 
   * {
@@ -88,8 +89,12 @@
       word-wrap: break-word;
       max-width: 980px;
       margin: auto;
-      margin-top: 60px;
-      padding: 4em;
+      margin-top: var(--topbars-height);
+      padding: 0 4em;
+  }
+
+  body > :first-child {
+      margin-top: 0 !important;
   }
 
   @media screen and (max-width: 799px) {
@@ -98,7 +103,7 @@
       }
 
       body {
-          padding: 1em;
+          padding: 0 1em;
       }
   }
 
@@ -625,6 +630,23 @@
         képviseltesse magát és az értékeink megjelenjenek</label></li>
     <li><label><input type="checkbox"></input>van rá esély, hogy a közeljövőben lesz telefonos verzió? Teljesen
         összedobál mindent. :((</label></li>
+</ul>
+<h1 id="mobil-verzió-feladatok">Mobil verzió feladatok:</h1>
+<ul class="task-list">
+    <li><label><input type="checkbox"></input>képek válogatása</label>
+        <ul class="task-list">
+            <li><label><input type="checkbox"></input>kezdőlapra (1db)</label></li>
+            <li><label><input type="checkbox"></input>Szakmai Napra (1db)</label></li>
+        </ul>
+    </li>
+    <li><label><input type="checkbox"></input>TM jel levétele</label></li>
+    <li><label><input checked type="checkbox"></input>social media logók megcsinálása</label></li>
+    <li><label><input checked type="checkbox"></input>igazgató nő lenyílóvá tétele</label></li>
+    <li><label><input type="checkbox"></input>sanyit felültetni a menü csíkjára</label></li>
+    <li><label><input checked type="checkbox"></input>Menü háromszöget lemozgatni</label></li>
+    <li><label><input checked type="checkbox"></input>“Kedves Gólyák!” betű méret növelése</label></li>
+    <li><label><input type="checkbox"></input>kikutatni, hogy a táblázatok szövegeit, hogyan lehetne vertikálisan
+        középre rendezni</label></li>
 </ul>
 </body>
 </html>

@@ -1,7 +1,7 @@
 ![](Arculati_Elemek/Logo/logo-long.png)
 
 <details>
-	<summary><h2>Menü</h2></summary>
+	<summary><h2 style="display: inline-block; border: none;">Menü</h2></summary>
 - [Kezdőlap](/mobile_version.html)
 - [Rólunk](/rolunk.html)
 - [Programok](/programok.html)

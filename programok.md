@@ -37,7 +37,7 @@ header#social {
 ![](Arculati_Elemek/Logo/logo-long.png)
 
 <details>
-	<summary><h2>Menü</h2></summary>
+	<summary><h2 style="display: inline-block;">Menü ![](Arculati_Elemek/SANYI.webp)</h2> </summary>
 - [Kezdőlap](/mobile_version.html)
 - [Rólunk](/rolunk.html)
 - [Programok](/programok.html)
@@ -49,6 +49,8 @@ header#social {
 - [Felújítások](/felujitasok.html)
 - [Kapcsolat](/kapcsolat.html)
 </details>
+
+<br>
 
 <header ID="social" >
         <a class="fa fa-facebook" href="https://www.facebook.com/Seraphicum/" target="_blank"></a>

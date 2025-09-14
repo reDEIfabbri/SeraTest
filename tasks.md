@@ -49,3 +49,16 @@
 
 - [ ] ESETLEG lehetne macska a honlapon, csak hogy Sándor Úr itt is képviseltesse magát és az értékeink megjelenjenek
 - [ ] van rá esély, hogy a közeljövőben lesz telefonos verzió? Teljesen összedobál mindent. :((
+
+# Mobil verzió feladatok:
+
+- [ ] képek válogatása
+    - [ ] kezdőlapra (1db)
+    - [ ] Szakmai Napra (1db)
+- [ ] TM jel levétele
+- [x] social media logók megcsinálása
+- [x] igazgató nő lenyílóvá tétele
+- [ ] sanyit felültetni a menü csíkjára
+- [x] Menü háromszöget lemozgatni
+- [x] "Kedves Gólyák!" betű méret növelése
+- [ ] kikutatni, hogy a táblázatok szövegeit, hogyan lehetne vertikálisan középre rendezni

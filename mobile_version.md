@@ -1,7 +1,7 @@
 ![](Arculati_Elemek/Logo/logo-long.png)
 
 <details>
-	<summary><h2>Menü</h2></summary>
+	<summary><h2 id="Menu" style="display: inline-block;">Menü</h2></summary>
 - [Rólunk](/rolunk.html)
 - [Programok](/programok.html)
 - [Szakmai nap](/SzakmaiNap.html)
@@ -13,9 +13,11 @@
 - [Kapcsolat](/kapcsolat.html)
 </details>
 
+<br>
+
 ![](src/pictures/SlideShow/2024-25.webp)
 
-### Kedves Gólyák!
+<h2 id="kedves" style="display: inline-block; border-bottom: none;">Kedves Gólyák!</h2>
 
 Örömmel hirdetjük, hogy a ti érkezéseteket előkészítők szorgos csapata egy pdf-ben összefoglalta nektek a legfontosabb
 tudni valókat! Még térkép is vagyon benne a zegzugos épület útvesztőjéről™. Használjátok
@@ -41,8 +43,9 @@ szellemileg is művelhettük magunkat a kollégium falain belül. És mindez per
 kifújni a gőzt és megpihenni, elbújva az élet forgatagától valamelyik udvarunkon és tűz mellett sütögetni, sörpongozni
 vagy csak olvasgatni a napsütésénben sütkérezve. Ezen programokból [válogattunk össze itt néhányat!](programok.html)
 
-### Igazgató: Dobosiné Rizmayer Rita
 
+<details>
+	<summary><h3 style="display: inline-block;">Igazgató: Dobosiné Rizmayer Rita</h3></summary>
 ![](src/pictures/honlap_kepek/093_0439_DorciRitaRegeKosza_2022aprilis_nnfoto.webp)
 Szeretettel köszöntök mindenkit a megújult honlapunkon, amelyet nagy büszkeségemre az egyik szeráflakó rakott össze. 🙂 A
 fényképemet látva gondolom, nyilvánvaló, hogy mi a közös Szent Ferencben és bennem. Persze az állatok szeretetén túl
@@ -66,3 +69,6 @@ elkötelezett hitéletükkel képviselik a keresztény és ferences értékeket 
 hozzájárulnak a társadalmi felelősségvállaláshoz, és önkéntes munkájukkal felelősségteljesen részt vesznek a
 Diákbizottság által irányított egyes munkacsoportokban, ezáltal gyakorolva és megtapasztalva a széleskörű autonómiával
 rendelkező önkormányzatiság jogait és felelősségét.”
+</details>
+
+<br>
