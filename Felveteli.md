@@ -11,6 +11,7 @@
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
 - [Kapcsolat](/kapcsolat.html)
+- [FerencEST](/ferencest.html)
 </details>
 
 ![](src/pictures/Kollegium_Bejarat.webp)

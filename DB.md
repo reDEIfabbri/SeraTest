@@ -11,6 +11,7 @@
 - [Dokumentumok](/dokumentumok.html)
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
+- [FerencEST](/ferencest.html)
 </details>
 
 ![](src/pictures/honlap_kepek/DB/2526i/CutOsszkep.webp)

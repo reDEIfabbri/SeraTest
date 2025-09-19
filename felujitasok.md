@@ -12,6 +12,7 @@
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
 - [Kapcsolat](/kapcsolat.html)
+- [FerencEST](/ferencest.html)
 </details>
 
 A kollégium épületének felújítása egy folyamatos projekt, melyet azon tény is nehezít, miszerint ez egy műemlék... Ez

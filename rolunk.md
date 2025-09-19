@@ -12,6 +12,7 @@
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
 - [Kapcsolat](/kapcsolat.html)
+- [FerencEST](/ferencest.html)
 </details>
 
 <br>
