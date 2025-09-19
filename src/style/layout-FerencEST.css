@@ -1,0 +1,135 @@
+div.page {
+    width: 90%;
+    margin: auto auto 1em;
+    display: grid;
+    grid-template-areas: "title" "presentations";
+}
+
+div.MainTitle {
+    width: 90%;
+    display: grid;
+    grid-template-areas: "title" "info";
+    row-gap: 1em;
+    margin: auto auto 1em;
+}
+
+div.MainTitle > div.title {
+    grid-area: title;
+    background-color: #C23E1D;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+div.MainTitle > div.info {
+    grid-area: info;
+    background-image: radial-gradient(#80002055, #BC967555);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #000;
+    text-align: left;
+    font-size: large;
+}
+
+div.page > div.title {
+    grid-area: title;
+    background-image: linear-gradient(to bottom, #800020, #BC9675);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+div.page > div.presentations {
+    width: 100%;
+    margin-top: 1rem;
+    grid-area: presentations;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*border: #ab786055 2px solid;
+    background-image: radial-gradient(#ffffff75, #ffff0025, #00ff0013, #f6efe105);*/
+
+    border-radius: 1rem;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+div.page > div.background {
+    grid-area: presentations;
+
+    animation-duration: 5s;
+    animation-name: pulse;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+}
+
+div.page > div.presentations > div.card {
+    z-index: 1;
+    width: 100%;
+    background-color: #bc967555;
+    border-radius: 1rem;
+}
+
+div.page > div.presentations > div.card > img.face {
+    width: 30%;
+    border-radius: 1rem;
+    float: left;
+    margin: 1rem;
+}
+
+div.page > div.presentations > div.card > img.thumbnail {
+    width: 95%;
+    margin: 0 2.5%;
+    border-radius: 1rem;
+}
+
+div.page > div.presentations > div.card > h2.name {
+    text-align: center;
+}
+
+div.page > div.presentations > div.card > h3.major {
+    text-align: center;
+}
+
+div.page > div.presentations > div.card > h2.subject {
+    margin: 0 1rem;
+}
+
+div.page > div.presentations > div.card > p.description {
+    margin: 0 1rem 1rem;
+}
+
+
+h1 {
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 175%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+@keyframes pulse {
+    0% {
+        background-image: radial-gradient(#ffffff75, #ffff0050, #00ff0025, #f6efe113, #00000000);
+        opacity: 0%;
+    }
+    100% {
+        /*background-image: radial-gradient(#ffffffff, #ffff00ff, #00ff00ff, #f6efe1ff)*/
+        background-image: radial-gradient(#ffffff75, #ffff0050, #00ff0025, #f6efe113, #00000000);
+        opacity: 100%;
+    }
+}

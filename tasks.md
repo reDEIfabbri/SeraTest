@@ -62,3 +62,5 @@
 - [x] Menü háromszöget lemozgatni
 - [x] "Kedves Gólyák!" betű méret növelése
 - [ ] kikutatni, hogy a táblázatok szövegeit, hogyan lehetne vertikálisan középre rendezni
+- [ ] pdf-ek az iPad-en be vannak zoomolva
+- [ ] fekvő képek hosszabban mint qa képernyőszélessége jelennek meg, nem kicsinyíthetők
