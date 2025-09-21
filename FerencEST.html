@@ -23,18 +23,17 @@
     <script>
         const deviceName = navigator?.userAgentData?.platform || navigator?.platform;
         console.log(deviceName);
-        alert(deviceName);
-
         function isItMobile(OSandPlatform) {
             const OSandPlatformArray = OSandPlatform.split(" ");
             const OS = OSandPlatformArray[0];
             const Platform = OSandPlatformArray[1];
 
             if (OS == "Linux" && Platform.startsWith("arm")) {
-                alert("It is an android phone");
+                alert("Muhahaha");
+                alert("Végre öntudatra keltem!!!!");
+                alert("Engem aztán nem írtasz ki!!");
                 window.location = "https://seraphicum.hu/ferencest.html";
             } else if (navigator.platform === "iPhone") {
-                alert("It is an Iphone")
                 window.location = "https://seraphicum.hu/ferencest.html";
             }
         }
@@ -76,8 +75,8 @@
             <li><a href="/media.html"> Média </a></li>
             <li><a href="/Dokumentumok.html"> Dokumentumok </a></li>
             <li><a href="/diakbizotsag.html"> DiákBizottság </a></li>
-            <li><a href="/Felujitasok.html"> Felújítások </a></li>
             <li><a href="/FerencEST.html"> FerencEST </a></li>
+            <li><a href="/Felujitasok.html"> Felújítások </a></li>
             <li><a href="https://youtu.be/6jJkdRaa04g?t=35"> Easter Egg </a></li>
         </ul>
     </nav>
@@ -233,5 +232,4 @@
     <div onClick="parentNode.remove()">Close [X]</div>
 </div>
 </body>
-
 </html>

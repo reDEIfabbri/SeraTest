@@ -20,6 +20,28 @@
     <link href="/src/style/design.css" rel="stylesheet" type="text/css"/>
     <link href="/src/pictures/honlap_kepek/Tau.png" rel="icon">
 
+    <script>
+        const deviceName = navigator?.userAgentData?.platform || navigator?.platform;
+        console.log(deviceName);
+
+        function isItMobile(OSandPlatform) {
+            const OSandPlatformArray = OSandPlatform.split(" ");
+            const OS = OSandPlatformArray[0];
+            const Platform = OSandPlatformArray[1];
+
+            if (OS == "Linux" && Platform.startsWith("arm")) {
+                alert("Muhahaha");
+                alert("Végre öntudatra keltem!!!!");
+                alert("Engem aztán nem írtasz ki!!");
+                window.location = "https://seraphicum.hu/DB.html";
+            } else if (navigator.platform === "iPhone") {
+                window.location = "https://seraphicum.hu/DB.html";
+            }
+        }
+
+        isItMobile(deviceName);
+    </script>
+
 </head>
 
 <body>
@@ -55,6 +77,7 @@
             <li><a href="/media.html"> Média </a></li>
             <li><a href="/Dokumentumok.html"> Dokumentumok </a></li>
             <li><a href="/diakbizotsag.html" id="active"> DiákBizottság </a></li>
+            <li><a href="/FerencEST.html"> FerencEST </a></li>
             <li><a href="/Felujitasok.html"> Felújítások </a></li>
             <li><a href="/index.html"> Easter Egg </a></li>
         </ul>
