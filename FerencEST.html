@@ -28,7 +28,7 @@
             const OS = OSandPlatformArray[0];
             const Platform = OSandPlatformArray[1];
 
-            if (OS == "Linux" && Platform.startsWith("arm")) {
+            if (OS === "Linux" && Platform.startsWith("arm")) {
                 window.location = "ferencest.html";
             } else if (navigator.platform === "iPhone") {
                 window.location = "ferencest.html";
@@ -44,7 +44,7 @@
 <body>
 <div class="heading">
     <header ID="long-logo">
-        <img src="Arculati_Elemek/Logo/logo-long.png">
+        <img alt="" src="/Arculati_Elemek/Logo/logo-long.png">
     </header>
     <!--
     <header ID="small-logo">
