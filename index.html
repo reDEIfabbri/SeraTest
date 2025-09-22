@@ -21,6 +21,25 @@
 
     <script src="/src/scripts/slideshow.js"></script>
 
+    <script>
+        const deviceName = navigator?.userAgentData?.platform || navigator?.platform;
+        console.log(deviceName);
+
+        function isItMobile(OSandPlatform) {
+            const OSandPlatformArray = OSandPlatform.split(" ");
+            const OS = OSandPlatformArray[0];
+            const Platform = OSandPlatformArray[1];
+
+            if (OS == "Linux" && Platform.startsWith("arm")) {
+                window.location = "mobile_version.html";
+            } else if (navigator.platform === "iPhone") {
+                window.location = "mobile_version.html";
+            }
+        }
+
+        isItMobile(deviceName);
+    </script>
+
 </head>
 
 <body>
@@ -299,6 +318,6 @@
 <footer>
     <script src="/src/scripts/slideshow.js"></script>
     <script src="/src/scripts/slideshow2.js"></script>
-    <script src="/src/scripts/SANYI.js"></script>
+    <!-- <script src="/src/scripts/SANYI.js"></script> --->
 </footer>
 </html>
