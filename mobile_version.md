@@ -4,14 +4,15 @@
 	<summary><h2 id="Menu" style="display: inline-block;">Menü</h2></summary>
 - [Rólunk](/rolunk.html)
 - [Programok](/programok.html)
+- [Média](/Media.html)
 - [Szakmai nap](/SzakmaiNap.html)
 - [Felvételi](/Felveteli.html)
 - [Galéria](/Galeria.html)
 - [Dokumentumok](/Dokumentumok.html)
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
-- [Kapcsolat](/kapcsolat.html)
 - [FerencEST](/ferencest.html)
+- [Kapcsolat](/kapcsolat.html)
 </details>
 
 <br>

@@ -2,6 +2,7 @@
 
 <details>
 	<summary><h2 id="Menu" style="display: inline-block;">Menü</h2></summary>
+- [Kezdőlap](/mobile_version.html)
 - [Rólunk](/rolunk.html)
 - [Programok](/programok.html)
 - [Média](/Media.html)

@@ -2,8 +2,10 @@
 
 <details>
 	<summary><h2>Menü</h2></summary>
+- [Kezdőlap](/mobile_version.html)
 - [Rólunk](/rolunk.html)
 - [Programok](/programok.html)
+- [Média](/Media.html)
 - [Szakmai nap](/SzakmaiNap.html)
 - [Felvételi](/Felveteli.html)
 - [Galéria](/Galeria.html)

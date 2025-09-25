@@ -5,6 +5,7 @@
 - [Kezdőlap](/mobile_version.html)
 - [Rólunk](/rolunk.html)
 - [Programok](/programok.html)
+- [Média](/Media.html)
 - [Szakmai nap](/SzakmaiNap.html)
 - [Felvételi](/Felveteli.html)
 - [Galéria](/Galeria.html)
@@ -12,6 +13,7 @@
 - [DiákBizottság](/DB.html)
 - [Felújítások](/felujitasok.html)
 - [FerencEST](/ferencest.html)
+- [Kapcsolat](/kapcsolat.html)
 </details>
 
 ![](src/pictures/honlap_kepek/DB/2526i/CutOsszkep.webp)
