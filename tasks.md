@@ -52,9 +52,9 @@
 
 # Mobil verzió feladatok:
 
-- [ ] képek válogatása
-    - [ ] kezdőlapra (1db)
-    - [ ] Szakmai Napra (1db)
+- [x] képek válogatása
+    - [x] kezdőlapra (1db)
+    - [ x Szakmai Napra (1db)
 - [ ] TM jel levétele
 - [x] social media logók megcsinálása
 - [x] igazgató nő lenyílóvá tétele

@@ -15,6 +15,8 @@
 - [FerencEST](/ferencest.html)
 </details>
 
+![](src/pictures/honlap_kepek/mobil_version/mv2.webp)
+
 # Szakmai nap
 
 ### 2025.04.06.

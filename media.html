@@ -23,6 +23,7 @@
     <script>
         const deviceName = navigator?.userAgentData?.platform || navigator?.platform;
         console.log(deviceName);
+        console.log("Illetlenség mások logjaiba csak úgy bele olvasgatni... ");
 
         function isItMobile(OSandPlatform) {
             const OSandPlatformArray = OSandPlatform.split(" ");
@@ -30,9 +31,6 @@
             const Platform = OSandPlatformArray[1];
 
             if (OS == "Linux" && Platform.startsWith("arm")) {
-                alert("Muhahaha");
-                alert("Végre öntudatra keltem!!!!");
-                alert("Engem aztán nem írtasz ki!!");
                 window.location = "https://seraphicum.hu/programok.html";
             } else if (navigator.platform === "iPhone") {
                 window.location = "https://seraphicum.hu/programok.html";
@@ -88,18 +86,6 @@
                 bama.hu</h1></a>
             <a href="https://www.bama.hu/helyi-kozelet/2025/09/collegium-seraphicum-szakkollegium-pecs">
                 <img alt="bama 2024" src="/src/bama3.png"> </a>
-        </section>
-
-        <section>
-            <a href="https://www.youtube.com/watch?v=RPv9pVK62xk" target="_blank"><h1>
-                Böjte Csaba a Seraphicumban!</h1></a>
-            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    frameborder="0"
-                    height="315" referrerpolicy="strict-origin-when-cross-origin"
-                    src="https://www.youtube-nocookie.com/embed/RPv9pVK62xk?si=1btYbDekM9BgKLI1"
-                    title="Böjte Csaba a Seraphicumban!" width="560">
-            </iframe>
         </section>
 
         <section>
