@@ -54,13 +54,6 @@ header#social {
 
 <br>
 
-<header ID="social" >
-        <a class="fa fa-facebook" href="https://www.facebook.com/Seraphicum/" target="_blank"></a>
-        <a class="fa fa-instagram" href="https://www.instagram.com/szeraf_koli/" target="_blank"></a>
-        <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpOokV3I5dHLWZNzvOiJa1w"
-           target="_blank"></a>
-</header>
-
 <br>
 ![](src/CsocsoJatek.webp)
 
@@ -75,4 +68,14 @@ Szerencsére még nem halt ki a spontaneitás művészete ifjaink közt, így re
 
 Sajnos ezeket itt mind felsorolni nehéz lenne, ezért inkább nyugodtan használjátok a fentebb belinkelt szociális
 médiáinkat, ahol előre szemezgettünk Nektek a legjobbakból...
- 
+
+<header ID="social" >
+        <a class="fa fa-facebook" href="https://www.facebook.com/Seraphicum/" target="_blank"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/szeraf_koli/" target="_blank"></a>
+        <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpOokV3I5dHLWZNzvOiJa1w"
+           target="_blank"></a>
+</header>
+
+<br>
+
+![](src/pictures/naptarak/sept25.webp)
