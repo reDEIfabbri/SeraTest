@@ -45,12 +45,12 @@ Járt nálunk Berhidai Piusz atya, Böjte Csaba testvér, Felföldi László pü
 tanultunk az újraélesztésről. (Még a félautomata defibrillátort is kipróbálhattuk a végtelenül türelmes bábun!) A
 FerencESTeken rendszeresen fogadtunk különféle előadókat, így szellemileg is művelhettük magunkat a kollégium falain
 belül. És mindez persze értelmetlen lett volna, ha nem tudjuk kifújni a gőzt és megpihenni, elbújva az élet forgatagától
-valamelyik udvarunkon és tűz mellett sütögetni, sörpongozni vagy csak olvasgatni a napsütésénben sütkérezve. Ezen
+valamelyik udvarunkon és tűz mellett sütögetni, sörpongozni vagy csak olvasgatni a napsütésében sütkérezve. Ezen
 programokból [válogattunk össze itt néhányat!](programok.html)
 
 
 <details>
-	<summary><h3 style="display: inline-block;">Igazgató: Dobosiné Rizmayer Rita</h3></summary>
+	<summary><h3 style="display: inline-block;">Igazgatónő: Dobosiné Rizmayer Rita</h3></summary>
 ![](src/pictures/honlap_kepek/igazgato.webp)
 Szeretettel köszöntök mindenkit a megújult honlapunkon, amelyet nagy büszkeségemre az egyik szeráflakó rakott össze 🙂 A fényképemet látva gondolom, nyilvánvaló, hogy mi a közös Szent Ferencben és bennem. Persze az állatok szeretetén túl igyekszem más területen is a nyomdokaiba lépni. <br>
             Szakmámat tekintve fordító, szinkrondramaturg és nyelvtanár vagyok, de azt tekintem a legfontosabb szerepemnek, hogy három (immáron nagy) gyermek édesanyja lehetek. Mellettük – a távol élő nagyszülők segítsége híján – az elmúlt években kifejleszthettem számos olyan képességet, amelyeket most a kollégium vezetését jelentő szerteágazó feladatok során kamatoztathatok. <br>
