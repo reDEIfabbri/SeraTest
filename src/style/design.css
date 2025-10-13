@@ -3,6 +3,31 @@
      src: url(../../Arculati_Elemek/libel-suit-rg.otf);
  }
 
+ @font-face {
+     font-family: Brightform;
+     src: url("../../Arculati_Elemek/Brightform_Font/Brightform.otf");
+ }
+
+ @font-face {
+     font-family: "Grako Demo";
+     src: url("../../Arculati_Elemek/Grako_Font/grako-demo-regular.ttf");
+ }
+
+ @font-face {
+     font-family: "Josefin Sans Thin";
+     src: url("../../Arculati_Elemek/Josefin_Sans_PT_Sans/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+ }
+
+ @font-face {
+     font-family: "Skyline Condensed";
+     src: url("../../Arculati_Elemek/Skyline_Condensed_Bold/Skyline Condensed Bold.otf");
+ }
+
+ @font-face {
+     font-family: Stockbridge;
+     src: url("../../Arculati_Elemek/stockbridge-1122467/Stockbridge.otf");
+ }
+
  h3, h2, h1, p {
      font-size: 150%;
  }
@@ -10,6 +35,13 @@
  body {
      background-color: #f6efe1;
      font-family: Libel_Suit_Rg, ui-rounded;
+     text-align: justify;
+     text-justify: inter-word;
+ }
+
+ body > p {
+     background-color: #f6efe1;
+     font-family: Brightform, sans-serif;
      text-align: justify;
      text-justify: inter-word;
  }
