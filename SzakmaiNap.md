@@ -27,7 +27,7 @@ tudását. Valaki a TDK vagy szakdolgozat témáját hozza rövid bemutatóra, v
 edukál, és akad olyan is, ki csak fun-fact-ekkel provokálja a hallgatóság szürkeállományát.
 Az alábbiakban a legutóbbi év előadóit és témáit mutatnánk be röviden a Kedves Olvasónak!
 
-## LÉVŐ - Kisdiplom Munka
+## LÉVŐ - Kisdiploma Munka
 
 <details>
 	<summary>Gyenese Anna - Grafikusművész</summary>
