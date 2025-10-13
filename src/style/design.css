@@ -28,6 +28,11 @@
      src: url("../../Arculati_Elemek/stockbridge-1122467/Stockbridge.otf");
  }
 
+ @font-face {
+     font-family: Oswald;
+     src: url("../../Arculati_Elemek/Bitter_Oswald/Oswald/Oswald-VariableFont_wght.ttf");
+ }
+
  h3, h2, h1, p {
      font-size: 150%;
  }
@@ -41,7 +46,7 @@
 
  body p {
      background-color: #f6efe1;
-     font-family: "Josefin Sans Thin", sans-serif;
+     font-family: "Oswald", sans-serif;
      text-align: justify;
      text-justify: inter-word;
  }
