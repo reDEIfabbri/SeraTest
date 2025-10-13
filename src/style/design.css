@@ -15,7 +15,7 @@
 
  @font-face {
      font-family: "Josefin Sans Thin";
-     src: url("../../Arculati_Elemek/Josefin_Sans_PT_Sans/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+     src: url("../../Arculati_Elemek/Josefin_Sans_PT_Sans/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf");
  }
 
  @font-face {
@@ -39,9 +39,9 @@
      text-justify: inter-word;
  }
 
- body > p {
+ body p {
      background-color: #f6efe1;
-     font-family: Brightform, sans-serif;
+     font-family: "Josefin Sans Thin", sans-serif;
      text-align: justify;
      text-justify: inter-word;
  }
