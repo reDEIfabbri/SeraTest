@@ -49,6 +49,13 @@ section a h2 {
 # Média megjelenéseink:
 
 <section>
+	<a href="https://zarandok.ma/uj-nemzedek-regi-ertekek-a-ferences-lelkiseg-ereje-pecsen-noiterero/" target="_blank">
+		<h2>NőiTérErő</h2>
+	</a>
+<iframe src="https://zarandok.ma/uj-nemzedek-regi-ertekek-a-ferences-lelkiseg-ereje-pecsen-noiterero/"></iframe>
+  </section>
+
+<section>
 	<a href="https://www.bama.hu/helyi-kozelet/2025/09/collegium-seraphicum-szakkollegium-pecs" target="_blank">
 		<h2>bama.hu</h2>
 	</a>
