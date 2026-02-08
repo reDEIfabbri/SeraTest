@@ -21,20 +21,21 @@
     <link href="/src/pictures/honlap_kepek/Tau.png" rel="icon">
 
     <script>
-        const deviceName = navigator?.userAgentData?.platform || navigator?.platform;
+        const deviceName = navigator.userAgentData?.platform || navigator.platform;
         console.log(deviceName);
 
-        function isItMobile(OSandPlatform) {
-            const OSandPlatformArray = OSandPlatform.split(" ");
-            const OS = OSandPlatformArray[0];
-            const Platform = OSandPlatformArray[1];
+        function isItMobile(platformString) {
+            if (!platformString) return;
+            const parts = platformString.split(" ");
+            const os = parts[0];
+            const arch = parts[1];
 
-            if (OS == "Linux" && Platform.startsWith("arm")) {
+            if (os === "Linux" && arch?.startsWith("arm")) {
                 console.log("It is an android phone");
-                window.location = "https://seraphicum.hu/programok.html";
+                window.location.href = "https://seraphicum.hu/programok.html";
             } else if (navigator.platform === "iPhone") {
-                console.log("It is an Iphone")
-                window.location = "https://seraphicum.hu/programok.html";
+                console.log("It is an iPhone");
+                window.location.href = "https://seraphicum.hu/programok.html";
             }
         }
 
@@ -51,15 +52,10 @@
         src="https://connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v19.0"></script>
 
 <div class="heading">
-    <header ID="long-logo">
+    <header id="long-logo">
         <img src="Arculati_Elemek/Logo/logo-long.png">
     </header>
-    <!--
-    <header ID="small-logo">
-        <img src="smalll-logo.webp" width="100%">
-    </header>
-    -->
-    <header ID="social">
+    <header id="social">
         <a class="fa fa-facebook" href="https://www.facebook.com/Seraphicum/" target="_blank"></a>
         <a class="fa fa-instagram" href="https://www.instagram.com/szeraf_koli/" target="_blank"></a>
         <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpOokV3I5dHLWZNzvOiJa1w"
@@ -88,189 +84,80 @@
 </div>
 
 <div class="page">
-    <!--<div class="fb-post"
-         data-href="" data-show-text="true">
-    </div> --->
+    <script>
+        const fbUrls = [
+            "https://www.facebook.com/Seraphicum/posts/pfbid02rqaqWFDbhxt5Ep28p7iLDTNYd22yMMgFkamFaBXhp8MQs8ZZsVV4e3q1mK6xx3fel",
+            "https://www.facebook.com/Seraphicum/posts/pfbid03Ca1TCxoEAfLzuWBAJKesqpxPdgTZysfqMc5eSqr2MLiEnhR1pgM1pWUyrJSasbcl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0NCPb8gqui9pgHVAj3dAEYPTnSA7ANw3PcHZfdmaP3zbjD9qHVRiyRtM8mYZ4zQEUl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02S4bcZYR4DjmSphoXyyhazFDohD5G6MwMHiZ94HXw3Q1C7aMVxwuML1pmbTM5dWEJl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0oYuQbcMGCxEWGor5d5TH6ag63edGtPv42jeG5pLbKg4ynhjpTVLymcLuYfvgYWEPl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0NKpLbhoggE6ngpborxTW8URr9mUnWXWw481DxNeJh5R14PfdrRSLCbRKMEKarnWZl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0opCDdDep1ptmqGvUGJhTvniup2HcAHmB813r2rbUMjLyFCtU27UZygnqjG8pjwaol",
+            "https://www.facebook.com/Seraphicum/posts/pfbid027MNq4sFgrLfkZhyUxCi27arADxmVTbTLnchfoVExWL13GGJrTNJvY75iLPqmRAKfl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0cpBuHEVSUwPswAqfuSTzF6gwMvYuCaKQzWU9vCSvrdmeqwZivgQh9sQkZSwswk4Vl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02tLjWyyVkYbTiKpCs4N6VUfBvK5bq4fK3r3y9WnqhU3QPchWkfyMiVpV3iqkaFmUFl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0rcG8Gk3Fsw5VyZ3Sz3aiQkq1TjNaVojMziyHVu5ZpXdLDTDZ7H9nPXDBbCJ45JFjl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02TyfWJtcxD7UDFawsLXk9diWkNRkPNbCDU3Uasp4DBgUKrbsUhrg9G61VC884n57dl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0Acpr4knWqKrbmGxJ2V9Gfjq5hjPx1wUsZkt2KR293zYBmDga7gT46qidiG7pBztDl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0QUW6gxEtsBtMP1GJrLMuCVYmxCtLSaGBy14dTkb2Qgim5G9UAd5378HaEJC5w3iql",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0HJdWyCD7dq4DdXYu9XtxMUCyz3Y98nzHwMbKjkETTd2APArK4zXr6LvuKGmwr9qfl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0TuvKh2PN4rKKgtJWD1YFkmx2ZpMj9TbzjJxN2qYPemXytKUc98aQDeWJEs9VBnV5l",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0jeoozMra9bdsz48LS4GPv4eY9pazFynNvxcRQ6B2ByJ7qXcQKEriMGTNfjCSjXXol",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02Ny2P2dSMeerHyyVRvvBB5L96SSpFsBf7dRKkXqaHSfPCHD6k28fGRq3kxTjwvgyfl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid01RLKdVGMujfptYdqURbdgvY9cbbYSicbtgDgzDBFPuXM1r1KBoY4VnH75o4RJkHFl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02zR876FqG4ge82MELt6jnCov46C4nFsmKU9UbqSjd2ch59z1c4JkyrEy7wGbpcPtDl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02jfu4uvs4AR6pHuam4M5cacPQiEcZHZ7DT81nHdQtotHwcgMT4nU8uoTHZhaVNsNXl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02zHUb7toXszV5TDf9pwDBrecKFVnTUboNjtJo4ak94rg1QwDHfVH1qBymLekdkzPRl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0Dink8kqgEtiWrJrpnsFGAKhG3uzHXYcYXpg2vpCLqeCcJYCAwr3Cj5ougJ2Z3kDRl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0qf4PjrHE6pdrKKCgZvxVeGAN1Xv1EvMarifgYnej22dLUoveMUC128WqYagVqhbDl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0xQ2ocdsVW956U2akBau5K47CDsLyGbxtAEFMUKUDet8tboJL2Bw7EopaDvFnXdgGl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid029Te8A5JKqNNMsVaS4gehe1ZmJxmrvDpa51mwCCvKTzHqEY9WXGGSyD9gMQKdyqJYl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0MbHNUKbWbCd5sYQ21quahbLnrgpfM5hn19oPQB9A3FUff116AwdMvjXUGGSc7LM5l",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0dThtkQW4tX9niR6gerxxpYduB5z4UZsFNnuLNPA7Nk4CDcced3pi5No2MHWW6CLTl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0Xp5JuAf5wafoPhMBVrHxj8thqF8t5XKBSsFY8nhzZuYWdPCFsSBWsVnwJgG4LSFrl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02UmUtsTzTB82s7jcWFht512MSYjkYxReAwfAxpxYATtcPZHwRpQmmKWaiXjSaVp5Sl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0xPvSoCUcjeXeSaWiwPGgrZTtTSdFpQD4oXrveDzTooFr5eiqj1tu9kxChgo5unMdl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0DRkLdZ4jBREHWT6mRVHfEWScNgmNBiu6UfUrxSPNwW5ZDQW4C8WhRE5hYF3BBu3il",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02v2Rfp41JKsUSgiUDtwqDtasQnVwRdbPeZGsTrugmJwBe3gC5ZofTVi6YXhDjAvNLl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0F2gjQ2LwDt7BAVZfaJZRPryEymAHKcp55RbCYsTpgrubpyVSysfsQMQdy9a8i4fil",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02xPhjzoi1HbqZHkMJy5GbXFrnjpefxrNHgBm3phPf5LWrvZdXhezcTerPwK4HoXo6l",
+            "https://www.facebook.com/Seraphicum/posts/pfbid035fFhd6z4nr2HPCvEF7WgVGsNpkx4AFvU9VSefYEEkUeuNiYdN8Q5xW65sLXsoT1el",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02mwr74XfPuXe5NWufYkfrM7GCFnVPfLcsdzeCsGqJQdWNe35XVyrj4aJ8qkw6pWKl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0FAbKLbvyhfna2P4xCFDbrT1cXoV3SDNkKAdBPXdoFhZf4m1TudkbLuzWSM7hQMHVl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid033G3YUijWQQ3UZCK5GtSSyL8bRugGoCfkXMzfmJgU4AVCH127kbVEL8eyRyQuJAiUl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02jXBB5PNkEh8twisHZaUWahgVoJwTZp4vgB2fagFFiH5mUVjN3HC92UYWXfMVeuJsl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0XAye7WiuRCnjn6qmMfPfP18MhdagcZHf7hYDoFZBw5NwqLkfhMke2xQSPBSEcwqAl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid024P8n6jTM9MLp3R1sbiRpTj89h8uQbmNXRX8AScwXhcBy4pMbTtbz7TWCRAEghPgLl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02RaWjmQ9ReDJDMvZHM9HHcR5ViSscEVxunGFKz4BCg24JGFzPQLmEhQLFNFCf5o2Cl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02sKBuEm51ojgb4jE8z8fKVNz8LdNN1q2DfPrkcTUT5rURgYNfTapscV4uLBqNm1hQl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02ryJi3M7XFRNEhrFsgRKMvuCRxzkES5WAaVXMdppNrNfxaYi5capu8JJquHhN2t2ul",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0xae8qftbQzwmbVXteZ2tMAEchAULtA4ECnfXQ93dkKaYytKcQRz3uEGpiqFgVJnRl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid024yxLwWME2yqKkm8DxLYvpkcdC63n3pmHpgjPkxwoPKt4kSbn26W9swCPZq5MSsyMl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid03XY2dbZQA1kawPyafE19DeYcTFXVv9wbXLA8VYaHfuW8xDpz4t5EiHEeAyu8JdhDl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0MdUbhDuTRfp89bqBbRBTuu4duSuWH8VyXmrS3mVDQzbDDnss48Jg54ak4m2F1hUql",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0eGEoPbEWeJvcsfmNaDX3dKdEvX6KWHDfSinqGxEtxqPjr3KUZxn8eX2dv1HD1SLKl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0quRTkMNLB68ks6UR4Px7jFcKFwnnnQtnQhnzKYpnj971j7FqqspuELgaTZB6n7fil",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0D1LkJsajqxj6oV1EFuwn7SCTnSfapcHfgH17VQr4NBMvZjLuK7oMqAbRT9HoB2pHl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0kQkLACh52oBhAkrEg3Br5GfaWmgU1YaNNxbgn4gCPYDyHKwr7GVZuiNwvVQLbBcKl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02W5sksr8Sj8UbYMYYivrpZGAYQTx9f8uWqX9dabs61uiuEXTNBhSipYYk6Hebup1Vl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02zs3TfRVqvpFme5mPWfBzd8c7WXRyd1v9QV5yNMaqqwr3ZHGF9dsBmscHjaguzuMLl",
+            "https://www.facebook.com/Seraphicum/posts/1275032113758726:1275032113758726",
+            "https://www.facebook.com/Seraphicum/posts/pfbid0awe3RBtFC2yfWWa96iaFe6PageZDgYiuzJ9VYEic8BdXFzLjsLZkCmnxa6kmgVNBl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02MQkAJA4jj6CSemYC9h6XkuegyWUFC7K4Tt6tzLhJihWHbWLoYWxU8fV282AJqWX2l",
+            "https://www.facebook.com/Seraphicum/posts/pfbid063NbKCpPoq3nXVVmvP5EwBGGgfvcut5oyjuYt7sApZvERMJroVijzg5Uh6hFVw4Sl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02oAjrVtUjfVHcFa7sjyjo4N1YjZhouBXTxr8T7ixvtNXsBYfZvprqbyP2Jf1yXmycl",
+            "https://www.facebook.com/Seraphicum/posts/pfbid02jV1pv2ph1BD1Jey1BFHmxCzeufegKfLPdnG9vwwFWZZg1S5kFPFzM37k7DdN6ScJl"
+        ];
 
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02rqaqWFDbhxt5Ep28p7iLDTNYd22yMMgFkamFaBXhp8MQs8ZZsVV4e3q1mK6xx3fel"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid03Ca1TCxoEAfLzuWBAJKesqpxPdgTZysfqMc5eSqr2MLiEnhR1pgM1pWUyrJSasbcl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0NCPb8gqui9pgHVAj3dAEYPTnSA7ANw3PcHZfdmaP3zbjD9qHVRiyRtM8mYZ4zQEUl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02S4bcZYR4DjmSphoXyyhazFDohD5G6MwMHiZ94HXw3Q1C7aMVxwuML1pmbTM5dWEJl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0oYuQbcMGCxEWGor5d5TH6ag63edGtPv42jeG5pLbKg4ynhjpTVLymcLuYfvgYWEPl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0NKpLbhoggE6ngpborxTW8URr9mUnWXWw481DxNeJh5R14PfdrRSLCbRKMEKarnWZl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0opCDdDep1ptmqGvUGJhTvniup2HcAHmB813r2rbUMjLyFCtU27UZygnqjG8pjwaol"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid027MNq4sFgrLfkZhyUxCi27arADxmVTbTLnchfoVExWL13GGJrTNJvY75iLPqmRAKfl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0cpBuHEVSUwPswAqfuSTzF6gwMvYuCaKQzWU9vCSvrdmeqwZivgQh9sQkZSwswk4Vl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02tLjWyyVkYbTiKpCs4N6VUfBvK5bq4fK3r3y9WnqhU3QPchWkfyMiVpV3iqkaFmUFl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0rcG8Gk3Fsw5VyZ3Sz3aiQkq1TjNaVojMziyHVu5ZpXdLDTDZ7H9nPXDBbCJ45JFjl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02TyfWJtcxD7UDFawsLXk9diWkNRkPNbCDU3Uasp4DBgUKrbsUhrg9G61VC884n57dl"
-         data-show-text="true">
-    </div>
-
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0Acpr4knWqKrbmGxJ2V9Gfjq5hjPx1wUsZkt2KR293zYBmDga7gT46qidiG7pBztDl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0QUW6gxEtsBtMP1GJrLMuCVYmxCtLSaGBy14dTkb2Qgim5G9UAd5378HaEJC5w3iql"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0HJdWyCD7dq4DdXYu9XtxMUCyz3Y98nzHwMbKjkETTd2APArK4zXr6LvuKGmwr9qfl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0TuvKh2PN4rKKgtJWD1YFkmx2ZpMj9TbzjJxN2qYPemXytKUc98aQDeWJEs9VBnV5l"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0jeoozMra9bdsz48LS4GPv4eY9pazFynNvxcRQ6B2ByJ7qXcQKEriMGTNfjCSjXXol"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02Ny2P2dSMeerHyyVRvvBB5L96SSpFsBf7dRKkXqaHSfPCHD6k28fGRq3kxTjwvgyfl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid01RLKdVGMujfptYdqURbdgvY9cbbYSicbtgDgzDBFPuXM1r1KBoY4VnH75o4RJkHFl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02zR876FqG4ge82MELt6jnCov46C4nFsmKU9UbqSjd2ch59z1c4JkyrEy7wGbpcPtDl"
-         data-show-text="true">
-    </div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02jfu4uvs4AR6pHuam4M5cacPQiEcZHZ7DT81nHdQtotHwcgMT4nU8uoTHZhaVNsNXl"
-         data-show-text="true">
-    </div>
-
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02zHUb7toXszV5TDf9pwDBrecKFVnTUboNjtJo4ak94rg1QwDHfVH1qBymLekdkzPRl"
-         data-show-text="true">
-
-    </div>
-
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0Dink8kqgEtiWrJrpnsFGAKhG3uzHXYcYXpg2vpCLqeCcJYCAwr3Cj5ougJ2Z3kDRl"
-         data-show-text="true"></div>
-
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0qf4PjrHE6pdrKKCgZvxVeGAN1Xv1EvMarifgYnej22dLUoveMUC128WqYagVqhbDl"
-         data-show-text="true"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0xQ2ocdsVW956U2akBau5K47CDsLyGbxtAEFMUKUDet8tboJL2Bw7EopaDvFnXdgGl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid029Te8A5JKqNNMsVaS4gehe1ZmJxmrvDpa51mwCCvKTzHqEY9WXGGSyD9gMQKdyqJYl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0MbHNUKbWbCd5sYQ21quahbLnrgpfM5hn19oPQB9A3FUff116AwdMvjXUGGSc7LM5l"
-         data-show-text="true"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0dThtkQW4tX9niR6gerxxpYduB5z4UZsFNnuLNPA7Nk4CDcced3pi5No2MHWW6CLTl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0Xp5JuAf5wafoPhMBVrHxj8thqF8t5XKBSsFY8nhzZuYWdPCFsSBWsVnwJgG4LSFrl"></div>
-
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02UmUtsTzTB82s7jcWFht512MSYjkYxReAwfAxpxYATtcPZHwRpQmmKWaiXjSaVp5Sl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0xPvSoCUcjeXeSaWiwPGgrZTtTSdFpQD4oXrveDzTooFr5eiqj1tu9kxChgo5unMdl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0DRkLdZ4jBREHWT6mRVHfEWScNgmNBiu6UfUrxSPNwW5ZDQW4C8WhRE5hYF3BBu3il"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02v2Rfp41JKsUSgiUDtwqDtasQnVwRdbPeZGsTrugmJwBe3gC5ZofTVi6YXhDjAvNLl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0F2gjQ2LwDt7BAVZfaJZRPryEymAHKcp55RbCYsTpgrubpyVSysfsQMQdy9a8i4fil"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02xPhjzoi1HbqZHkMJy5GbXFrnjpefxrNHgBm3phPf5LWrvZdXhezcTerPwK4HoXo6l"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid035fFhd6z4nr2HPCvEF7WgVGsNpkx4AFvU9VSefYEEkUeuNiYdN8Q5xW65sLXsoT1el"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02mwr74XfPuXe5NWufYkfrM7GCFnVPfLcsdzeCsGqJQdWNe35XVyrj4aJ8qkw6pWKl"></div>
-
-
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0FAbKLbvyhfna2P4xCFDbrT1cXoV3SDNkKAdBPXdoFhZf4m1TudkbLuzWSM7hQMHVl"></div>
-
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid033G3YUijWQQ3UZCK5GtSSyL8bRugGoCfkXMzfmJgU4AVCH127kbVEL8eyRyQuJAiUl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02jXBB5PNkEh8twisHZaUWahgVoJwTZp4vgB2fagFFiH5mUVjN3HC92UYWXfMVeuJsl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0XAye7WiuRCnjn6qmMfPfP18MhdagcZHf7hYDoFZBw5NwqLkfhMke2xQSPBSEcwqAl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid024P8n6jTM9MLp3R1sbiRpTj89h8uQbmNXRX8AScwXhcBy4pMbTtbz7TWCRAEghPgLl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02RaWjmQ9ReDJDMvZHM9HHcR5ViSscEVxunGFKz4BCg24JGFzPQLmEhQLFNFCf5o2Cl"></div>
-
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02sKBuEm51ojgb4jE8z8fKVNz8LdNN1q2DfPrkcTUT5rURgYNfTapscV4uLBqNm1hQl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02ryJi3M7XFRNEhrFsgRKMvuCRxzkES5WAaVXMdppNrNfxaYi5capu8JJquHhN2t2ul"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0xae8qftbQzwmbVXteZ2tMAEchAULtA4ECnfXQ93dkKaYytKcQRz3uEGpiqFgVJnRl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid024yxLwWME2yqKkm8DxLYvpkcdC63n3pmHpgjPkxwoPKt4kSbn26W9swCPZq5MSsyMl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid03XY2dbZQA1kawPyafE19DeYcTFXVv9wbXLA8VYaHfuW8xDpz4t5EiHEeAyu8JdhDl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0MdUbhDuTRfp89bqBbRBTuu4duSuWH8VyXmrS3mVDQzbDDnss48Jg54ak4m2F1hUql"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0eGEoPbEWeJvcsfmNaDX3dKdEvX6KWHDfSinqGxEtxqPjr3KUZxn8eX2dv1HD1SLKl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0quRTkMNLB68ks6UR4Px7jFcKFwnnnQtnQhnzKYpnj971j7FqqspuELgaTZB6n7fil"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0D1LkJsajqxj6oV1EFuwn7SCTnSfapcHfgH17VQr4NBMvZjLuK7oMqAbRT9HoB2pHl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0kQkLACh52oBhAkrEg3Br5GfaWmgU1YaNNxbgn4gCPYDyHKwr7GVZuiNwvVQLbBcKl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02W5sksr8Sj8UbYMYYivrpZGAYQTx9f8uWqX9dabs61uiuEXTNBhSipYYk6Hebup1Vl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02zs3TfRVqvpFme5mPWfBzd8c7WXRyd1v9QV5yNMaqqwr3ZHGF9dsBmscHjaguzuMLl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/1275032113758726:1275032113758726"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid0awe3RBtFC2yfWWa96iaFe6PageZDgYiuzJ9VYEic8BdXFzLjsLZkCmnxa6kmgVNBl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02MQkAJA4jj6CSemYC9h6XkuegyWUFC7K4Tt6tzLhJihWHbWLoYWxU8fV282AJqWX2l"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid063NbKCpPoq3nXVVmvP5EwBGGgfvcut5oyjuYt7sApZvERMJroVijzg5Uh6hFVw4Sl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02oAjrVtUjfVHcFa7sjyjo4N1YjZhouBXTxr8T7ixvtNXsBYfZvprqbyP2Jf1yXmycl"></div>
-    <div class="fb-post"
-         data-href="https://www.facebook.com/Seraphicum/posts/pfbid02jV1pv2ph1BD1Jey1BFHmxCzeufegKfLPdnG9vwwFWZZg1S5kFPFzM37k7DdN6ScJl"></div>
+        const container = document.querySelector('.page');
+        fbUrls.forEach(url => {
+            const div = document.createElement('div');
+            div.className = "fb-post";
+            div.setAttribute("data-href", url);
+            div.setAttribute("data-show-text", "true");
+            container.appendChild(div);
+        });
+    </script>
 </div>
 
 <div class="footing">
@@ -290,48 +177,7 @@
         <img alt="a kollégium támogatóinak logói" src="/src/pictures/honlap_kepek/tamogatok.png">
     </footer>
 
-    <!--
-    <footer id="right">
-        Kapcsolat
-        <ul>
-            <a href="https://www.ferencesek.hu/" target="_blank">
-                <li>https://www.ferencesek.hu/</li>
-            </a>
-        </ul>
-        Információk:
-        <ul>
-            <a href="tamogatok.html" target="_blank">
-                <li>Támogatóink</li>
-            </a>
-            <li>Itt lakóknak</li>
-        </ul>
-    </footer>
-    --->
-    <!--
-    <footer id="right">
-        Kapcsolat
-        <ul>
-            <a href="https://www.ferencesek.hu/" target="_blank">
-                <li>https://www.ferencesek.hu/</li>
-            </a>
-        </ul>
-        Információk:
-        <ul>
-            <a href="tamogatok.html" target="_blank">
-                <li>Támogatóink</li>
-            </a>
-            <li>Itt lakóknak</li>
-        </ul>
-    </footer>
-    --->
 </div>
-
-<!--<div class="banner">-->
-<!--    <p> Támogasson minket adója 1%-val : <a href="/tamogatok.html"> Kattintson ide a további információkért.</a></p>-->
-<!--    <div onClick="parentNode.remove()">-->
-<!--        Nem, köszönöm én nem akarok most segíteni: [X]-->
-<!--    </div>-->
-<!--</div>-->
 
 </body>
 
