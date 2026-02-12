@@ -6,24 +6,15 @@ body {
 
 div.page {
     /*overflow: hidden;*/
-    width: 90%;
-    margin: 10px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: min-content;
-    gap: 10px;
     /*width: 90%;*/
 }
 
 div.page > section {
     display: inline-block;
-    max-width: 100%;
     min-height: 315px;
-}
-
-div.page > section > img {
-    max-width: 100%;
-    height: auto;
 }
 
 div.page > section > a > img {
@@ -35,7 +26,6 @@ div.page > section > iframe {
     aspect-ratio: 210/297;
     min-width: 210px;
     min-height: 297px;
-    width: 100%;
 }
 
 div.page > section img.inner {

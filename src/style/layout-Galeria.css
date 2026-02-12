@@ -5,13 +5,13 @@ body {
 div.page {
     width: 90%;
     margin: 1rem 5%;
-    height: max-content;
-    min-height: 400%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8vw;
 }
 
 section.year {
-    float: left;
-    margin: 0.4vw;
+    margin: 0;
     text-align: center;
     background: #ecc684;
     border-radius: 1rem;
@@ -40,7 +40,6 @@ section.year > img.thumbnail {
 }
 
 section.viewer {
-    float: left;
     width: 100%;
     height: 95vh;
     margin: 0;
@@ -62,6 +61,14 @@ section.viewer > div.butt {
     border-radius: 1rem;
     background: #ecc68455;
     align-content: center;
+}
+
+section.viewer > div.butt#prev {
+    grid-area: prev;
+}
+
+section.viewer > div.butt#next {
+    grid-area: next;
 }
 
 section.viewer > div.butt:hover {

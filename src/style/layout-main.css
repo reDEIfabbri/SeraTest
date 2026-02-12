@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 div.heading {
     overflow: hidden;
     float: left;
@@ -18,11 +22,6 @@ div.heading > header > img {
     margin-bottom: 10px;
     width: 50%;
 }
-
-/*
-Legyennek gap-ek a navbar-ban!
-https://ferenc800.hu/ dizályn példa
-*/
 
 div.navbar {
     width: 90%;
@@ -40,15 +39,13 @@ div.navbar>nav>ul {
     background-color: #9F8C76;
     border-radius: 15px;
     overflow: hidden;
-}
-
-div.navbar>nav>ul li {
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 div.navbar>nav>ul li a {
     font-size: 1.3em;
-    margin-right: 10px;
     display: block;
     padding: 8px;
     color: #fff;
@@ -60,8 +57,7 @@ div.navbar>nav>ul li a {
 }
 
 div.navbar>nav>ul li:last-child {
-    float: right;
-    margin: 0;
+    margin-left: auto;
 }
 
 div.navbar>nav>ul li:last-child a {
@@ -87,7 +83,7 @@ div.navbar nav ul li a:hover {
     opacity: 100%;
 }
 
-iv.navbar nav ul li a#felveteli:hover {
+div.navbar nav ul li a#felveteli:hover {
     background-color: #fff;
     color: rgb(194, 62, 29);
     border: 1px solid #000;
@@ -117,10 +113,10 @@ div.footing > footer#middle > img {
     height: auto;
 }
 
-/*
-div.footing #right {
+div.footing > footer#right {
     grid-area: footr;
-}*/
+    height: 100%;
+}
 
 header#social {
     position: absolute;
@@ -138,41 +134,35 @@ header#social {
     min-width: 4vw;
     aspect-ratio: 1;
     font-size: xx-large;
-    max-font-size: 50px;
     margin-bottom: 10px;
 }
 
 div.footing {
-    float-wrap: none;
     padding: 50px;
     display: grid;
     grid-template-areas:
-        'padl footl footr footm padr' /*Add footr if needed*/
-    ;
+        'padl footl footm footr padr';
     grid-template-rows: max-content;
-    grid-template-columns: 5% 40% 10% 40% 5%;
+    grid-template-columns: 5% 30% 30% 30% 5%;
 }
 
 @media only screen and (max-width: 1081px) {
 
     div.footing {
         width: 100%;
-        padding: 0;
-        display: block;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: large;
+        gap: 20px;
     }
 
-    div.footing > footer#left {
-        width: 80%;
-        font-size: large;
-    }
-
-    div.footing #middle {
-        width: 80%
-    }
-
-    div.footing #right {
-        width: 80%;
+    div.footing > footer#left,
+    div.footing > footer#middle,
+    div.footing > footer#right {
+        width: 90%;
+        margin: 0 auto;
     }
 
     div.heading > header > img {
@@ -197,7 +187,6 @@ div.footing {
         width: 100%;
         min-width: 48px;
         max-width: 75px;
-        max-font-size: 50px;
         margin-bottom: 10px;
     }
 
@@ -218,21 +207,18 @@ div.footing {
 
     div.footing {
         width: 100%;
-        padding: 0px;
-        display: block;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
 
-    div.footing #left {
-        width: 80%;
-        font-size: large;
-    }
-
-    div.footing #middle {
-        width: 80%
-    }
-
-    div.footing #right {
-        width: 80%;
+    div.footing > footer#left,
+    div.footing > footer#middle,
+    div.footing > footer#right {
+        width: 95%;
+        margin: 0 auto;
     }
 
     div.heading > header > img {
@@ -255,7 +241,6 @@ div.footing {
         width: 100%;
         min-width: 48px;
         max-width: 75px;
-        max-font-size: 50px;
         margin-bottom: 10px;
     }
 
@@ -286,14 +271,131 @@ div.banner > div {
     margin-top: 0;
 }
 
-/*div.SANYI {*/
-/*    position: fixed;*/
-/*    bottom: 0;*/
-/*    width: 100%;*/
-/*}*/
+div.SANYI {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}
 
 img#SANYI {
     position: fixed;
     bottom: 0;
     right: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    width: 100%;
+    justify-content: center;
+}
+
+.mySlides:first-of-type {
+    display: flex;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 90%;
+    position: relative;
+    margin: 10px max(85px, 5%);
+}
+
+/* Next & previous buttons */
+.prevp, .nextp {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextp {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevp:hover, .nextp:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+div.page, div.content {
+    width: 90%;
+    margin: 10px auto;
+    gap: 10px;
+}
+
+div.page > section, div.content > section {
+    max-width: 100%;
+}
+
+div.page > section > img, div.content > section > img {
+    max-width: 100%;
+    height: auto;
+}
+
+div.page > section > iframe, div.content > section > iframe {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    div.page, div.content {
+        grid-template-columns: 1fr;
+    }
+
+    a.fa {
+        display: none;
+    }
 }
