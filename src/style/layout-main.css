@@ -101,22 +101,18 @@ div.footing > footer#left {
     height: 100%;
 }
 
-div.footing > footer#middle {
-    grid-area: footm;
+div.footing > footer#right {
+    grid-area: footr;
     margin: 0 20px;
     height: fit-content;
     width: fit-content;
 }
 
-div.footing > footer#middle > img {
+div.footing > footer#right > img {
     width: 100%;
     height: auto;
 }
 
-div.footing > footer#right {
-    grid-area: footr;
-    height: 100%;
-}
 
 header#social {
     position: absolute;
@@ -141,9 +137,9 @@ div.footing {
     padding: 50px;
     display: grid;
     grid-template-areas:
-        'padl footl footm footr padr';
+        'padl footl footr padr';
     grid-template-rows: max-content;
-    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-columns: 5% 45% 45% 5%;
 }
 
 @media only screen and (max-width: 1081px) {
@@ -215,7 +211,6 @@ div.footing {
     }
 
     div.footing > footer#left,
-    div.footing > footer#middle,
     div.footing > footer#right {
         width: 95%;
         margin: 0 auto;

@@ -5,9 +5,13 @@ body {
 div.page {
     width: 90%;
     margin: 1rem 5%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8vw;
+}
+
+div.years {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 100%;
 }
 
 section.year {
@@ -15,6 +19,8 @@ section.year {
     text-align: center;
     background: #ecc684;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 section.year#active-year {
@@ -27,16 +33,23 @@ section.year:hover {
     opacity: 0.75;
     background: #615040;
     color: #fff;
+    cursor: pointer;
 }
 
 section.year > img.thumbnail {
     object-fit: cover;
-    height: 16vw;
-    /*max-height: 200px;*/
-    width: 16vw;
-    /*max-width: 200px;*/
+    width: 100%;
+    height: 200px;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+}
+
+section.year > p {
+    margin: 0.5rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 section.viewer {
