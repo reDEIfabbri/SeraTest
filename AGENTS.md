@@ -60,6 +60,7 @@ SeraTest/
 │   │   ├── SANYI.js            # General utilities or Easter egg logic.
 │   │   ├── slideshow.js        # Logic for image carousels.
 │   │   ├── gallery.js          # Logic for the photo gallery.
+│   │   ├── NewGallery.js       # Enhanced logic for the photo gallery with keyboard navigation.
 │   │   └── db-nav.js           # Navigation logic for the student committee page.
 │   │
 │   ├── pictures/               # Stores all image assets.

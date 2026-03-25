@@ -36,7 +36,9 @@ function changeGallery(id) {
     //Here I could just add an if to check whether this is the first run of the function/is there any element to actually remove, but to run that if every time is kind of wasteful... So instead I will just add an empty paragraph to the HTML with the "viewer" id XD
     document.getElementById("viewer").remove();
 
-    document.getElementById("active-year").id = "";
+    if (document.getElementById("active-year")) {
+        document.getElementById("active-year").id = "";
+    }
     years[index].id = "active-year";
     let html = `<section class="viewer" id="viewer">
             <div class="prev butt" onclick="goPicBack()">
@@ -58,6 +60,7 @@ function changeGallery(id) {
 }
 
 function goPicBack() {
+    if (!currentGallery) return;
     imgIndex--;
     console.log(imgIndex);
 
@@ -70,6 +73,7 @@ function goPicBack() {
 }
 
 function goPicForth() {
+    if (!currentGallery) return;
     imgIndex++;
     console.log(imgIndex);
 
@@ -80,3 +84,13 @@ function goPicForth() {
 
     currentGallery.src = currentPath + imgIndex + ".webp";
 }
+
+document.addEventListener('keydown', function (event) {
+    if (document.getElementById("viewerpicture")) {
+        if (event.key === "ArrowLeft") {
+            goPicBack();
+        } else if (event.key === "ArrowRight") {
+            goPicForth();
+        }
+    }
+});
