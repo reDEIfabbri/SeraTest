@@ -1,0 +1,184 @@
+.jelentkezes-content {
+    max-width: 1600px;
+    width: 90%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .jelentkezes-content {
+        width: 100%;
+    }
+}
+
+.form-wrapper {
+    background-color: #fcf9f5;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #5e3d25;
+    margin: 20px auto;
+}
+
+.form-wrapper h3 {
+    margin-top: 30px;
+    border-bottom: 2px solid #927966;
+    padding-bottom: 5px;
+    color: #5e3d25;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 10px;
+    align-items: flex-end;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px dotted #000;
+    border-radius: 0;
+    font-family: inherit;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: none;
+    line-height: 25px;
+    background-image: repeating-linear-gradient(transparent, transparent 24px, #000 24px, #000 25px);
+}
+
+.radio-group, .checkbox-group {
+    margin-bottom: 15px;
+}
+
+.radio-group label, .checkbox-group label {
+    margin-right: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.header-images {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-download {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #5e3d25;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #3e2818;
+}
+
+.form-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+/* Styles to make it look good in the generated PDF */
+#pdf-content {
+    padding: 20px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.inline-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.inline-group label.main-label {
+    font-weight: normal;
+    margin: 0;
+}
+
+.instructions {
+    text-align: center;
+    color: #d32f2f;
+    font-weight: bold;
+    background-color: #ffebee;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ffcdd2;
+}
+
+.pdf-page {
+    /* To simulate an A4 page */
+    background: white;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+    margin: 0 auto 20px;
+    padding: 2cm; /* Standard margins */
+    width: 100%;
+    max-width: 210mm;
+    min-height: 297mm;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .pdf-page {
+        padding: 10px;
+        box-shadow: none;
+        min-height: auto;
+    }
+
+    .form-wrapper {
+        padding: 15px;
+    }
+}
+
+@media print {
+    .pdf-page {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        page-break-after: always;
+        max-width: none;
+        width: auto;
+        min-height: auto;
+    }
+
+    .hide-on-pdf {
+        display: none !important;
+    }
+}

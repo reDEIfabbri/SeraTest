@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Jelentkezési Lap - Collegium Seraphicum</title>
+
+    <!-- Add icon library, for social media buttons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/src/style/layout-main.css" rel="stylesheet" type="text/css"/>
+    <link href="/src/style/layout-szakkoli.css" rel="stylesheet" type="text/css"/>
+    <link href="/src/style/layout-jelentkezes.css" rel="stylesheet" type="text/css"/>
+    <link href="/src/style/design.css" rel="stylesheet" type="text/css"/>
+    <link href="/src/pictures/honlap_kepek/Tau.png" rel="icon">
+
+    <script src="/src/scripts/footer.js"></script>
+    <!-- PDF export library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="heading hide-on-pdf">
+    <header ID="long-logo">
+        <img alt="a kollégium logója" src="/Arculati_Elemek/Logo/logo-long.png">
+    </header>
+
+    <header ID="social">
+        <a class="fa fa-facebook" href="https://www.facebook.com/Seraphicum/" target="_blank"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/szeraf_koli/" target="_blank"></a>
+        <a class="fa fa-youtube" href="https://www.youtube.com/channel/UCpOokV3I5dHLWZNzvOiJa1w" target="_blank"></a>
+    </header>
+</div>
+
+<div class="navbar hide-on-pdf">
+    <nav id="navigation-bar">
+        <ul>
+            <li><a href="/index.html"> Kezdőlap </a></li>
+            <li><a href="/Rolunk.html"> Rólunk </a></li>
+            <li><a href="/tevekenyseg.html"> Programok </a></li>
+            <li><a href="/szakmainap.html"> Szakmai nap </a></li>
+            <li><a href="/felveteli.html" id="active"> Felvételi </a></li>
+            <li><a href="/Galeria.html"> Galéria </a></li>
+            <li><a href="/media.html"> Média </a></li>
+            <li><a href="/Dokumentumok.html"> Dokumentumok </a></li>
+            <li><a href="/diakbizotsag.html"> DiákBizottság </a></li>
+            <li><a href="/FerencEST.html"> FerencEST </a></li>
+            <li><a href="/Felujitasok.html"> Felújítások </a></li>
+            <li><a href="/Tamogatok.html"> Támogatások </a></li>
+            <li><a href="/index.html"> Easter Egg </a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="content jelentkezes-content"
+     style="width: 100%; box-sizing: border-box; max-width: none; overflow-x: hidden; display: block;">
+
+    <div class="form-wrapper">
+        <div class="instructions hide-on-pdf">
+            <p>Kérjük, töltse ki az alábbi űrlapot! Az adatok nem kerülnek mentésre a szerveren, minden adat a saját
+                gépén marad (GDPR kompatibilis).</p>
+            <p>A kitöltés után kattintson a lap alján található "Jelentkezési lap letöltése (PDF)" gombra, majd a
+                letöltött fájlt írja alá (digitálisan vagy nyomtatva) és küldje el nekünk e-mailben!</p>
+        </div>
+
+        <div id="pdf-content">
+            <div class="pdf-page">
+                <div class="header-images" style="text-align: center; margin-bottom: 20px;">
+                    <img alt="Collegium Seraphicum Logo" src="/Arculati_Elemek/Logo/logo-long.png"
+                         style="max-height: 80px;">
+                </div>
+                <h2 class="form-title">JELENTKEZÉSI LAP 2025/2026 TANÉVRE</h2>
+
+                <form id="dorm-form">
+                    <div class="radio-group" style="text-align: center; margin-bottom: 30px; font-weight: bold;">
+                        <label>Szakkollégista státuszba jelentkezem <input name="statusz" type="checkbox"
+                                                                           value="Szakkollégista"></label>
+                        <span style="margin: 0 40px; font-weight: normal;">vagy</span>
+                        <label>Albérlő státuszba jelentkezem <input name="statusz" type="checkbox"
+                                                                    value="Albérlő"></label>
+                    </div>
+
+                    <h3 style="margin-top: 0; font-weight: bold; font-size: 1rem; border: none;">Személyes adatok</h3>
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Név: </label>
+                        <input name="nev" style="flex: 2;" type="text">
+                        <label style="margin-bottom: 0;">Születési hely: </label>
+                        <input name="szul_hely" style="flex: 1;" type="text">
+                        <label style="margin-bottom: 0;">idő: </label>
+                        <input max="2008-12-31" min="2000-01-01" name="szul_ido" style="flex: 1;" type="date">
+                    </div>
+
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Édesanyja születési neve: </label>
+                        <input name="anyja_neve" style="flex: 1;" type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Állandó lakcím:</label>
+                    </div>
+                    <div class="form-row">
+                        <input name="lakcim_iranyitoszam" placeholder="Irányítószám" style="flex: 0.5;" type="text">
+                        <input name="lakcim_telepules" placeholder="Település" style="flex: 1;" type="text">
+                        <input name="lakcim_utca" placeholder="Utca, házszám, emelet, ajtó" style="flex: 2;"
+                               type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Mobil</label>
+                        <input name="mobil" placeholder="száma:" style="flex: 1; text-align: center;" type="text">
+                        <input name="mobil_2" style="flex: 1; margin-left: 20px;" type="text">
+                    </div>
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">E-mail:</label>
+                        <input name="email" style="flex: 1;" type="email">
+                    </div>
+
+                    <h3 style="font-weight: bold; font-size: 1rem; border: none; margin-top: 20px;">Tanulmányok</h3>
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Érettségi</label>
+                        <input name="erettsegi_helye" placeholder="helye," style="flex: 1; text-align: center;"
+                               type="text">
+                        <input name="erettsegi_eve" placeholder="éve," style="flex: 1; text-align: center;" type="text">
+                        <label style="margin-bottom: 0;">eredménye:</label>
+                    </div>
+                    <div class="form-row">
+                        <input name="erettsegi_eredmenye" style="flex: 1; margin-top: 5px;" type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Jelenlegi</label>
+                        <input name="jelenlegi_tanulmanyok" placeholder="tanulmányok" style="flex: 2; text-align: center;"
+                               type="text">
+                        <label style="margin-bottom: 0;">(kar,</label>
+                        <input name="kar" placeholder="szak," style="flex: 1; text-align: center;" type="text">
+                        <label style="margin-bottom: 0;">évfolyam):</label>
+                    </div>
+                    <div class="form-row">
+                        <input name="evfolyam" style="flex: 1; margin-top: 5px;" type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Előző</label>
+                        <input name="elozo_ev" placeholder="év" style="flex: 0.5; text-align: center;" type="text">
+                        <label style="margin-bottom: 0;">félévi</label>
+                        <input name="elozo_felevi" style="flex: 1;" type="text">
+                        <label style="margin-bottom: 0;">és</label>
+                        <input name="elozo_evvegi" placeholder="évvégi" style="flex: 1; text-align: center;"
+                               type="text">
+                        <label style="margin-bottom: 0;">tanulmányi</label>
+                        <label style="margin-bottom: 0; margin-left: auto;">átlagai:</label>
+                    </div>
+                    <div class="form-row">
+                        <input name="atlagai" style="flex: 1; margin-top: 5px;" type="text">
+                    </div>
+
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Nyelvvizsga</label>
+                        <input name="nyelvvizsga_nyelv" placeholder="(nyelv," style="flex: 1; text-align: center;"
+                               type="text">
+                        <input name="nyelvvizsga_fok" placeholder="fok," style="flex: 1; text-align: center;"
+                               type="text">
+                        <input name="nyelvvizsga_tipus" placeholder="típus," style="flex: 1; text-align: center;"
+                               type="text">
+                        <label style="margin-bottom: 0;">év):</label>
+                        <input name="nyelvvizsga_ev" style="flex: 1;" type="date">
+                    </div>
+
+                    <div class="form-group" style="margin-top: 20px;">
+                        <label>Miért jelentkezett a választott szakra és hogyan képzeli el a jövőjét a diploma
+                            megszerzése után?</label>
+                        <textarea name="miert_szak" rows="3"></textarea>
+                    </div>
+
+                    <h3 style="font-weight: bold; font-size: 1rem; border: none; margin-top: 20px;">Vallás</h3>
+                    <div class="radio-group"
+                         style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; justify-content: space-between;">
+                        <label>Római katolikus <input name="vallas" type="radio" value="Római katolikus"></label>
+                        <label>görög katolikus <input name="vallas" type="radio" value="Görög katolikus"></label>
+                        <label>református <input name="vallas" type="radio" value="Református"></label>
+                        <label>evangélikus <input name="vallas" type="radio" value="Evangélikus"></label>
+                        <label style="display: flex; align-items: center;">egyéb: <input name="vallas_egyeb" style="margin-left: 5px; width: 150px;"
+                                                                                         type="text"></label>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group inline-group" style="flex: 1;">
+                            <label class="main-label">Részesült-e rendszeres hitoktatásban? Igen <input name="hitoktatas"
+                                                                                                        type="radio"
+                                                                                                        value="Igen">
+                                Nem <input name="hitoktatas" type="radio" value="Nem"></label>
+                        </div>
+                        <div class="form-group inline-group" style="flex: 1; justify-content: flex-end;">
+                            <label class="main-label">Meg van-e keresztelve? Igen <input name="keresztelve" type="radio"
+                                                                                         value="Igen"> Nem <input
+                                    name="keresztelve" type="radio" value="Nem"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group inline-group" style="flex: 1;">
+                            <label class="main-label">Volt-e elsőáldozó? Igen <input name="elsoaldozo" type="radio"
+                                                                                     value="Igen"> Nem <input
+                                    name="elsoaldozo" type="radio" value="Nem"></label>
+                        </div>
+                        <div class="form-group inline-group" style="flex: 1; justify-content: flex-end;">
+                            <label class="main-label">Volt-e bérmálkozó? Igen <input name="bermalkozo" type="radio"
+                                                                                     value="Igen"> Nem <input
+                                    name="bermalkozo" type="radio" value="Nem"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Jelenleg</label>
+                        <input name="ifjusagi_kozosseg_hol" placeholder="hol" style="flex: 1; text-align: center;"
+                               type="text">
+                        <label style="margin-bottom: 0;">tagja</label>
+                        <input name="ifjusagi_kozosseg_ifjusagi" placeholder="ifjúsági" style="flex: 1; text-align: center;"
+                               type="text">
+                        <label style="margin-bottom: 0;">közösségnek?</label>
+                    </div>
+
+                    <h3 style="font-weight: bold; font-size: 1rem; border: none; margin-top: 20px;">Kollégium</h3>
+                    <div class="form-row">
+                        <label style="margin-bottom: 0;">Lakott-e már kollégiumban/albérletben?</label>
+                        <input name="lakott_e_mar" placeholder="Ha igen, milyen volt" style="flex: 1; text-align: center;"
+                               type="text">
+                        <label style="margin-bottom: 0;">az ottani élet?</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="milyen_volt" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Kitől, és mit hallott a Collegium Seraphicumról?</label>
+                        <textarea name="mit_hallott_b" rows="2"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Miért szeretne ebben a kollégiumban lakni?</label>
+                        <textarea name="miert_szeretne_b" rows="2"></textarea>
+                    </div>
+            </div>
+
+            <div class="pdf-page">
+                <h3 style="font-weight: bold; font-size: 1rem; border: none;">Szociális helyzet</h3>
+                <div class="form-group inline-group" style="width: 100%;">
+                    <label class="main-label" style="width: auto; margin-right: 10px;">Apa (gondviselő) foglalkozása,
+                        jövedelme:</label>
+                    <input name="apa_foglalkozas" style="flex: 1;" type="text">
+                </div>
+                <div class="form-group inline-group" style="width: 100%;">
+                    <label class="main-label" style="width: auto; margin-right: 10px;">Anya (gondviselő) foglalkozása,
+                        jövedelme:</label>
+                    <input name="anya_foglalkozas" style="flex: 1;" type="text">
+                </div>
+                <div class="form-group inline-group" style="width: 100%;">
+                    <label class="main-label" style="width: auto; margin-right: 10px;">Kivel él egy
+                        háztartásban:</label>
+                    <input name="haztartas" style="flex: 1;" type="text">
+                </div>
+
+                <div class="form-group inline-group" style="width: 100%; margin-top: 10px;">
+                    <label class="main-label" style="width: auto; margin-right: 10px;"><b>Kit ismer a kollégiumban?</b></label>
+                    <input name="kit_ismer" style="flex: 1;" type="text">
+                </div>
+                <div class="form-group inline-group" style="width: 100%;">
+                    <label class="main-label" style="width: auto; margin-right: 10px;"><b>Van-e egészségügyi
+                        problémája?</b></label>
+                    <input name="egeszsegugyi" style="flex: 1;" type="text">
+                </div>
+
+                <div class="form-row" style="margin-top: 50px;">
+                    <div class="form-group">
+                        <label style="display: inline-block;">Kelt:</label>
+                        <input id="kelt-date" name="kelt" style="display: inline-block; width: 80%;" type="date">
+                    </div>
+                    <div class="form-group" style="display: flex; align-items: flex-end; justify-content: flex-end;">
+                        <div style="border-top: 1px dotted #000; width: 80%; text-align: center; padding-top: 5px; margin-bottom: 8px; font-weight: bold;">
+                            aláírás
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+
+        <button class="btn-download hide-on-pdf" onclick="generatePDF()" type="button">Jelentkezési lap letöltése
+            (PDF)
+        </button>
+    </div>
+</div>
+
+<div id="footer-placeholder"></div>
+
+<script>
+    // Set today's date in the Kelt field
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.getElementById('kelt-date').valueAsDate = new Date();
+    });
+
+    function generatePDF() {
+        // Hide instructions and download button for PDF
+        const hideElements = document.querySelectorAll('.hide-on-pdf');
+        hideElements.forEach(el => el.style.display = 'none');
+
+        // Remove page box-shadow for cleaner print
+        const pages = document.querySelectorAll('.pdf-page');
+        pages.forEach(p => p.style.boxShadow = 'none');
+
+        const form = document.getElementById('dorm-form');
+
+        // Store original element types before replacing them
+        const originalElements = [];
+
+        // Handle inputs to look like static text in PDF
+        const inputs = form.querySelectorAll('input[type="text"], input[type="email"], input[type="date"]');
+        inputs.forEach(input => {
+            const textNode = document.createElement('span');
+            textNode.textContent = input.value;
+            textNode.style.display = 'inline-block';
+            textNode.style.width = input.style.width || '100%';
+            textNode.style.borderBottom = '1px dotted #000';
+            textNode.style.padding = '8px';
+            textNode.style.boxSizing = 'border-box';
+            textNode.style.minHeight = '35px';
+
+            // Keep flex styling if present
+            if (input.style.flex) textNode.style.flex = input.style.flex;
+            if (input.style.marginLeft) textNode.style.marginLeft = input.style.marginLeft;
+
+            originalElements.push({parent: input.parentNode, old: input, new: textNode});
+            input.parentNode.replaceChild(textNode, input);
+        });
+
+        const textareas = form.querySelectorAll('textarea');
+        textareas.forEach(textarea => {
+            const textNode = document.createElement('div');
+            textNode.textContent = textarea.value;
+            textNode.style.width = '100%';
+            textNode.style.minHeight = textarea.style.height || '75px';
+            textNode.style.lineHeight = '25px';
+            textNode.style.backgroundImage = 'repeating-linear-gradient(transparent, transparent 24px, #000 24px, #000 25px)';
+            textNode.style.whiteSpace = 'pre-wrap';
+
+            originalElements.push({parent: textarea.parentNode, old: textarea, new: textNode});
+            textarea.parentNode.replaceChild(textNode, textarea);
+        });
+
+
+        const element = document.getElementById('pdf-content');
+
+        const opt = {
+            margin: 0,
+            filename: 'Jelentkezesi_lap_Collegium_Seraphicum.pdf',
+            image: {type: 'jpeg', quality: 0.98},
+            html2canvas: {scale: 2, useCORS: true},
+            jsPDF: {unit: 'mm', format: 'a4', orientation: 'portrait'}
+        };
+
+        html2pdf().set(opt).from(element).save().then(() => {
+            // Restore styling and inputs
+            hideElements.forEach(el => el.style.display = '');
+            pages.forEach(p => p.style.boxShadow = '');
+
+            originalElements.forEach(item => {
+                item.parent.replaceChild(item.old, item.new);
+            });
+        });
+    }
+</script>
+
+</body>
+</html>

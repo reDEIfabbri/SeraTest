@@ -15,7 +15,7 @@ p.sorkizart {
     text-justify: inter-word
 }
 
-/* Hide the images by default */
+/* Hide the images by default, cuz ya ain't wanna see 'em all @ all */
 .mySlides {
     display: none;
 }
