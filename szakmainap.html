@@ -86,15 +86,159 @@
 <!--</div>-->
 
 <div class="page">
+    <div class="db-navbar">
+        <nav id="db-navigation">
+            <ul class="db-years">
+                <li class="szaknap-year db-year" data-year="2526" id="active-szaknap" onclick="changeYearTo(0)">2026
+                </li>
+                <li class="szaknap-year db-year" data-year="2425" onclick="changeYearTo(1)">2025</li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="title">
-        <h1>Szakmai nap </h1>
-        <h3>2025.04.06.</h3>
+        <h1 style="margin: 0;">Szakmai nap </h1>
+        <h3 id="szaknap-date" style="margin: 0;">2026</h3>
     </div>
     <div class="info">
         <p>Az előadókat szereplési sorrendjük szerint tüntettük fel.</p>
     </div>
+
     <div class="presentations">
-        <div class="card" style="background-color: #D1F72555">
+        <!-- 2026 (2526) -->
+        <div class="card szaknap-presentation 2526" style="background-color: #D1F72555">
+            <img alt="Böhm Patrik" class="face" src="/src/pictures/szaknap/2526/1_Böhm_Patrik.jpg"></img>
+            <h2 class="name">Böhm Patrik</h2>
+            <h3 class="major">ÁJK</h3>
+            <!-- No thumbnail image was found in the markdown, ignoring or leaving a blank spot if desired. We will skip thumbnail if missing in md -->
+            <h2 class="subject">Megélhetési bűnözés jellemzői és bírói gyakorlata</h2><br>
+            <p class="description">Előadásomban egy rendkívül súlyos és aktuális jelenségről, a megélhetési bűnözésről
+                beszéltem. A probléma gyökereinek bemutatását követően ismerettem a releváns bíró gyakorlatot.
+                Prezentációm végén pedig bemutattam néhány lehetséges megoldást is, melyek által visszaszorítható lenne
+                az elterjedtség.</p>
+            <br>
+        </div>
+
+        <div class="card szaknap-presentation 2526" style="background-color: #25F72955">
+            <img alt="Dobai Gergely" class="face" src="/src/pictures/szaknap/2526/2_Dobai_Gergely.webp"></img>
+            <h2 class="name">Dobai Gergely</h2>
+            <h3 class="major">ÁJK</h3>
+            <h2 class="subject">A halálbüntetés</h2><br>
+            <p class="description">Az előadásomban a halálbüntetés általános elveit ismertettem, majd ezt követően
+                konkrét jogeseteken keresztül mutattam be ezen büntetési nem hibáit és visszásságait. Végezetül pedig
+                részleteztem a halálbüntetés alkalmazása ellen szóló legfontosabb érveket.</p>
+            <br>
+        </div>
+
+        <div class="card szaknap-presentation 2526" style="background-color: #AAF77755">
+            <img alt="Gyenese Anna" class="face" src="/src/pictures/szaknap/2526/3_Gyenese_Anna.jpg"></img>
+            <h2 class="name">Gyenese Anna</h2>
+            <h3 class="major">MK</h3>
+            <h2 class="subject">Macbeth színházplakátok a kortárs tervezőgrafikában</h2><br>
+            <p class="description">Szakdolgozatomban szeretném megvizsgálni, hogyan viszonyulnak a kortárs
+                színházplakátok tervezői Shakespeare: Macbeth művéhez. Hiszen ezt a darabot a reneszánsz óta
+                rengetegszer előadták, feldolgozták, megjelenítették - hogy birkózik meg a kortárs grafikus ezzel a
+                feladattal, hogy ezredjére is elkerülje a klisét, és újat mondjon a darabról? Továbbá hogyan csapódnak
+                le a plakát műfaján a darabot feldolgozó különböző kultúrák hagyományai és milyen eszközöket használnak
+                a tervezők, amelyek alapján a plakátok vonzóvá válnak az adott célközönség számára?</p>
+            <br>
+        </div>
+
+        <div class="card szaknap-presentation 2526" style="background-color: #25F76F55">
+            <img alt="Hertelendy Gellért" class="face" src="/src/pictures/szaknap/2526/4_Hertelendy_Gellért.jpg"></img>
+            <h2 class="name">Hertelendy Gellért</h2>
+            <h3 class="major">MIK</h3>
+            <h2 class="subject">CMT (Cold Metal Transfer) additív gyártási paraméterek meghatározásához szükséges
+                cseppszámlálás villamos érzékeléssel</h2><br>
+            <p class="description">A "CMT (Cold Metal Transfer) additív gyártási paraméterek meghatározásához szükséges
+                cseppszámlálás villamos érzékeléssel" című TDK munkámat és a kutatási projektet mutattam be, melyben
+                gépészmérnökökkel és villamosmérnökökkel dolgozunk. Magyarul?: 3D nyomtatás alumíniummal és árammal. A
+                hegesztés erős kapcsolatot tud létrehozni a rétegek között, de csak bizonyos körülmények között. Az áram
+                precíz mérésével meg tudjuk határozni az alumínium cseppenését és ebből következtetni tudunk a folyamat
+                minőségére, befolyásolni tudjuk a siker érdekében.</p>
+            <br>
+        </div>
+
+        <div class="card szaknap-presentation 2526" style="background-color: #ABB8D055">
+            <img alt="Jekl Tamás" class="face" src="/src/pictures/szaknap/2526/5_Jekl_Tamás.jpg"></img>
+            <h2 class="name">Jekl Tamás</h2>
+            <h3 class="major">MK</h3>
+            <h2 class="subject">A szövegfestő zene-G. F. Händel: Izrael Egyiptomban</h2><br>
+            <p class="description">Ének-zene tanári hallgatóként fontos számomra, hogy a zene és esetlegesen a
+                zenetörténet ne egy utált tabu téma legyen. Händel egyik zseniális, az Izrael Egyiptomban c. oratóriumán
+                keresztül mutattam be, hogy a zenetöri vagy éppen a zeneelmélet nem csak unalmas hadova. Az előadás fő
+                témáját az oratórium zenei szövegfestése adta, ezen keresztül adtam betekintést a zeneszerzés és zenei
+                szövegfestés rejtelmeibe. A barokk kor egyik legnagyobb zeneszerzője G. F. Händel tudta, hogy zenéje
+                halhatatlan és örök életű lesz, bármikor, bármilyen körülmények közt is adják elő.</p>
+            <br>
+        </div>
+
+        <div class="card szaknap-presentation 2526" style="background-color: #067C1055">
+            <img alt="Peilert Soma" class="face" src="/src/pictures/szaknap/2526/6.webp"></img>
+            <h2 class="name">Peilert Soma</h2>
+            <h3 class="major">TTK</h3>
+            <h2 class="subject">A reform reformja? – a római rítus rövid története</h2>
+            <br>
+            <p class="description">A lex orando lex credendi alapelvből kiindulva (az imádság törvénye a hit törvénye)
+                végigjárjuk a római rítus történetét, annak kulturális vonatkozásaivak együtt. Különös figyelmet
+                szentelünk a Bugnini-féle reformra, azzal kapcsolatos kevésbé ismert részletekre, vagy tévhitekre. A
+                latin nyelv szakrális használatának és a Kelet felé misézés gyakorlatának lényegét, illetve jogi
+                státuszát is tisztázzuk. A hagyományhűség és az ökumenikusság összefeszülésének egyik példájaként
+                tárgyaljuk a jelenleg is zajló konfliktusát a Vatikánnak és a X. Piusz Papi Testvérületnek.</p>
+            <br>
+        </div>
+
+        <div class="card szaknap-presentation 2526" style="background-color: #79F72555">
+            <img alt="Folkmann-Papp Petra" class="face"
+                 src="/src/pictures/szaknap/2526/7_Folkmann-Papp_Petra.jpg"></img>
+            <h2 class="name">Folkmann-Papp Petra</h2>
+            <h3 class="major">ÁJK</h3>
+            <h2 class="subject">Vakvágányon: Közbiztonság az igazság felett</h2><br>
+            <p class="description">Folkmann-Papp Petra, a Pécsi Tudományegyetem ötödéves jogász szakos hallgatója
+                vagyok. Előadásomban a Móri bankrablás teljes ügyét mutattam be, különös hangsúlyt fektetve a
+                közbiztonság és az igazságszolgáltatás kapcsolatára, valamint azokra a nyomozati hibákra és
+                megválaszolatlan kérdésekre, amelyek az esetet mindmáig övezik. Ismertettem a forró nyomon történő
+                nyomozás sajátosságait, a raszternyomozás módszerét, továbbá kitértem arra is, hogy a modern
+                technológiák és a mesterséges intelligencia milyen lehetőségeket kínálhatnak a jövőben a hasonló hibák
+                megelőzésére és a nyomozások hatékonyabbá tételére. Számomra a móri ügy legfontosabb tanulsága az, hogy
+                minden körülmény között törekednünk kell az igazságos döntésre és ennek megfelelően, felelősségteljesen
+                kell eljárnunk.</p>
+            <br>
+        </div>
+
+        <div class="card szaknap-presentation 2526" style="background-color: #F7E92555">
+            <img alt="Szí Benedek" class="face" src="/src/pictures/szaknap/2526/8_Szí_Benedek.webp"></img>
+            <h2 class="name">Szí Benedek</h2>
+            <h3 class="major">ÁOK</h3>
+            <h2 class="subject">Fogorvosi készségfejlesztés 3D nyomtatott eszközökkel</h2><br>
+            <p class="description">TDK munkámban azt kutatom, hogyan lehet a leendő fogorvosok kézügyességét modern 3D
+                nyomtatási technológiával fejleszteni.</p>
+            <br>
+        </div>
+
+        <div class="card szaknap-presentation 2526" style="background-color: #FFB34755">
+            <img alt="Böhm Kristóf" class="face" src="/src/pictures/szaknap/2526/9_Böhm_kristóf.jpg"></img>
+            <h2 class="name">Böhm Kristóf</h2>
+            <h3 class="major">ETK</h3>
+            <h2 class="subject">Keringésmegállás a gyakorlatban – laikustól a professzionális ellátásig</h2><br>
+            <p class="description">A „Keringésmegállás a gyakorlatban – laikustól a professzionális ellátásig” című
+                előadás átfogó képet ad az újraélesztés teljes folyamatáról. A téma társadalmi szerepe kiemelkedő,
+                hiszen Magyarországon évente 20.000-25.000 embert érint a hirtelen keringésmegállás, így a laikusok
+                által azonnal megkezdett mellkaskompresszió és a félautomata defibrillátor (AED) használata kritikus
+                élettani jelentőségű. Mivel minden perc késlekedés 10%-kal rontja a túlélés esélyét, elengedhetetlen,
+                hogy a társadalom tagjai felismerjék a bajt, azonnal tárcsázzák a 112-t, és ne féljenek cselekedni. Az
+                előadás mély szakmai jellege a mentők és a kórházi személyzet által végzett emelt szintű újraélesztési
+                (ALS) protokollok részletes bemutatásában mutatkozik meg. A professzionális fázis magában foglalja az
+                EKG-ritmus szerinti sokkolandó és nem sokkolandó állapotok elkülönítését, a reverzibilis okok célzott
+                kezelését, valamint a komplex intenzív osztályos utókezelést. A beteg hosszú távú túlélése és megfelelő
+                életminősége tehát a laikusok gyors beavatkozásának és a magasszintű egészségügyi szakmai munkának az
+                elválaszthatatlan egységén múlik.</p>
+            <br>
+        </div>
+
+
+        <!-- 2025 (2425) -->
+        <div class="card szaknap-presentation 2425" style="background-color: #D1F72555">
             <img alt="Gyenese Anna" class="face" src="/src/pictures/szaknap/2425/1_Gyenese_Anna.jpg"></img>
             <h2 class="name">Gyenese Anna</h2>
             <h3 class="major">Grafikusművész</h3>
@@ -108,7 +252,7 @@
             <br>
         </div>
 
-        <div class="card" style="background-color: #25F72955">
+        <div class="card szaknap-presentation 2425" style="background-color: #25F72955">
             <img alt="Böhm Kristóf" class="face" src="/src/pictures/szaknap/2425/2_Böhm_Kristóf.jpg"></img>
             <h2 class="name">Böhm Kristóf</h2>
             <h3 class="major">Mentőtiszt</h3>
@@ -123,7 +267,7 @@
             <br>
         </div>
 
-        <div class="card" style="background-color: #AAF77755">
+        <div class="card szaknap-presentation 2425" style="background-color: #AAF77755">
             <img alt="Pazicska Dóra" class="face" src="/src/pictures/szaknap/2425/3_Pazicska_Dóra.jpg"></img>
             <h2 class="name">Pazicska Dóra</h2>
             <h3 class="major">Földrajz; magyar nyelv és -irodalom szakos tanár</h3>
@@ -139,7 +283,7 @@
             <br>
         </div>
 
-        <div class="card" style="background-color: #25F76F55">
+        <div class="card szaknap-presentation 2425" style="background-color: #25F76F55">
             <img alt="Böhm Patrik" class="face" src="/src/pictures/szaknap/2425/4_Böhm_Patrik.jpg"></img>
             <h2 class="name">Böhm Patrik</h2>
             <h3 class="major">Jogász</h3>
@@ -152,7 +296,7 @@
             <br>
         </div>
 
-        <div class="card" style="background-color: #ABB8D055">
+        <div class="card szaknap-presentation 2425" style="background-color: #ABB8D055">
             <img alt="Kovács Mihály" class="face" src="/src/pictures/szaknap/2425/5_Kovács_Mihály.jpg"></img>
             <h2 class="name">Kovács Mihály</h2>
             <h3 class="major">Mérnökinformatikus</h3>
@@ -168,7 +312,7 @@
             <br>
         </div>
 
-        <div class="card" style="background-color: #067C1055">
+        <div class="card szaknap-presentation 2425" style="background-color: #067C1055">
             <img alt="Peilert Soma" class="face" src="/src/pictures/szaknap/2425/6_Peilert_Soma.jpg"></img>
             <h2 class="name">Peilert Soma</h2>
             <h3 class="major">Fizika-matematika tanár</h3>
@@ -185,7 +329,7 @@
             <br>
         </div>
 
-        <div class="card" style="background-color: #79F72555">
+        <div class="card szaknap-presentation 2425" style="background-color: #79F72555">
             <img alt="Folkmann-Papp Petra" class="face"
                  src="/src/pictures/szaknap/2425/7_Folkmann-Papp_Petra.jpg"></img>
             <h2 class="name">Folkmann-Papp Petra</h2>
@@ -202,7 +346,7 @@
             <br>
         </div>
 
-        <div class="card" style="background-color: #F7E92555">
+        <div class="card szaknap-presentation 2425" style="background-color: #F7E92555">
             <img alt="Ocskay Flóra" class="face" src="/src/pictures/szaknap/2425/8_Ocskay_Flóra.jpg"></img>
             <h2 class="name">Ocskay Flóra Anna</h2>
             <h3 class="major">Történelem</h3>
@@ -227,5 +371,6 @@
 
 <footer>
 </footer>
+<script src="/src/scripts/szaknap-nav.js"></script>
 
 </html>
