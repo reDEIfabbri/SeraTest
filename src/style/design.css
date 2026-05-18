@@ -162,6 +162,22 @@
      color: #5c4034;
  }
 
+ video {
+     background-color: #e5d0be;
+     /*border-style: none;*/
+     border: 5px solid rgba(194, 62, 29, 0%);
+     border-radius: 50px;
+     max-height: 100vh;
+     max-width: 100vw;
+ }
+
+ .container {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+
 
  /*these are the buttons for social media, we probably only need like two of them but it is nice to have them for shits and giggles*/
  .fa {
