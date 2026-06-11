@@ -16,6 +16,7 @@
 
     <link href="/src/style/design.css" rel="stylesheet" type="text/css"/>
     <link href="/src/pictures/honlap_kepek/Tau.png" rel="icon">
+    <script defer src="/src/scripts/slideshow.js"></script>
 
 </head>
 
@@ -140,240 +141,119 @@
         kollégisták lakhatását és az önkéntes munkájukat.
     </p>
 
-    <style>
-
-        /* Position the image container (needed to position the left and right arrows) */
-        .container {
-            box-sizing: border-box;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 25%;
-            height: 25%;
-            max-height: 25vh;
-            margin: auto;
-        }
-
-        /* Hide the images by default */
-        .mySlides {
-            display: none;
-        }
-
-        /* Add a pointer when hovering over the thumbnail images */
-        .cursor {
-            cursor: pointer;
-        }
-
-        /* Next & previous buttons */
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 40%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        /* Container for image text */
-        .caption-container {
-            text-align: center;
-            background-color: #222;
-            padding: 2px 16px;
-            color: white;
-        }
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Six columns side by side */
-        .column {
-            float: left;
-            width: 16.66%;
-        }
-
-        /* Add a transparency effect for thumnbail images */
-        .demo {
-            opacity: 0.6;
-        }
-
-        .active,
-        .demo:hover {
-            opacity: 1;
-        }
-    </style>
     <!-- Container for the image gallery -->
-    <div class="container">
+    <div class="tm-container">
 
         <!-- Full-width images with number text -->
-        <div class="mySlides">
-            <div class="numbertext">1 / 9</div>
+        <div class="tm-mySlides">
+            <div class="tm-numbertext">1 / 9</div>
             <img alt="A Collegium Seraphicum a Hovatovább Napon" src="/src/pictures/honlap_kepek/hova-tova/1.jpeg"
                  style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">2 / 9</div>
+        <div class="tm-mySlides">
+            <div class="tm-numbertext">2 / 9</div>
             <img alt="Minden érdeklődőnek megmutattuk kik vagyunk,..." src="/src/pictures/honlap_kepek/hova-tova/2.jpeg"
                  style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">3 / 9</div>
+        <div class="tm-mySlides">
+            <div class="tm-numbertext">3 / 9</div>
             <img alt="... és hogy miért állunk ki!" src="/src/pictures/honlap_kepek/hova-tova/3.jpeg"
                  style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">4 / 9</div>
+        <div class="tm-mySlides">
+            <div class="tm-numbertext">4 / 9</div>
             <img alt="Igyekeztünk azokat is hasznos tanácsokkal ellátni, akik még bizonytalanok voltak a jövőjükkel kapcsolatban." src="/src/pictures/honlap_kepek/hova-tova/4.jpeg"
                  style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">5 / 9</div>
+        <div class="tm-mySlides">
+            <div class="tm-numbertext">5 / 9</div>
             <img alt="Ajándékait osztogató Mikulás a Szeráfban" src="/src/pictures/honlap_kepek/hova-tova/5.JPG"
                  style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">6 / 9</div>
+        <div class="tm-mySlides">
+            <div class="tm-numbertext">6 / 9</div>
             <img alt="A kolis Mikulás pontosan tudja, kit melyik listára kell tennie..." src="/src/pictures/honlap_kepek/hova-tova/6.JPG"
                  style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">7 / 9</div>
+        <div class="tm-mySlides">
+            <div class="tm-numbertext">7 / 9</div>
             <img alt="Kicsitt korábban jött, a szán még szervízben volt!" src="/src/pictures/honlap_kepek/hova-tova/7.JPG"
                  style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">8 / 9</div>
+        <div class="tm-mySlides">
+            <div class="tm-numbertext">8 / 9</div>
             <img alt="A 8 Boldogság Nővérek havonta gyakran tartanak előadást a kollegistáknak." src="/src/pictures/honlap_kepek/hova-tova/8.JPG"
                  style="width:100%">
         </div>
 
-        <div class="mySlides">
-            <div class="numbertext">9 / 9</div>
+        <div class="tm-mySlides">
+            <div class="tm-numbertext">9 / 9</div>
             <img alt="Lehetetlen unatkozni rajtuk!" src="/src/pictures/honlap_kepek/hova-tova/9.JPG" style="width:100%">
         </div>
 
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="tm-prev" onclick="plusSlidesTm(-1)">&#10094;</a>
+        <a class="tm-next" onclick="plusSlidesTm(1)">&#10095;</a>
 
         <!-- Image text -->
-        <div class="caption-container">
-            <p id="caption"></p>
+        <div class="tm-caption-container">
+            <p id="tm-caption"></p>
         </div>
 
         <!-- Thumbnail images -->
-        <div class="row">
-            <div class="column">
-                <img alt="A Collegium Seraphicum a Hovatovább Napon" class="demo cursor" onclick="currentSlide(1)"
+        <div class="tm-row">
+            <div class="tm-column">
+                <img alt="A Collegium Seraphicum a Hovatovább Napon" class="tm-demo tm-cursor"
+                     onclick="currentSlideTm(1)"
                      src="/src/pictures/honlap_kepek/hova-tova/1.jpeg" style="width:100%">
             </div>
-            <div class="column">
-                <img alt="Minden érdeklődőnek megmutattuk kik vagyunk,..." class="demo cursor" onclick="currentSlide(2)"
+            <div class="tm-column">
+                <img alt="Minden érdeklődőnek megmutattuk kik vagyunk,..." class="tm-demo tm-cursor"
+                     onclick="currentSlideTm(2)"
                      src="/src/pictures/honlap_kepek/hova-tova/2.jpeg" style="width:100%">
             </div>
-            <div class="column">
-                <img alt="... és hogy miért állunk ki!" class="demo cursor" onclick="currentSlide(3)"
+            <div class="tm-column">
+                <img alt="... és hogy miért állunk ki!" class="tm-demo tm-cursor" onclick="currentSlideTm(3)"
                      src="/src/pictures/honlap_kepek/hova-tova/3.jpeg" style="width:100%">
             </div>
-            <div class="column">
-                <img alt="Igyekeztünk azokat is hasznos tanácsokkal ellátni, akik még bizonytalanok voltak a jövőjükkel kapcsolatban." class="demo cursor" onclick="currentSlide(4)"
+            <div class="tm-column">
+                <img alt="Igyekeztünk azokat is hasznos tanácsokkal ellátni, akik még bizonytalanok voltak a jövőjükkel kapcsolatban."
+                     class="tm-demo tm-cursor" onclick="currentSlideTm(4)"
                      src="/src/pictures/honlap_kepek/hova-tova/4.jpeg"
                      style="width:100%">
             </div>
-            <div class="column">
-                <img alt="Ajándékait osztogató Mikulás a Szeráfban" class="demo cursor" onclick="currentSlide(5)"
+            <div class="tm-column">
+                <img alt="Ajándékait osztogató Mikulás a Szeráfban" class="tm-demo tm-cursor"
+                     onclick="currentSlideTm(5)"
                      src="/src/pictures/honlap_kepek/hova-tova/5.JPG" style="width:100%">
             </div>
-            <div class="column">
-                <img alt="A kolis Mikulás pontosan tudja, kit melyik listára kell tennie..." class="demo cursor" onclick="currentSlide(6)"
+            <div class="tm-column">
+                <img alt="A kolis Mikulás pontosan tudja, kit melyik listára kell tennie..." class="tm-demo tm-cursor"
+                     onclick="currentSlideTm(6)"
                      src="/src/pictures/honlap_kepek/hova-tova/6.JPG" style="width:100%">
             </div>
-            <div class="column">
-                <img alt="Kicsitt korábban jött, a szán még szervízben volt!" class="demo cursor" onclick="currentSlide(7)"
+            <div class="tm-column">
+                <img alt="Kicsitt korábban jött, a szán még szervízben volt!" class="tm-demo tm-cursor"
+                     onclick="currentSlideTm(7)"
                      src="/src/pictures/honlap_kepek/hova-tova/7.JPG" style="width:100%">
             </div>
-            <div class="column">
-                <img alt="A 8 Boldogság Nővérek havonta gyakran tartanak előadást a kollegistáknak." class="demo cursor" onclick="currentSlide(8)"
+            <div class="tm-column">
+                <img alt="A 8 Boldogság Nővérek havonta gyakran tartanak előadást a kollegistáknak."
+                     class="tm-demo tm-cursor" onclick="currentSlideTm(8)"
                      src="/src/pictures/honlap_kepek/hova-tova/8.JPG"
                      style="width:100%">
             </div>
-            <div class="column">
-                <img alt="Lehetetlen unatkozni rajtuk!" class="demo cursor" onclick="currentSlide(9)"
+            <div class="tm-column">
+                <img alt="Lehetetlen unatkozni rajtuk!" class="tm-demo tm-cursor" onclick="currentSlideTm(9)"
                      src="/src/pictures/honlap_kepek/hova-tova/9.JPG" style="width:100%">
             </div>
         </div>
     </div>
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("demo");
-            let captionText = document.getElementById("caption");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            captionText.innerHTML = dots[slideIndex - 1].alt;
-        }
-    </script>
 </div>

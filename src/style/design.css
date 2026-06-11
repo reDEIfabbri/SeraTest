@@ -233,3 +233,84 @@
  ::-webkit-scrollbar-thumb:hover {
      background: #c23e1d;
  }
+
+ /* Gallery styling for Tamogatok.html and similar pages */
+ .tm-container {
+     box-sizing: border-box;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     width: 25%;
+     height: 25%;
+     max-height: 25vh;
+     margin: auto;
+ }
+
+ .tm-mySlides {
+     display: none;
+ }
+
+ .tm-cursor {
+     cursor: pointer;
+ }
+
+ .tm-prev,
+ .tm-next {
+     cursor: pointer;
+     position: absolute;
+     top: 40%;
+     width: auto;
+     padding: 16px;
+     margin-top: -50px;
+     color: white;
+     font-weight: bold;
+     font-size: 20px;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+     -webkit-user-select: none;
+ }
+
+ .tm-next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+ }
+
+ .tm-prev:hover,
+ .tm-next:hover {
+     background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ .tm-numbertext {
+     color: #f2f2f2;
+     font-size: 12px;
+     padding: 8px 12px;
+     position: absolute;
+     top: 0;
+ }
+
+ .tm-caption-container {
+     text-align: center;
+     background-color: #222;
+     padding: 2px 16px;
+     color: white;
+ }
+
+ .tm-row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ .tm-column {
+     float: left;
+     width: 16.66%;
+ }
+
+ .tm-demo {
+     opacity: 0.6;
+ }
+
+ .tm-active,
+ .tm-demo:hover {
+     opacity: 1;
+ }
