@@ -69,6 +69,15 @@
      background-color: #bc9675;
  }
 
+ div.szobak > p {
+     text-align: center;
+ }
+
+ div.szobak-gallery {
+     display: flex;
+     justify-content: center;
+ }
+
  body>div.footing {
      margin: 0;
      background: #f6efe1;
