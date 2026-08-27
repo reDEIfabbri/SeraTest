@@ -91,4 +91,4 @@ hallgató gazdagítja és szélesíti a látókörünk horizontját jelenlétév
 - [jelentkezési lap](/src/documents/2025/Jelentkez%C3%A9si%20lap_R%C3%A9gieknek_2025.docx)
 - [jelentkezéshez szükséges dokumentumok listája](/src/documents/2025/Dokumentumok%20list%C3%A1ja_R%C3%A9giek_2025.docx)
 
-<iframe allow="clipboard-write" allowfullscreen="allowfullscreen" class="fp-iframe" scrolling="no" style="aspect-ratio: 210/297; width: 100%;" src="https://heyzine.com/flip-book/ffb3c64821.html"><iframe>
+<iframe allow="clipboard-write" allowfullscreen="allowfullscreen" class="fp-iframe" scrolling="no" style="aspect-ratio: 210/297; width: 100%;" src="https://heyzine.com/flip-book/fbc9d68b55.html"><iframe>
