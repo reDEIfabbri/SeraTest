@@ -1,3 +1,4 @@
+/node_modules/
 /tevekenyseggRegi.html
 /src/rotatedDB1.JPG
 /src/sport-20241111T150335Z-001.zip
@@ -5,8 +6,7 @@
 /src/VenKezFog.JPG
 /src/CsocsoJatek.JPG
 /src/DB1.webp
-/Arculati_Elemek/Logo/Logók - Png formátum/fekvoPaths.svg
-/Arculati_Elemek/Logo/Logók - Png formátum/fekvoPathsAIO.svg
+/Arculati_Elemek
 /src/how-a-rabbit-receives-a-ct-scan-v0-Nzg2eGNyMDV5emlkMSk3ZNOetGQEghL9mwFiHJvFdFMfmgEAWJCMLPoIMyES.webp
 /src/karacsonyiLogo.webp
 /src/pictures/logo3D.blend
@@ -18,15 +18,19 @@ New File.md
 SzakmaiNap.pdf
 Támogatások_20141231-1_emmi.xlsx
 Arculati_Elemek/AOK/aok-brandbook-FINAL-HU.pdf
-performance/Gallery_desktop_1.png
-performance/Gallery_desktop_2.png
-performance/gallery_mobile_1.png
-performance/gallery_mobile_2.png
-performance/index_desktop_1.png
-performance/index_desktop_2.png
-performance/index_mobile_1.png
-performance/index_mobile_2.png
-performance/Screenshot From 2025-06-12 19-39-07.png
-performance/Screenshot From 2025-06-12 19-39-17.png
-performance/Screenshot From 2025-06-12 20-03-34.png
+performance/
 src/pictures/naptarak/20251027_115212.heic
+package-lock.json
+src/pictures/gallery/2526_beerpong.zip
+src/pictures/gallery/2526_golyaavato.zip
+hu_HU.aff
+log.csv
+package-lock.json
+src/pictures/honlap_kepek/Csomag-Logok/
+src/pictures/honlap_kepek/Csomag-Logok_KIM/
+src/videos/0423.MOV
+src/videos/Kolis video.MOV
+src/videos/MEGOSZTASRA.mp4
+src/videos/megosztasra.mp4
+src/pictures/honlap_kepek/Csomag-Logok_KIM.zip
+src/pictures/honlap_kepek/Csomag-Logok.zip

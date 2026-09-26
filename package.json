@@ -4,6 +4,7 @@
     "headers": "^0.9.6",
     "htmlincludejs": "^1.0.0",
     "http-server": "^14.1.1",
+    "jsdom": "^27.0.0",
     "require": "^0.4.4"
   }
 }
